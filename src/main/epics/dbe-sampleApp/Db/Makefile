@@ -12,6 +12,10 @@ include $(TOP)/configure/CONFIG
 # databases, templates, substitutions like this
 
 DB += DBE.db
+DB += binout.template
+DB += binin.template
+DB += analogin.template
+DB += DBE.substitutions
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

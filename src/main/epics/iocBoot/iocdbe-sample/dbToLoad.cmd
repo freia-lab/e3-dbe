@@ -4,7 +4,7 @@
 
 cd "$(TOP)/db"
 dbLoadRecords("DBE.db","user=kg")
-#dbLoadTemplate(xxx.substitutions)
+dbLoadTemplate(DBE.substitutions)
 
 # PLC communication 
 #cd "$(EPICS_MODULES)/s7plc/db"

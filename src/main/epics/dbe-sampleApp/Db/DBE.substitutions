@@ -1,0 +1,42 @@
+file "binout.template" { pattern
+{SYS,	SUBS,	DEV,	SIG,		OFFS,	ZNAM,	ONAM,		DESC}
+{HPRF,	DBE,	Ampl,	CmdOn, 		1,	Idle,	Ampl_ON, 	"ON Command"}
+{HPRF,	DBE,	Ampl,	CmdOff, 	3,	Idle,	Ampl_OFF, 	"OFF Command"}
+{HPRF,	DBE,	APS,	CmdOn, 		5,	Idle,	Anodic_ON, 	"ON Command"}
+{HPRF,	DBE,	APS,	CmdOff, 	7,	Idle,	Anodic_OFF, 	"OFF Command"}
+{HPRF,	DBE,	Ampl,	CmdReset, 	9,	Idle,	Ampl_RESET, 	"RESET Command"}
+{HPRF,	DBE,	Free,	1,	 	11,	Idle,	Ampl_Free1, 	"Free1 Command"}
+{HPRF,	DBE,	Free,	2,	 	13,	Idle,	Ampl_Free1, 	"Free2 Command"}
+{HPRF,	DBE,	Free,	3,	 	15,	Idle,	Ampl_Free1, 	"Free3 Command"}
+{HPRF,	DBE,	Free,	4,	 	17,	Idle,	Ampl_Free1, 	"Free4 Command"}
+{HPRF,	DBE,	Free,	5,	 	19,	Idle,	Ampl_Free1, 	"Free5 Command"}
+}
+
+file "binin.template" { pattern
+{SYS,	SUBS,	DEV,	SIG,	OFFS,	ZNAM,	   ONAM,  ZSV,  OSV, DESC}
+{HPRF,	DBE,	Ampl,	sLocal,	1,	"Remote",  "Local",  NO_ALARM,  MINOR, "Local/Remote"}
+{HPRF,	DBE,	Ampl,	sOn,	3,	"Off", 	   "On",  NO_ALARM,  NO_ALARM, "On/Off"}
+{HPRF,	DBE,	APS,	sOn,	5,	"Off", 	   "On",  NO_ALARM,  NO_ALARM, "On/Off"}
+{HPRF,	DBE,	APS,	sAlarm,	7,	"OK", 	   "Alarm",  NO_ALARM,  MAJOR, "Alarm"}
+{HPRF,	DBE,	Ampl,	sFault,	9,	"OK", 	   "Fault",  NO_ALARM,  MAJOR, "Fault"}
+{HPRF,	DBE,	Ampl,	sMode,	11,	"CW", 	   "Pulse",  NO_ALARM,  NO_ALARM, "Pulse/CW"}
+{HPRF,	DBE,	Ampl,	sAlrm-AirCavP,	15,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Cavity Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-AirFilP,	17,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-TubeLqdFlow,	19,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-TubeLqdP,	21,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-TubeLqdT,	23,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-SSALqdFlow,	25,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-SSALqdP,	27,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-SSALqdT,	29,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-ExtIntlck,	31,	"OK", 	   "Interlock open",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-AOvrCur,	33,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-G1OvrCur,	35,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-G2OvrCur,	37,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-Crowbar,	39,	"OK", 	   "Crowbar in",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-Mains,	41,	"OK", 	   "Mains absent",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-G1Fault,	43,	"OK", 	   "Grid1 fault",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-G2Fault,	45,	"OK", 	   "Grid2 fault",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-TubeReflPwr,	47,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-SSAReflPwr,	49,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+}
+

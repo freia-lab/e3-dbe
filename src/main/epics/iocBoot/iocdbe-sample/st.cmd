@@ -34,7 +34,7 @@ cd "${TOP}"
 dbLoadDatabase "dbd/dbe-sample.dbd"
 dbe_sample_registerRecordDeviceDriver pdbbase
 
-< "${TOP}/iocBoot/iocdbe-sample/sddPreDriverConf.cmd"
+#< "${TOP}/iocBoot/iocdbe-sample/sddPreDriverConf.cmd"
 < "${TOP}/iocBoot/iocdbe-sample/userPreDriverConf.cmd"
 < "${TOP}/iocBoot/iocdbe-sample/threadSchedulingConf.cmd"
 < "${TOP}/iocBoot/iocdbe-sample/dbToLoad.cmd"
@@ -53,8 +53,8 @@ iocInit
 
 < "${TOP}/iocBoot/iocdbe-sample/iocdbe-sample-postSaveRestore.cmd"
 < "${TOP}/iocBoot/iocdbe-sample/sddSeqToLoad.cmd"
-< "${TOP}/iocBoot/iocdbe-sample/seqToLoad.cmd"
-< "${TOP}/iocBoot/iocdbe-sample/sddPostDriverConf.cmd"
+#< "${TOP}/iocBoot/iocdbe-sample/seqToLoad.cmd"
+#< "${TOP}/iocBoot/iocdbe-sample/sddPostDriverConf.cmd"
 < "${TOP}/iocBoot/iocdbe-sample/userPostDriverConf.cmd"
 
 

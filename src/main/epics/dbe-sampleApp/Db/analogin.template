@@ -1,0 +1,7 @@
+record (ai, "HPRF-$(SUBS):$(DEV):$(SIG)") {
+  field (DESC, "$(SUBS):$(DEV) $(DESC)")
+  field (EGU, "$(EGU)")
+  field (DTYP, "S7plc")
+  field (INP,  "@DBE:PLC/$(OFFS) T=UINT16")
+  field (SCAN, "I/O Intr")
+}
