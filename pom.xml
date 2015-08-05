@@ -31,6 +31,7 @@
     <!-- project properties -->
     <properties>
         <unit.type>module</unit.type>
+        <module.name>dbe-sample</module.name>
     </properties>
 
     <!-- parent pom.xml -->
@@ -70,6 +71,10 @@
                         <package name="dbe-sample-ioc">
                             <include type="ioc" name="dbe-sample" runlevels="-" />
                         </package>
+                        <package name="src">
+                       	    <include type="source" source="./src/main/epics" target="epics/apps/${module.name}/src"/>
+                       	    <include type="file" source="/main/tools/server_dbe.tcl" target="epics/apps/${module.name}/src/tools/"/>
+                       	</package>
                     </packaging>
                 </configuration>
             </plugin>
