@@ -29,3 +29,17 @@ record(waveform, PLC:DBE:Status:Buffer) {
   field(NELM, "86")
   field(SCAN, "I/O Intr")
 }
+
+ record(mbbi, "HPRF-DBE:Ampl:sType") {
+  field (DTYP, "S7plc")
+  field (INP,  "@$PLC:DBE/13 T=BYTE")
+  field (SCAN, "I/O Intr")
+  field (NOBT, "2")
+  field (SHFT, "0")
+  field (ZRVL, "0")
+  field (ONVL, "1")
+  field (TWVL, "2")
+  field (ZRST, "Normal")
+  field (ONST, "Slave")
+  field (TWST, "Master")
+ }

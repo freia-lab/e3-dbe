@@ -22,21 +22,85 @@ file "binin.template" { pattern
 {HPRF,	DBE,	Ampl,	sMode,	11,	"CW", 	   "Pulse",  NO_ALARM,  NO_ALARM, "Pulse/CW"}
 {HPRF,	DBE,	Ampl,	sAlrm-AirCavP,	15,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Cavity Air P"}
 {HPRF,	DBE,	Ampl,	sAlrm-AirFilP,	17,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-TubeLqdFlow,	19,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-TubeLqdP,	21,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-TubeLqdT,	23,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-SSALqdFlow,	25,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-SSALqdP,	27,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-SSALqdT,	29,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-ExtIntlck,	31,	"OK", 	   "Interlock open",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-AOvrCur,	33,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-G1OvrCur,	35,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-G2OvrCur,	37,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-Crowbar,	39,	"OK", 	   "Crowbar in",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-Mains,	41,	"OK", 	   "Mains absent",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-G1Fault,	43,	"OK", 	   "Grid1 fault",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-G2Fault,	45,	"OK", 	   "Grid2 fault",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-TubeReflPwr,	47,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-SSAReflPwr,	49,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-TubeLqdFlow,	19,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Tube Lqd Flow"}
+{HPRF,	DBE,	Ampl,	sAlrm-TubeLqdP,	21,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Tube Lqd Press."}
+{HPRF,	DBE,	Ampl,	sAlrm-TubeLqdT,	23,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Tube Lqd Temp."}
+{HPRF,	DBE,	Ampl,	sAlrm-SSALqdFlow,	25,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm SSA Lqd Flow"}
+{HPRF,	DBE,	Ampl,	sAlrm-SSALqdP,	27,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm SSA Lqd Press."}
+{HPRF,	DBE,	Ampl,	sAlrm-SSALqdT,	29,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm SSA Lqd Temp."}
+{HPRF,	DBE,	Ampl,	sAlrm-ExtIntlck,	31,	"OK", 	   "Interlock open",  NO_ALARM,  MAJOR, "Alarm Ext. Interlock"}
+{HPRF,	DBE,	Ampl,	sAlrm-AOvrCur,	33,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Anode Overcurrent"}
+{HPRF,	DBE,	Ampl,	sAlrm-G1OvrCur,	35,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Grid 1 Overcurrent"}
+{HPRF,	DBE,	Ampl,	sAlrm-G2OvrCur,	37,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Grid 2 Overcurrent"}
+{HPRF,	DBE,	Ampl,	sAlrm-Crowbar,	39,	"OK", 	   "Crowbar in",  NO_ALARM,  MAJOR, "Alarm Crowbar In"}
+{HPRF,	DBE,	Ampl,	sAlrm-Mains,	41,	"OK", 	   "Mains absent",  NO_ALARM,  MAJOR, "Alarm Mains Fault"}
+{HPRF,	DBE,	Ampl,	sAlrm-G1Fault,	43,	"OK", 	   "Grid1 fault",  NO_ALARM,  MAJOR, "Alarm Grid 1 Fault"}
+{HPRF,	DBE,	Ampl,	sAlrm-G2Fault,	45,	"OK", 	   "Grid2 fault",  NO_ALARM,  MAJOR, "Alarm Grid 2 Fault"}
+{HPRF,	DBE,	Ampl,	sAlrm-TubeReflPwr,	47,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Tube Reflected Pwr"}
+{HPRF,	DBE,	Ampl,	sAlrm-SSAReflPwr,	49,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm SSA Reflected Pwr"}
 }
 
+file "analogin.template"  { pattern
+{SYS,	SUBS,	DEV,	SIG,	OFFS,	EGU,	MAXVAL,	PREC, DESC}
+{HPRF,	DBE,	Fil,	sRdV-V,	50,	"V", 	"65535", 0,   "Filament Voltage"}
+{HPRF,	DBE,	Fil,	sRdV-I,	52,	"A", 	"65535", 0,   "Filament Current"}
+{HPRF,	DBE,	Grid-1,	sRdV-V,	54,	"V", 	"65535", 0,   "Grid 1 Voltage"}
+{HPRF,	DBE,	Grid-1,	sRdV-I,	56,	"mA", 	"65535", 0,   "Grid 1 Current"}
+{HPRF,	DBE,	Grid-2,	sRdV-V,	58,	"V", 	"65535", 0,   "Grid 2 Voltage"}
+{HPRF,	DBE,	Grid-2,	sRdV-I,	60,	"mA", 	"65535", 0,   "Grid 2 Current"}
+{HPRF,	DBE,	APS,	sRdV-V,	62,	"V", 	"65535", 0,   "Anodic Voltage"}
+{HPRF,	DBE,	APS,	sRdV-I,	64,	"mA", 	"6553.5", 1,   "Anodic Current"}
+{HPRF,	DBE,	Ampl,	sRdV-FwdPwr,	66,	"kW", 	"6553.5", 1,   "Forward Power"}
+{HPRF,	DBE,	Ampl,	sRdV-ReflPwr,	68,	"kW", 	"6553.5", 1,   "Reflected Power"}
+{HPRF,	DBE,	SSA,	sRdV-FwdPwr,	70,	"W", 	"65535", 0,   "Forward Power"}
+{HPRF,	DBE,	SSA,	sRdV-ReflPwr,	72,	"W", 	"65535", 0,   "Reflected Power"}
+{HPRF,	DBE,	Ampl,	sRdV-LqdFlow,	74,	"l/min", 	"65535", 0,   "Liquid Flow"}
+{HPRF,	DBE,	SSA,	sRdV-LqdFlow,	76,	"l/min", 	"65535", 0,   "Liquid Flow"}
+{HPRF,	DBE,	Ampl,	sRdV-LqdInT,	78,	"°C", 	"65535", 0,   "Liquid In Temp."}
+{HPRF,	DBE,	Ampl,	sRdV-LqdOutT,	80,	"°C", 	"65535", 0,   "Liquid Out Temp."}
+{HPRF,	DBE,	SSA,	sRdV-LqdInT,	82,	"°C", 	"65535", 0,   "Liquid In Temp."}
+{HPRF,	DBE,	SSA,	sRdV-LqdOutT,	84,	"°C", 	"65535", 0,   "Liquid Out Temp."}
+{HPRF,	DBE,	Ampl,	sRdV-Preheat,	86,	"s", 	"65535", 0,   "Time-out Fil. Preheating"}
+{HPRF,	DBE,	Ampl,	sRdV-CoolDwn,	88,	"s", 	"65535", 0,   "Time-out Fil. Cooldown"}
+{HPRF,	DBE,	Ampl,	sRdV-PostVent,	90,	"s", 	"65535", 0,   "Time-out Post Ventilation"}
+{HPRF,	DBE,	SSAPS-1,	sRdV-V1,	92,	"V", 	"6553.5", 1,   "Voltage PS1"}
+{HPRF,	DBE,	SSAPS-1,	sRdV-V2,	94,	"V", 	"6553.5", 1,   "Voltage PS21"}
+{HPRF,	DBE,	SSA-1,	sRdV-I1,	96,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
+{HPRF,	DBE,	SSA-1,	sRdV-I2,	98,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
+{HPRF,	DBE,	SSA-1,	sRdV-I3,	100,	"A", 	"6553.5", 1,   "Current Rf Module 3"}
+{HPRF,	DBE,	SSA-1,	sRdV-I4,	102,	"A", 	"6553.5", 1,   "Current Rf Module 4"}
+{HPRF,	DBE,	SSA-1,	sRdV-I5,	104,	"A", 	"6553.5", 1,   "Current Rf Module 5"}
+{HPRF,	DBE,	SSA-1,	sRdV-I6,	106,	"A", 	"6553.5", 1,   "Current Rf Module 6"}
+{HPRF,	DBE,	SSA-1,	sRdV-I7,	108,	"A", 	"6553.5", 1,   "Current Rf Module 7"}
+{HPRF,	DBE,	SSA-1,	sRdV-I8,	110,	"A", 	"6553.5", 1,   "Current Rf Module 8"}
+{HPRF,	DBE,	SSA-1,	sRdV-FwdPwr,	112,	"W", 	"65535", 0,   "Forward Power"}
+{HPRF,	DBE,	SSA-1,	sRdV-ReflPwr,	114,	"W", 	"65535", 0,   "Reflected Power"}
+{HPRF,	DBE,	SSA-1,	sRdV-T,	116,	"°C", 	"65535", 0,   "Heatsink Temp."}
+{HPRF,	DBE,	SSAPS-2,	sRdV-V1,	118,	"V", 	"6553.5", 1,   "Voltage PS1"}
+{HPRF,	DBE,	SSAPS-2,	sRdV-V2,	120,	"V", 	"6553.5", 1,   "Voltage PS21"}
+{HPRF,	DBE,	SSA-2,	sRdV-I1,	122,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
+{HPRF,	DBE,	SSA-2,	sRdV-I2,	124,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
+{HPRF,	DBE,	SSA-2,	sRdV-I3,	126,	"A", 	"6553.5", 1,   "Current Rf Module 3"}
+{HPRF,	DBE,	SSA-2,	sRdV-I4,	128,	"A", 	"6553.5", 1,   "Current Rf Module 4"}
+{HPRF,	DBE,	SSA-2,	sRdV-I5,	130,	"A", 	"6553.5", 1,   "Current Rf Module 5"}
+{HPRF,	DBE,	SSA-2,	sRdV-I6,	132,	"A", 	"6553.5", 1,   "Current Rf Module 6"}
+{HPRF,	DBE,	SSA-2,	sRdV-I7,	134,	"A", 	"6553.5", 1,   "Current Rf Module 7"}
+{HPRF,	DBE,	SSA-2,	sRdV-I8,	136,	"A", 	"6553.5", 1,   "Current Rf Module 8"}
+{HPRF,	DBE,	SSA-2,	sRdV-FwdPwr,	138,	"W", 	"65535", 0,   "Forward Power"}
+{HPRF,	DBE,	SSA-2,	sRdV-ReflPwr,	140,	"W", 	"65535", 0,   "Reflected Power"}
+{HPRF,	DBE,	SSA-2,	sRdV-T,	142,	"°C", 	"65535", 0,   "Heatsink Temp."}
+{HPRF,	DBE,	DRVPS,	sRdV-V,	144,	"V", 	"6553.5", 1,   "Voltage PS"}
+{HPRF,	DBE,	DRV,	sRdV-I,	146,	"A", 	"6553.5", 1,   "Current RF Module"}
+{HPRF,	DBE,	DRV,	sRdV-FwdPwr,	148,	"W", 	"65535", 0,   "Forward Power"}
+{HPRF,	DBE,	DRV,	sRdV-ReflPwr,	150,	"W", 	"65535", 0,   "Reflected Power"}
+{HPRF,	DBE,	DRV,	sRdV-T,	152,	"°C", 	"65535", 0,   "Heatsink Temp."}
+{HPRF,	DBE,	DRVPS-CW,	sRdV-V,	154,	"V", 	"6553.5", 1,   "Voltage PS"}
+{HPRF,	DBE,	Ampl-CW,	sRdV-V1,	156,	"V", 	"6553.5", 1,   "Voltage PS1"}
+{HPRF,	DBE,	Ampl-CW,	sRdV-V2,	158,	"V", 	"6553.5", 1,   "Voltage PS1"}
+{HPRF,	DBE,	DRV-CW,	sRdV-I,	160,	"A", 	"6553.5", 1,   "Current Driver Module"}
+{HPRF,	DBE,	Ampl-CW,	sRdV-I1,	162,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
+{HPRF,	DBE,	Ampl-CW,	sRdV-I2,	164,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
+{HPRF,	DBE,	Ampl-CW,	sRdV-FwdPwr,	166,	"W", 	"65535", 0,   "Forward Power"}
+{HPRF,	DBE,	Ampl-CW,	sRdV-ReflPwr,	168,	"W", 	"65535", 0,   "Reflected Power"}
+{HPRF,	DBE,	Ampl-CW,	sRdV-T,	170,	"°C", 	"65535", 0,   "Heatsink Temp."}
+}

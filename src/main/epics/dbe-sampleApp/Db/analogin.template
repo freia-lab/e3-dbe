@@ -1,7 +1,11 @@
-record (ai, "HPRF-$(SUBS):$(DEV):$(SIG)") {
+record (ai, "$(SYS)-$(SUBS):$(DEV):$(SIG)") {
   field (DESC, "$(SUBS):$(DEV) $(DESC)")
   field (EGU, "$(EGU)")
   field (DTYP, "S7plc")
   field (INP,  "@DBE:PLC/$(OFFS) T=UINT16")
+  field (LINR, "LINEAR")
+  field (EGUL, "0")
+  field (EGUF, "$(MAXVAL)")
+  field (PREC, "$(PREC)")
   field (SCAN, "I/O Intr")
 }
