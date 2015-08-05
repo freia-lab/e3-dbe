@@ -23,4 +23,4 @@
 #<sendIntervall> : time to wait before sending new data to PLC [ms]
 
 #s7plcConfigure PLC:DBE,192.168.1.248,2000,172,20,1,1000,500
-s7plcConfigure PLC:DBE,192.168.10.105,2000,172,20,1,2000,500
+s7plcConfigure PLC:DBE,127.0.0.1,2000,172,20,1,2000,500
