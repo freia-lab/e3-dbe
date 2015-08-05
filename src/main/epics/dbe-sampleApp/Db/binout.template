@@ -6,6 +6,5 @@ record (bo, "$(SYS)-$(SUBS):$(DEV):$(SIG)") {
   field (HIGH, "0.5")
   field (DOL,  "0")
   field (ONAM, "$(ONAM)")
-  field (PINI, "YES")
-  field (FLNK, "s7-send-counter")
+  field (PINI, "NO")
 }

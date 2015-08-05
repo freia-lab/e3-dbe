@@ -22,7 +22,7 @@ record(calc, PLC-DBE:disconnect-counter) {
   field(CALC, "(A=0&&B=1)?C+1:C")
 }
 
-record(waveform, PLC:DBE:Status:Buffer) {
+record(waveform, PLC-DBE:Status:Buffer) {
   field(DTYP, "S7plc")
   field(INP, "@PLC:DBE/0 T=UINT16")
   field(FTVL, "SHORT")
