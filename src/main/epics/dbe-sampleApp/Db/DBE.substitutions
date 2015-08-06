@@ -60,9 +60,9 @@ file "analogin.template"  { pattern
 {HPRF,	DBE,	Ampl,	sRdV-LqdOutT,	80,	"°C", 	"65535", 0,   "Liquid Out Temp."}
 {HPRF,	DBE,	SSA,	sRdV-LqdInT,	82,	"°C", 	"65535", 0,   "Liquid In Temp."}
 {HPRF,	DBE,	SSA,	sRdV-LqdOutT,	84,	"°C", 	"65535", 0,   "Liquid Out Temp."}
-{HPRF,	DBE,	Ampl,	sRdV-Preheat,	86,	"s", 	"65535", 0,   "Time-out Fil. Preheating"}
-{HPRF,	DBE,	Ampl,	sRdV-CoolDwn,	88,	"s", 	"65535", 0,   "Time-out Fil. Cooldown"}
-{HPRF,	DBE,	Ampl,	sRdV-PostVent,	90,	"s", 	"65535", 0,   "Time-out Post Ventilation"}
+{HPRF,	DBE,	Fil,	sRdV-Preheat,	86,	"s", 	"65535", 0,   "Time-out Fil. Preheating"}
+{HPRF,	DBE,	Fil,	sRdV-CoolDwn,	88,	"s", 	"65535", 0,   "Time-out Fil. Cooldown"}
+{HPRF,	DBE,	Fil,	sRdV-PostVent,	90,	"s", 	"65535", 0,   "Time-out Post Ventilation"}
 {HPRF,	DBE,	SSAPS-1,	sRdV-V1,	92,	"V", 	"6553.5", 1,   "Voltage PS1"}
 {HPRF,	DBE,	SSAPS-1,	sRdV-V2,	94,	"V", 	"6553.5", 1,   "Voltage PS21"}
 {HPRF,	DBE,	SSA-1,	sRdV-I1,	96,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
@@ -90,7 +90,7 @@ file "analogin.template"  { pattern
 {HPRF,	DBE,	SSA-2,	sRdV-ReflPwr,	140,	"W", 	"65535", 0,   "Reflected Power"}
 {HPRF,	DBE,	SSA-2,	sRdV-T,	142,	"°C", 	"65535", 0,   "Heatsink Temp."}
 {HPRF,	DBE,	DRVPS,	sRdV-V,	144,	"V", 	"6553.5", 1,   "Voltage PS"}
-{HPRF,	DBE,	DRV,	sRdV-I,	146,	"A", 	"6553.5", 1,   "Current RF Module"}
+{HPRF,	DBE,	DRVPS,	sRdV-I,	146,	"A", 	"6553.5", 1,   "Current RF Module"}
 {HPRF,	DBE,	DRV,	sRdV-FwdPwr,	148,	"W", 	"65535", 0,   "Forward Power"}
 {HPRF,	DBE,	DRV,	sRdV-ReflPwr,	150,	"W", 	"65535", 0,   "Reflected Power"}
 {HPRF,	DBE,	DRV,	sRdV-T,	152,	"°C", 	"65535", 0,   "Heatsink Temp."}
