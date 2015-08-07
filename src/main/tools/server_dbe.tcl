@@ -20,7 +20,10 @@ proc makeGUI {{parent {}}} {
     # create up buffer (where user can write to)
     set maxrow [expr ($upsize-1)/16+1]
     set f [frame $parent.input]
+    set lf [frame $parent.labels -width 2]
     for {set row 0} {$row < $maxrow} {incr row} {
+	set lbl [label $lf.l_$row -text [expr 16*$row]]
+	grid $lbl -row $row -column 0
         for {set col 0} {$col < 16} {incr col} {
             set e [entry $f.hexentry_${row}_$col \
                 -width 2 -validate key \
@@ -52,6 +55,8 @@ proc makeGUI {{parent {}}} {
     set maxrow [expr ($downsize-1)/16+1]
     set baserow $row
     for {set row 0} {$row < $maxrow} {incr row} {
+	set lbl [label $lf.l_$row$row -text [expr 16*$row]]
+	grid $lbl -row [expr $row+$baserow] -column 0	
         for {set col 0} {$col < 16} {incr col} {
             set e [label $f.hexlabel_${row}_$col \
                 -width 2 -relief raised]
@@ -62,7 +67,7 @@ proc makeGUI {{parent {}}} {
         grid $e -row [expr $row+$baserow] -column $col
     }
     trace variable downdata w "updataData $f"
-    pack $f
+    pack $lf $f -side left
     updataData $f
 }
 
