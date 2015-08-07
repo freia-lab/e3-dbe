@@ -23,7 +23,7 @@
     <groupId>org.iter.codac.units</groupId>
     <artifactId>epics-dbe-sample</artifactId>
     <packaging>codac</packaging>
-    <version>0.0a1</version>
+    <version>0.1</version>
     <name>CODAC Core System epics-dbe-sample module</name>
     <description>CODAC Core System epics-dbe-sample module</description>
     <url>http://www.iter.org/</url>
