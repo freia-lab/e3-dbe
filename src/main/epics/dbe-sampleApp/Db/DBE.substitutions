@@ -97,7 +97,7 @@ file "analogin.template"  { pattern
 {HPRF,	DBE,	DRVPS-CW,	sRdV-V,	154,	"V", 	"6553.5", 1,   "Voltage PS"}
 {HPRF,	DBE,	Ampl-CW,	sRdV-V1,	156,	"V", 	"6553.5", 1,   "Voltage PS1"}
 {HPRF,	DBE,	Ampl-CW,	sRdV-V2,	158,	"V", 	"6553.5", 1,   "Voltage PS1"}
-{HPRF,	DBE,	DRV-CW,	sRdV-I,	160,	"A", 	"6553.5", 1,   "Current Driver Module"}
+{HPRF,	DBE,	DRVPS-CW,	sRdV-I,	160,	"A", 	"6553.5", 1,   "Current Driver Module"}
 {HPRF,	DBE,	Ampl-CW,	sRdV-I1,	162,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
 {HPRF,	DBE,	Ampl-CW,	sRdV-I2,	164,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
 {HPRF,	DBE,	Ampl-CW,	sRdV-FwdPwr,	166,	"W", 	"65535", 0,   "Forward Power"}
