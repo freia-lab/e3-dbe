@@ -3500,7 +3500,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-FwdPwr</pv_name>
+        <pv_name>$(PVN):sFwdPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -3558,7 +3558,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-ReflPwr</pv_name>
+        <pv_name>$(PVN):sReflPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -3740,7 +3740,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-FwdPwr</pv_name>
+        <pv_name>$(PVN):sFwdPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -3798,7 +3798,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-ReflPwr</pv_name>
+        <pv_name>$(PVN):sReflPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -3980,7 +3980,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-FwdPwr</pv_name>
+        <pv_name>$(PVN):sFwdPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -4038,7 +4038,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-ReflPwr</pv_name>
+        <pv_name>$(PVN):sReflPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -4316,7 +4316,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-FwdPwr</pv_name>
+        <pv_name>$(PVN):sFwdPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -4374,7 +4374,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-ReflPwr</pv_name>
+        <pv_name>$(PVN):sReflPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -4556,7 +4556,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-FwdPwr</pv_name>
+        <pv_name>$(PVN):sFwdPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -4614,7 +4614,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-ReflPwr</pv_name>
+        <pv_name>$(PVN):sReflPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -4933,7 +4933,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-FwdPwr</pv_name>
+        <pv_name>$(PVN):sFwdPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -4991,7 +4991,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-ReflPwr</pv_name>
+        <pv_name>$(PVN):sReflPwr</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -5433,7 +5433,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-LqdInT</pv_name>
+        <pv_name>$(PVN):sLqdInT</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -5491,7 +5491,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-LqdOutT</pv_name>
+        <pv_name>$(PVN):sLqdOutT</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -5590,7 +5590,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-LqdFlow</pv_name>
+        <pv_name>$(PVN):sLqdFlow</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -5772,7 +5772,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-LqdInT</pv_name>
+        <pv_name>$(PVN):sLqdInT</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -5830,7 +5830,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-LqdOutT</pv_name>
+        <pv_name>$(PVN):sLqdOutT</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -5929,7 +5929,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-LqdFlow</pv_name>
+        <pv_name>$(PVN):sLqdFlow</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -6343,7 +6343,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(P):Fil:sRdV-Preheat</pv_name>
+        <pv_name>$(P):Fil:sPreheat</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -6442,7 +6442,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(P):Fil:sRdV-CoolDwn</pv_name>
+        <pv_name>$(P):Fil:sCoolDwn</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -6541,7 +6541,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(P):Fil:sRdV-PostVent</pv_name>
+        <pv_name>$(P):Fil:sPostVent</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -6682,7 +6682,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V</pv_name>
+        <pv_name>$(PVN):sV</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -6781,7 +6781,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I</pv_name>
+        <pv_name>$(PVN):sI</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -7141,7 +7141,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V</pv_name>
+        <pv_name>$(PVN):sV</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -7240,7 +7240,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I</pv_name>
+        <pv_name>$(PVN):sI</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -7381,7 +7381,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V</pv_name>
+        <pv_name>$(PVN):sV</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -7480,7 +7480,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I</pv_name>
+        <pv_name>$(PVN):sI</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -7799,7 +7799,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V</pv_name>
+        <pv_name>$(PVN):sV</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -7898,7 +7898,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I</pv_name>
+        <pv_name>$(PVN):sI</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -8039,7 +8039,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V</pv_name>
+        <pv_name>$(PVN):sV</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -8138,7 +8138,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I</pv_name>
+        <pv_name>$(PVN):sI</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -8498,7 +8498,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V1</pv_name>
+        <pv_name>$(PVN):sV1</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -8597,7 +8597,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V2</pv_name>
+        <pv_name>$(PVN):sV2</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -8738,7 +8738,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V1</pv_name>
+        <pv_name>$(PVN):sV1</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -8837,7 +8837,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V2</pv_name>
+        <pv_name>$(PVN):sV2</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -8978,7 +8978,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>false</transparent>
-      <pv_name>$(P):DRV:sRdV-T</pv_name>
+      <pv_name>$(P):DRV:sT</pv_name>
       <background_color>
         <color name="IO InputPV Bg" red="255" green="255" blue="255" />
       </background_color>
@@ -9117,7 +9117,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(P):SSA-1:sRdV-T</pv_name>
+        <pv_name>$(P):SSA-1:sT</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -9216,7 +9216,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(P):SSA-2:sRdV-T</pv_name>
+        <pv_name>$(P):SSA-2:sT</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -9398,7 +9398,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I1</pv_name>
+        <pv_name>$(PVN):sI1</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -9497,7 +9497,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I2</pv_name>
+        <pv_name>$(PVN):sI2</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -9596,7 +9596,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I3</pv_name>
+        <pv_name>$(PVN):sI3</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -9695,7 +9695,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I4</pv_name>
+        <pv_name>$(PVN):sI4</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -9794,7 +9794,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I5</pv_name>
+        <pv_name>$(PVN):sI5</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -9893,7 +9893,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I6</pv_name>
+        <pv_name>$(PVN):sI6</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -9992,7 +9992,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I7</pv_name>
+        <pv_name>$(PVN):sI7</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -10091,7 +10091,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I8</pv_name>
+        <pv_name>$(PVN):sI8</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -10240,7 +10240,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I1</pv_name>
+        <pv_name>$(PVN):sI1</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -10339,7 +10339,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I2</pv_name>
+        <pv_name>$(PVN):sI2</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -10438,7 +10438,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I3</pv_name>
+        <pv_name>$(PVN):sI3</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -10537,7 +10537,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I4</pv_name>
+        <pv_name>$(PVN):sI4</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -10636,7 +10636,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I5</pv_name>
+        <pv_name>$(PVN):sI5</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -10735,7 +10735,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I6</pv_name>
+        <pv_name>$(PVN):sI6</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -10834,7 +10834,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I7</pv_name>
+        <pv_name>$(PVN):sI7</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -10933,7 +10933,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I8</pv_name>
+        <pv_name>$(PVN):sI8</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -11479,7 +11479,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V</pv_name>
+        <pv_name>$(PVN):sV</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -11578,7 +11578,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I</pv_name>
+        <pv_name>$(PVN):sI</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -11719,7 +11719,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I1</pv_name>
+        <pv_name>$(PVN):sI1</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -11818,7 +11818,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-I2</pv_name>
+        <pv_name>$(PVN):sI2</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -11959,7 +11959,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V1</pv_name>
+        <pv_name>$(PVN):sV1</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -12058,7 +12058,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>false</transparent>
-        <pv_name>$(PVN):sRdV-V2</pv_name>
+        <pv_name>$(PVN):sV2</pv_name>
         <background_color>
           <color name="IO InputPV Bg" red="255" green="255" blue="255" />
         </background_color>
@@ -12158,7 +12158,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>false</transparent>
-      <pv_name>$(P):Ampl-CW:sRdV-T</pv_name>
+      <pv_name>$(P):Ampl-CW:sT</pv_name>
       <background_color>
         <color name="IO InputPV Bg" red="255" green="255" blue="255" />
       </background_color>
