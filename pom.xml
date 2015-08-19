@@ -68,7 +68,7 @@
                             <include type="databrowser" file="*" />
                             <include type="boy" file="dbe-sample.opi" topopi="true" />
                         </package>
-                        <package name="dbe-sample-ioc">
+                        <package name="ioc">
                             <include type="ioc" name="dbe-sample" runlevels="-" />
                         </package>
                         <package name="src">
