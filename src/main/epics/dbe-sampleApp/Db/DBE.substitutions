@@ -56,10 +56,10 @@ file "analogin.template"  { pattern
 {HPRF,	DBE,	SSA,	sReflPwr,	72,	"W", 	"65535", 1.0, 0,   "Reflected Power"}
 {HPRF,	DBE,	Ampl,	sLqdFlow,	74,	"l/min", 	"65535", 1.0, 0,   "Liquid Flow"}
 {HPRF,	DBE,	SSA,	sLqdFlow,	76,	"l/min", 	"65535", 1.0, 0,   "Liquid Flow"}
-{HPRF,	DBE,	Ampl,	sLqdInT,	78,	"°C", 	"65535", 0.1, 1,   "Liquid In Temp."}
-{HPRF,	DBE,	Ampl,	sLqdOutT,	80,	"°C", 	"65535", 0.1, 1,   "Liquid Out Temp."}
-{HPRF,	DBE,	SSA,	sLqdInT,	82,	"°C", 	"65535", 0.1, 1,   "Liquid In Temp."}
-{HPRF,	DBE,	SSA,	sLqdOutT,	84,	"°C", 	"65535", 0.1, 1,   "Liquid Out Temp."}
+{HPRF,	DBE,	Ampl,	sLqdInT,	78,	"°C", 	"6553.5", 0.1, 1,   "Liquid In Temp."}
+{HPRF,	DBE,	Ampl,	sLqdOutT,	80,	"°C", 	"6553.5", 0.1, 1,   "Liquid Out Temp."}
+{HPRF,	DBE,	SSA,	sLqdInT,	82,	"°C", 	"6553.5", 0.1, 1,   "Liquid In Temp."}
+{HPRF,	DBE,	SSA,	sLqdOutT,	84,	"°C", 	"6553.5", 0.1, 1,   "Liquid Out Temp."}
 {HPRF,	DBE,	Fil,	sPreheat,	86,	"s", 	"65535", 1.0, 0,   "Time-out Fil. Preheating"}
 {HPRF,	DBE,	Fil,	sCoolDwn,	88,	"s", 	"65535", 1.0, 0,   "Time-out Fil. Cooldown"}
 {HPRF,	DBE,	Fil,	sPostVent,	90,	"s", 	"65535", 1.0, 0,   "Time-out Post Ventilation"}
