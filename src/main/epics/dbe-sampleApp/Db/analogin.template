@@ -4,6 +4,7 @@ record (ai, "$(SYS)-$(SUBS):$(DEV):$(SIG)") {
   field (DTYP, "S7plc")
   field (INP,  "@PLC:DBE/$(OFFS) T=UINT16")
   field (LINR, "LINEAR")
+  field (ESLO, "$(ESLO)")
   field (EGUL, "0")
   field (EGUF, "$(MAXVAL)")
   field (PREC, "$(PREC)")
