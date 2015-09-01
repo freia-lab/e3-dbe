@@ -3,8 +3,8 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <PLC>PLC-DBE</PLC>
-    <P>HPRF-DBE</P>
+    <PLC>PLC-DBE$(nr)</PLC>
+    <P>HPRF-DBE$(nr)</P>
   </macros>
   <wuid>-14a921ec:134b2495e46:-7f53</wuid>
   <boy_version>3.2.0.codac_core_4_1_0</boy_version>
@@ -445,7 +445,7 @@ $(trace_0_y_pv_value)</tooltip>
     <visible>true</visible>
     <wuid>-1329e1e0:14efdedba50:-7c23</wuid>
     <scripts />
-    <height>200</height>
+    <height>286</height>
     <name>Commands &amp; Status</name>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -492,7 +492,7 @@ $(trace_0_y_pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>HPRF-DBE:APS:CmdOff</pv_name>
+      <pv_name>$(P):APS:CmdOff</pv_name>
       <background_color>
         <color name="IO Button" red="178" green="178" blue="178" />
       </background_color>
@@ -506,7 +506,7 @@ $(trace_0_y_pv_value)</tooltip>
       <font>
         <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
       </font>
-      <width>80</width>
+      <width>85</width>
       <border_style>6</border_style>
       <push_action_index>0</push_action_index>
       <image></image>
@@ -545,7 +545,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>HPRF-DBE:APS:CmdOn</pv_name>
+      <pv_name>$(P):APS:CmdOn</pv_name>
       <background_color>
         <color name="IO Button" red="178" green="178" blue="178" />
       </background_color>
@@ -559,7 +559,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
       </font>
-      <width>80</width>
+      <width>85</width>
       <border_style>6</border_style>
       <push_action_index>0</push_action_index>
       <image></image>
@@ -598,7 +598,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>HPRF-DBE:Ampl:CmdOff</pv_name>
+      <pv_name>$(P):Ampl:CmdOff</pv_name>
       <background_color>
         <color name="IO Button" red="178" green="178" blue="178" />
       </background_color>
@@ -612,7 +612,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
       </font>
-      <width>80</width>
+      <width>85</width>
       <border_style>6</border_style>
       <push_action_index>0</push_action_index>
       <image></image>
@@ -651,7 +651,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>HPRF-DBE:Ampl:CmdOn</pv_name>
+      <pv_name>$(P):Ampl:CmdOn</pv_name>
       <background_color>
         <color name="IO Button" red="178" green="178" blue="178" />
       </background_color>
@@ -665,7 +665,7 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
       </font>
-      <width>80</width>
+      <width>85</width>
       <border_style>6</border_style>
       <push_action_index>0</push_action_index>
       <image></image>
@@ -695,7 +695,7 @@ $(pv_value)</tooltip>
       <visible>true</visible>
       <wuid>-1329e1e0:14efdedba50:-79c2</wuid>
       <scripts />
-      <height>98</height>
+      <height>66</height>
       <style>1</style>
       <name>Action Button Template_4</name>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
@@ -704,7 +704,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>HPRF-DBE:Ampl:CmdReset</pv_name>
+      <pv_name>$(P):Ampl:CmdReset</pv_name>
       <background_color>
         <color name="IO Button" red="178" green="178" blue="178" />
       </background_color>
@@ -729,7 +729,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <y>55</y>
+      <y>152</y>
       <actions hook="false" hook_all="true">
         <action type="WRITE_PV">
           <pv_name>$(pv_name)</pv_name>
@@ -741,7 +741,7 @@ $(pv_value)</tooltip>
       </actions>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-      <x>365</x>
+      <x>233</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -765,7 +765,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sFault</pv_name>
+      <pv_name>$(P):Ampl:sFault</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -825,7 +825,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:APS:sAlarm</pv_name>
+      <pv_name>$(P):APS:sAlarm</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -885,7 +885,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO Default" red="255" green="0" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sOn</pv_name>
+      <pv_name>$(P):Ampl:sOn</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -945,7 +945,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO Default" red="255" green="0" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sOn</pv_name>
+      <pv_name>$(P):APS:sOn</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1005,7 +1005,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sLocal</pv_name>
+      <pv_name>$(P):Ampl:sLocal</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1065,7 +1065,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="Minor" red="255" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sMode</pv_name>
+      <pv_name>$(P):Ampl:sMode</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1161,6 +1161,271 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
       <x>365</x>
     </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>6d6e2db0:14f82ea251c:-44d3</wuid>
+      <scripts />
+      <height>71</height>
+      <style>1</style>
+      <name>Action Button Template_5</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <pv_name>$(P):Ampl:CmdTotPwrMeasOff</pv_name>
+      <background_color>
+        <color name="IO Button" red="178" green="178" blue="178" />
+      </background_color>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Action Button</widget_type>
+      <enabled>true</enabled>
+      <text>$(actions)</text>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
+      </font>
+      <width>85</width>
+      <border_style>6</border_style>
+      <push_action_index>0</push_action_index>
+      <image></image>
+      <rules />
+      <pv_value />
+      <toggle_button>false</toggle_button>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <y>165</y>
+      <actions hook="false" hook_all="true">
+        <action type="WRITE_PV">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <timeout>10</timeout>
+          <confirm_message></confirm_message>
+          <description>Combined Pwr Meas Off</description>
+        </action>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>5</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>6d6e2db0:14f82ea251c:-44c1</wuid>
+      <scripts />
+      <height>71</height>
+      <style>1</style>
+      <name>Action Button Template_6</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <pv_name>$(P):Ampl:CmdTotPwrMeasOn</pv_name>
+      <background_color>
+        <color name="IO Button" red="178" green="178" blue="178" />
+      </background_color>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Action Button</widget_type>
+      <enabled>true</enabled>
+      <text>$(actions)</text>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
+      </font>
+      <width>85</width>
+      <border_style>6</border_style>
+      <push_action_index>0</push_action_index>
+      <image></image>
+      <rules />
+      <pv_value />
+      <toggle_button>false</toggle_button>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <y>165</y>
+      <actions hook="false" hook_all="true">
+        <action type="WRITE_PV">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <timeout>10</timeout>
+          <confirm_message></confirm_message>
+          <description>Combined Pwr Meas On</description>
+        </action>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>95</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>6d6e2db0:14f82ea251c:-3904</wuid>
+      <scripts />
+      <height>40</height>
+      <style>1</style>
+      <name>Action Button Template_7</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <pv_name>$(P):Ampl:CmdNormal</pv_name>
+      <background_color>
+        <color name="IO Button" red="178" green="178" blue="178" />
+      </background_color>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Action Button</widget_type>
+      <enabled>true</enabled>
+      <text>$(actions)</text>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
+      </font>
+      <width>80</width>
+      <border_style>6</border_style>
+      <push_action_index>0</push_action_index>
+      <image></image>
+      <rules />
+      <pv_value />
+      <toggle_button>false</toggle_button>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <y>54</y>
+      <actions hook="false" hook_all="true">
+        <action type="WRITE_PV">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <timeout>10</timeout>
+          <confirm_message></confirm_message>
+          <description>Normal</description>
+        </action>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>365</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>6d6e2db0:14f82ea251c:-38e9</wuid>
+      <scripts />
+      <height>40</height>
+      <style>1</style>
+      <name>Action Button Template_8</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <pv_name>$(P):Ampl:CmdMaster</pv_name>
+      <background_color>
+        <color name="IO Button" red="178" green="178" blue="178" />
+      </background_color>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Action Button</widget_type>
+      <enabled>true</enabled>
+      <text>$(actions)</text>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
+      </font>
+      <width>80</width>
+      <border_style>6</border_style>
+      <push_action_index>0</push_action_index>
+      <image></image>
+      <rules />
+      <pv_value />
+      <toggle_button>false</toggle_button>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <y>108</y>
+      <actions hook="false" hook_all="true">
+        <action type="WRITE_PV">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <timeout>10</timeout>
+          <confirm_message></confirm_message>
+          <description>Master</description>
+        </action>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>365</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <visible>true</visible>
+      <wuid>6d6e2db0:14f82ea251c:-38da</wuid>
+      <scripts />
+      <height>40</height>
+      <style>1</style>
+      <name>Action Button Template_9</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <pv_name>$(P):Ampl:CmdSlave</pv_name>
+      <background_color>
+        <color name="IO Button" red="178" green="178" blue="178" />
+      </background_color>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Action Button</widget_type>
+      <enabled>true</enabled>
+      <text>$(actions)</text>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
+      </font>
+      <width>80</width>
+      <border_style>6</border_style>
+      <push_action_index>0</push_action_index>
+      <image></image>
+      <rules />
+      <pv_value />
+      <toggle_button>false</toggle_button>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <y>165</y>
+      <actions hook="false" hook_all="true">
+        <action type="WRITE_PV">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <timeout>10</timeout>
+          <confirm_message></confirm_message>
+          <description>Slave</description>
+        </action>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <x>365</x>
+    </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <macros>
@@ -1224,7 +1489,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-AirCavP</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-AirCavP</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1325,7 +1590,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-AirFilP</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-AirFilP</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1426,7 +1691,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-TubeLqdFlow</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-TubeLqdFlow</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1527,7 +1792,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-TubeLqdP</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-TubeLqdP</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1628,7 +1893,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-TubeLqdT</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-TubeLqdT</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1729,7 +1994,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-SSALqdFlow</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-SSALqdFlow</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1830,7 +2095,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-SSALqdP</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-SSALqdP</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -1931,7 +2196,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-SSALqdT</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-SSALqdT</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2032,7 +2297,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-ExtIntlck</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-ExtIntlck</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2133,7 +2398,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-AOvrCur</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-AOvrCur</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2234,7 +2499,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-G1OvrCur</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-G1OvrCur</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2335,7 +2600,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-G2OvrCur</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-G2OvrCur</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2436,7 +2701,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-Crowbar</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-Crowbar</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2537,7 +2802,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-Mains</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-Mains</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2638,7 +2903,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-G1Fault</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-G1Fault</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2739,7 +3004,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-G2Fault</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-G2Fault</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2840,7 +3105,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-TubeReflPwr</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-TubeReflPwr</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -2941,7 +3206,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color name="IO OK" red="0" green="255" blue="0" />
       </off_color>
-      <pv_name>HPRF-DBE:Ampl:sAlrm-SSAReflPwr</pv_name>
+      <pv_name>$(P):Ampl:sAlrm-SSAReflPwr</pv_name>
       <background_color>
         <color name="IO Background" red="255" green="255" blue="205" />
       </background_color>
@@ -5337,7 +5602,7 @@ $(pv_value)</tooltip>
         <wuid>-1329e1e0:14efdedba50:-5ff3</wuid>
         <auto_size>true</auto_size>
         <scripts />
-        <height>15</height>
+        <height>16</height>
         <name>Label Template</name>
         <scale_options>
           <width_scalable>true</width_scalable>
@@ -5378,7 +5643,7 @@ $(pv_value)</tooltip>
         <wuid>-1329e1e0:14efdedba50:-5f9b</wuid>
         <auto_size>true</auto_size>
         <scripts />
-        <height>15</height>
+        <height>16</height>
         <name>Label Template_1</name>
         <scale_options>
           <width_scalable>true</width_scalable>
@@ -5535,7 +5800,7 @@ $(pv_value)</tooltip>
         <wuid>-1329e1e0:14efdedba50:-5c76</wuid>
         <auto_size>true</auto_size>
         <scripts />
-        <height>15</height>
+        <height>16</height>
         <name>Label Template_2</name>
         <scale_options>
           <width_scalable>true</width_scalable>
@@ -9254,6 +9519,88 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
         <x>100</x>
       </widget>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <visible>true</visible>
+      <vertical_alignment>1</vertical_alignment>
+      <wuid>6d6e2db0:14f82ea251c:-4b6a</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <height>16</height>
+      <name>Label Template_11</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <transparent>true</transparent>
+      <show_scrollbar>false</show_scrollbar>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205" />
+      </background_color>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92" />
+      </foreground_color>
+      <widget_type>Label</widget_type>
+      <enabled>false</enabled>
+      <text>Anode</text>
+      <font>
+        <opifont.name fontName="arial" height="10" style="0">IO Normal</opifont.name>
+      </font>
+      <width>37</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <actions hook="false" hook_all="false" />
+      <y>405</y>
+      <wrap_words>true</wrap_words>
+      <tooltip></tooltip>
+      <x>90</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <visible>true</visible>
+      <vertical_alignment>1</vertical_alignment>
+      <wuid>6d6e2db0:14f82ea251c:-4b04</wuid>
+      <auto_size>true</auto_size>
+      <scripts />
+      <height>16</height>
+      <name>Label Template_12</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <transparent>true</transparent>
+      <show_scrollbar>false</show_scrollbar>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205" />
+      </background_color>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92" />
+      </foreground_color>
+      <widget_type>Label</widget_type>
+      <enabled>false</enabled>
+      <text>Driver PS</text>
+      <font>
+        <opifont.name fontName="arial" height="10" style="0">IO Normal</opifont.name>
+      </font>
+      <width>57</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <actions hook="false" hook_all="false" />
+      <y>405</y>
+      <wrap_words>true</wrap_words>
+      <tooltip></tooltip>
+      <x>215</x>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">

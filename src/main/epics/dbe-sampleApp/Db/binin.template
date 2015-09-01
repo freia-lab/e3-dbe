@@ -1,7 +1,7 @@
 record (bi, "$(SYS)-$(SUBS):$(DEV):$(SIG)") {
   field (DESC, "$(SUBS):$(DEV) $(DESC)")
   field (DTYP, "S7plc")
-  field (INP,  "@PLC:DBE/$(OFFS) T=BYTE B=0")
+  field (INP,  "@PLC:$(SUBS)/$(OFFS) T=BYTE B=0")
   field (ZNAM, "$(ZNAM)")
   field (ONAM, "$(ONAM)")
   field (SCAN, "I/O Intr")

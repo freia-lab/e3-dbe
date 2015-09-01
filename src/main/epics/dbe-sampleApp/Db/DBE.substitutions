@@ -5,11 +5,11 @@ file "binout.template" { pattern
 {HPRF,	DBE,	APS,	CmdOn, 		5,	Idle,	Anodic_ON, 	"ON Command"}
 {HPRF,	DBE,	APS,	CmdOff, 	7,	Idle,	Anodic_OFF, 	"OFF Command"}
 {HPRF,	DBE,	Ampl,	CmdReset, 	9,	Idle,	Ampl_RESET, 	"RESET Command"}
-{HPRF,	DBE,	Free,	1,	 	11,	Idle,	Ampl_Free1, 	"Free1 Command"}
-{HPRF,	DBE,	Free,	2,	 	13,	Idle,	Ampl_Free1, 	"Free2 Command"}
-{HPRF,	DBE,	Free,	3,	 	15,	Idle,	Ampl_Free1, 	"Free3 Command"}
-{HPRF,	DBE,	Free,	4,	 	17,	Idle,	Ampl_Free1, 	"Free4 Command"}
-{HPRF,	DBE,	Free,	5,	 	19,	Idle,	Ampl_Free1, 	"Free5 Command"}
+{HPRF,	DBE,	Ampl,	CmdNormal,	11,	Idle,	Ampl_Normal, 	"Normal Mode Command"}
+{HPRF,	DBE,	Ampl,	CmdMaster,	13,	Idle,	Ampl_Master, 	"Master Mode Command"}
+{HPRF,	DBE,	Ampl,	CmdSlave,	15,	Idle,	Ampl_Slave, 	"Slave Mode Command"}
+{HPRF,	DBE,	Ampl,	CmdTotPwrMeasOn,	17,	Idle,		Ampl_TotPwrMeasOn,	"Total Pwr Meas. Enable Cmd,"}
+{HPRF,	DBE,	Ampl,	CmdTotPwrMeasOff,	19,	Idle, 		Ampl_TotPwrMeasOff, 	"Total Pwr Meas. Disable Cmd"}
 }
 
 file "binin.template" { pattern
@@ -41,66 +41,66 @@ file "binin.template" { pattern
 }
 
 file "analogin.template"  { pattern
-{SYS,	SUBS,	DEV,	SIG,	OFFS,	EGU,	MAXVAL,	ESLO,  PREC, DESC}
-{HPRF,	DBE,	Fil,	sV,	50,	"V", 	"65535", 1.0,  0,   "Filament Voltage"}
-{HPRF,	DBE,	Fil,	sI,	52,	"A", 	"65535", 1.0, 0,   "Filament Current"}
-{HPRF,	DBE,	Grid-1,	sV,	54,	"V", 	"65535", 1.0, 0,   "Grid 1 Voltage"}
-{HPRF,	DBE,	Grid-1,	sI,	56,	"mA", 	"65535", 1.0, 0,   "Grid 1 Current"}
-{HPRF,	DBE,	Grid-2,	sV,	58,	"V", 	"65535", 1.0, 0,   "Grid 2 Voltage"}
-{HPRF,	DBE,	Grid-2,	sI,	60,	"mA", 	"65535", 1.0, 0,   "Grid 2 Current"}
-{HPRF,	DBE,	APS,	sV,	62,	"V", 	"65535", 1.0, 0,   "Anodic Voltage"}
-{HPRF,	DBE,	APS,	sI,	64,	"mA", 	"6553.5", 0.1, 1,   "Anodic Current"}
-{HPRF,	DBE,	Ampl,	sFwdPwr,	66,	"kW", 	"6553.5", 0.1, 1,   "Forward Power"}
-{HPRF,	DBE,	Ampl,	sReflPwr,	68,	"kW", 	"6553.5", 0.1, 1,   "Reflected Power"}
-{HPRF,	DBE,	SSA,	sFwdPwr,	70,	"W", 	"65535", 1.0, 0,   "Forward Power"}
-{HPRF,	DBE,	SSA,	sReflPwr,	72,	"W", 	"65535", 1.0, 0,   "Reflected Power"}
-{HPRF,	DBE,	Ampl,	sLqdFlow,	74,	"l/min", 	"65535", 1.0, 0,   "Liquid Flow"}
-{HPRF,	DBE,	SSA,	sLqdFlow,	76,	"l/min", 	"65535", 1.0, 0,   "Liquid Flow"}
-{HPRF,	DBE,	Ampl,	sLqdInT,	78,	"°C", 	"6553.5", 0.1, 1,   "Liquid In Temp."}
-{HPRF,	DBE,	Ampl,	sLqdOutT,	80,	"°C", 	"6553.5", 0.1, 1,   "Liquid Out Temp."}
-{HPRF,	DBE,	SSA,	sLqdInT,	82,	"°C", 	"6553.5", 0.1, 1,   "Liquid In Temp."}
-{HPRF,	DBE,	SSA,	sLqdOutT,	84,	"°C", 	"6553.5", 0.1, 1,   "Liquid Out Temp."}
-{HPRF,	DBE,	Fil,	sPreheat,	86,	"s", 	"65535", 1.0, 0,   "Time-out Fil. Preheating"}
-{HPRF,	DBE,	Fil,	sCoolDwn,	88,	"s", 	"65535", 1.0, 0,   "Time-out Fil. Cooldown"}
-{HPRF,	DBE,	Fil,	sPostVent,	90,	"s", 	"65535", 1.0, 0,   "Time-out Post Ventilation"}
-{HPRF,	DBE,	SSAPS-1,	sV1,	92,	"V", 	"6553.5", 0.1, 1,   "Voltage PS1"}
-{HPRF,	DBE,	SSAPS-1,	sV2,	94,	"V", 	"6553.5", 0.1, 1,   "Voltage PS21"}
-{HPRF,	DBE,	SSA-1,	sI1,	96,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 1"}
-{HPRF,	DBE,	SSA-1,	sI2,	98,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 2"}
-{HPRF,	DBE,	SSA-1,	sI3,	100,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 3"}
-{HPRF,	DBE,	SSA-1,	sI4,	102,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 4"}
-{HPRF,	DBE,	SSA-1,	sI5,	104,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 5"}
-{HPRF,	DBE,	SSA-1,	sI6,	106,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 6"}
-{HPRF,	DBE,	SSA-1,	sI7,	108,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 7"}
-{HPRF,	DBE,	SSA-1,	sI8,	110,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 8"}
-{HPRF,	DBE,	SSA-1,	sFwdPwr,	112,	"W", 	"65535", 1.0, 0,   "Forward Power"}
-{HPRF,	DBE,	SSA-1,	sReflPwr,	114,	"W", 	"65535", 1.0, 0,   "Reflected Power"}
-{HPRF,	DBE,	SSA-1,	sT,	116,	"°C", 	"65535", 1.0, 0,   "Heatsink Temp."}
-{HPRF,	DBE,	SSAPS-2,	sV1,	118,	"V", 	"6553.5", 0.1, 1,   "Voltage PS1"}
-{HPRF,	DBE,	SSAPS-2,	sV2,	120,	"V", 	"6553.5", 0.1, 1,   "Voltage PS21"}
-{HPRF,	DBE,	SSA-2,	sI1,	122,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 1"}
-{HPRF,	DBE,	SSA-2,	sI2,	124,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 2"}
-{HPRF,	DBE,	SSA-2,	sI3,	126,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 3"}
-{HPRF,	DBE,	SSA-2,	sI4,	128,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 4"}
-{HPRF,	DBE,	SSA-2,	sI5,	130,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 5"}
-{HPRF,	DBE,	SSA-2,	sI6,	132,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 6"}
-{HPRF,	DBE,	SSA-2,	sI7,	134,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 7"}
-{HPRF,	DBE,	SSA-2,	sI8,	136,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 8"}
-{HPRF,	DBE,	SSA-2,	sFwdPwr,	138,	"W", 	"65535", 1.0, 0,   "Forward Power"}
-{HPRF,	DBE,	SSA-2,	sReflPwr,	140,	"W", 	"65535", 1.0, 0,   "Reflected Power"}
-{HPRF,	DBE,	SSA-2,	sT,	142,	"°C", 	"65535", 1.0, 0,   "Heatsink Temp."}
-{HPRF,	DBE,	DRVPS,	sV,	144,	"V", 	"6553.5", 0.1, 1,   "Voltage PS"}
-{HPRF,	DBE,	DRVPS,	sI,	146,	"A", 	"6553.5", 0.1, 1,   "Current RF Module"}
-{HPRF,	DBE,	DRV,	sFwdPwr,	148,	"W", 	"65535", 1.0, 0,   "Forward Power"}
-{HPRF,	DBE,	DRV,	sReflPwr,	150,	"W", 	"65535", 1.0, 0,   "Reflected Power"}
-{HPRF,	DBE,	DRV,	sT,	152,	"°C", 	"65535", 1.0, 0,   "Heatsink Temp."}
-{HPRF,	DBE,	DRVPS-CW,	sV,	154,	"V", 	"6553.5", 0.1, 1,   "Voltage PS"}
-{HPRF,	DBE,	Ampl-CW,	sV1,	156,	"V", 	"6553.5", 0.1, 1,   "Voltage PS1"}
-{HPRF,	DBE,	Ampl-CW,	sV2,	158,	"V", 	"6553.5", 0.1, 1,   "Voltage PS1"}
-{HPRF,	DBE,	DRVPS-CW,	sI,	160,	"A", 	"6553.5", 0.1, 1,   "Current Driver Module"}
-{HPRF,	DBE,	Ampl-CW,	sI1,	162,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 1"}
-{HPRF,	DBE,	Ampl-CW,	sI2,	164,	"A", 	"6553.5", 0.1, 1,   "Current Rf Module 2"}
-{HPRF,	DBE,	Ampl-CW,	sFwdPwr,	166,	"W", 	"65535", 1.0, 0,   "Forward Power"}
-{HPRF,	DBE,	Ampl-CW,	sReflPwr,	168,	"W", 	"65535", 1.0, 0,   "Reflected Power"}
-{HPRF,	DBE,	Ampl-CW,	sT,	170,	"°C", 	"65535", 1.0, 0,   "Heatsink Temp."}
+{SYS,	SUBS,	DEV,	SIG,	OFFS,	EGU,	MAXVAL,  PREC, DESC}
+{HPRF,	DBE,	Fil,	sV,	50,	"V", 	"65535",  0,   "Filament Voltage"}
+{HPRF,	DBE,	Fil,	sI,	52,	"A", 	"65535", 0,   "Filament Current"}
+{HPRF,	DBE,	Grid-1,	sV,	54,	"V", 	"65535", 0,   "Grid 1 Voltage"}
+{HPRF,	DBE,	Grid-1,	sI,	56,	"mA", 	"65535", 0,   "Grid 1 Current"}
+{HPRF,	DBE,	Grid-2,	sV,	58,	"V", 	"65535", 0,   "Grid 2 Voltage"}
+{HPRF,	DBE,	Grid-2,	sI,	60,	"mA", 	"65535", 0,   "Grid 2 Current"}
+{HPRF,	DBE,	APS,	sV,	62,	"V", 	"65535", 0,   "Anodic Voltage"}
+{HPRF,	DBE,	APS,	sI,	64,	"mA", 	"6553.5", 1,   "Anodic Current"}
+{HPRF,	DBE,	Ampl,	sFwdPwr,	66,	"kW", 	"6553.5", 1,   "Forward Power"}
+{HPRF,	DBE,	Ampl,	sReflPwr,	68,	"kW", 	"6553.5", 1,   "Reflected Power"}
+{HPRF,	DBE,	SSA,	sFwdPwr,	70,	"W", 	"65535",  0,   "Forward Power"}
+{HPRF,	DBE,	SSA,	sReflPwr,	72,	"W", 	"65535" 0,   "Reflected Power"}
+{HPRF,	DBE,	Ampl,	sLqdFlow,	74,	"l/min", 	"65535" 0,   "Liquid Flow"}
+{HPRF,	DBE,	SSA,	sLqdFlow,	76,	"l/min", 	"65535" 0,   "Liquid Flow"}
+{HPRF,	DBE,	Ampl,	sLqdInT,	78,	"°C", 	"6553.5", 1,   "Liquid In Temp."}
+{HPRF,	DBE,	Ampl,	sLqdOutT,	80,	"°C", 	"6553.5", 1,   "Liquid Out Temp."}
+{HPRF,	DBE,	SSA,	sLqdInT,	82,	"°C", 	"6553.5", 1,   "Liquid In Temp."}
+{HPRF,	DBE,	SSA,	sLqdOutT,	84,	"°C", 	"6553.5", 1,   "Liquid Out Temp."}
+{HPRF,	DBE,	Fil,	sPreheat,	86,	"s", 	"65535", 0,   "Time-out Fil. Preheating"}
+{HPRF,	DBE,	Fil,	sCoolDwn,	88,	"s", 	"65535", 0,   "Time-out Fil. Cooldown"}
+{HPRF,	DBE,	Fil,	sPostVent,	90,	"s", 	"65535", 0,   "Time-out Post Ventilation"}
+{HPRF,	DBE,	SSAPS-1,	sV1,	92,	"V", 	"6553.5", 1,   "Voltage PS1"}
+{HPRF,	DBE,	SSAPS-1,	sV2,	94,	"V", 	"6553.5", 1,   "Voltage PS21"}
+{HPRF,	DBE,	SSA-1,	sI1,	96,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
+{HPRF,	DBE,	SSA-1,	sI2,	98,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
+{HPRF,	DBE,	SSA-1,	sI3,	100,	"A", 	"6553.5", 1,   "Current Rf Module 3"}
+{HPRF,	DBE,	SSA-1,	sI4,	102,	"A", 	"6553.5", 1,   "Current Rf Module 4"}
+{HPRF,	DBE,	SSA-1,	sI5,	104,	"A", 	"6553.5", 1,   "Current Rf Module 5"}
+{HPRF,	DBE,	SSA-1,	sI6,	106,	"A", 	"6553.5", 1,   "Current Rf Module 6"}
+{HPRF,	DBE,	SSA-1,	sI7,	108,	"A", 	"6553.5", 1,   "Current Rf Module 7"}
+{HPRF,	DBE,	SSA-1,	sI8,	110,	"A", 	"6553.5", 1,   "Current Rf Module 8"}
+{HPRF,	DBE,	SSA-1,	sFwdPwr,	112,	"W", 	"65535", 0,   "Forward Power"}
+{HPRF,	DBE,	SSA-1,	sReflPwr,	114,	"W", 	"65535", 0,   "Reflected Power"}
+{HPRF,	DBE,	SSA-1,	sT,	116,	"°C", 	"65535", 0,   "Heatsink Temp."}
+{HPRF,	DBE,	SSAPS-2,	sV1,	118,	"V", 	"6553.5", 1,   "Voltage PS1"}
+{HPRF,	DBE,	SSAPS-2,	sV2,	120,	"V", 	"6553.5", 1,   "Voltage PS21"}
+{HPRF,	DBE,	SSA-2,	sI1,	122,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
+{HPRF,	DBE,	SSA-2,	sI2,	124,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
+{HPRF,	DBE,	SSA-2,	sI3,	126,	"A", 	"6553.5", 1,   "Current Rf Module 3"}
+{HPRF,	DBE,	SSA-2,	sI4,	128,	"A", 	"6553.5", 1,   "Current Rf Module 4"}
+{HPRF,	DBE,	SSA-2,	sI5,	130,	"A", 	"6553.5", 1,   "Current Rf Module 5"}
+{HPRF,	DBE,	SSA-2,	sI6,	132,	"A", 	"6553.5", 1,   "Current Rf Module 6"}
+{HPRF,	DBE,	SSA-2,	sI7,	134,	"A", 	"6553.5", 1,   "Current Rf Module 7"}
+{HPRF,	DBE,	SSA-2,	sI8,	136,	"A", 	"6553.5", 1,   "Current Rf Module 8"}
+{HPRF,	DBE,	SSA-2,	sFwdPwr,	138,	"W", 	"65535", 0,   "Forward Power"}
+{HPRF,	DBE,	SSA-2,	sReflPwr,	140,	"W", 	"65535", 0,   "Reflected Power"}
+{HPRF,	DBE,	SSA-2,	sT,	142,	"°C", 	"65535", 0,   "Heatsink Temp."}
+{HPRF,	DBE,	DRVPS,	sV,	144,	"V", 	"6553.5", 1,   "Voltage PS"}
+{HPRF,	DBE,	DRVPS,	sI,	146,	"A", 	"6553.5", 1,   "Current RF Module"}
+{HPRF,	DBE,	DRV,	sFwdPwr,	148,	"W", 	"65535", 0,   "Forward Power"}
+{HPRF,	DBE,	DRV,	sReflPwr,	150,	"W", 	"65535", 0,   "Reflected Power"}
+{HPRF,	DBE,	DRV,	sT,	152,	"°C", 	"65535", 0,   "Heatsink Temp."}
+{HPRF,	DBE,	DRVPS-CW,	sV,	154,	"V", 	"6553.5", 1,   "Voltage PS"}
+{HPRF,	DBE,	Ampl-CW,	sV1,	156,	"V", 	"6553.5", 1,   "Voltage PS1"}
+{HPRF,	DBE,	Ampl-CW,	sV2,	158,	"V", 	"6553.5", 1,   "Voltage PS1"}
+{HPRF,	DBE,	DRVPS-CW,	sI,	160,	"A", 	"6553.5", 1,   "Current Driver Module"}
+{HPRF,	DBE,	Ampl-CW,	sI1,	162,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
+{HPRF,	DBE,	Ampl-CW,	sI2,	164,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
+{HPRF,	DBE,	Ampl-CW,	sFwdPwr,	166,	"W", 	"65535", 0,   "Forward Power"}
+{HPRF,	DBE,	Ampl-CW,	sReflPwr,	168,	"W", 	"65535", 0,   "Reflected Power"}
+{HPRF,	DBE,	Ampl-CW,	sT,	170,	"°C", 	"65535", 0,   "Heatsink Temp."}
 }

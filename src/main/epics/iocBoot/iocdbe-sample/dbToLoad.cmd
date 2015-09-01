@@ -3,7 +3,7 @@
 #############################################
 
 cd "$(TOP)/db"
-dbLoadRecords("DBE.db","user=kg")
+dbLoadRecords("DBE.db","user=kg,SUBS=DBE")
 dbLoadTemplate(DBE.substitutions)
 
 # PLC communication 

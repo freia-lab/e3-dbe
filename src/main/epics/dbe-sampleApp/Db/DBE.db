@@ -1,38 +1,38 @@
-record(bi, PLC-DBE:status) {
+record(bi, PLC-$(SUBS):status) {
   field(DTYP, "S7plc stat")
-  field(INP, "@PLC:DBE")
+  field(INP, "@PLC:$(SUBS)")
   field(SCAN, "I/O Intr")
   field(ZNAM, "disconnected")
   field(ONAM, "connected")
   field(ZSV, "MAJOR")
-  field(FLNK, "PLC-DBE:status-counter")
+  field(FLNK, "PLC-$(SUBS):status-counter")
 }
 
-record(calc, PLC-DBE:status-counter) {
-  field(INPA, "PLC-DBE:status-counter")
+record(calc, PLC-$(SUBS):status-counter) {
+  field(INPA, "PLC-$(SUBS):status-counter")
   field(CALC, "A+1")
-  field(FLNK, "PLC-DBE:disconnect-counter")
+  field(FLNK, "PLC-$(SUBS):disconnect-counter")
 }
 
 
-record(calc, PLC-DBE:disconnect-counter) {
-  field(INPA, "PLC-DBE:status")
-  field(INPB, "PLC-DBE:disconnect-counter.LA")
-  field(INPC, "PLC-DBE:disconnect-counter")
+record(calc, PLC-$(SUBS):disconnect-counter) {
+  field(INPA, "PLC-$(SUBS):status")
+  field(INPB, "PLC-$(SUBS):disconnect-counter.LA")
+  field(INPC, "PLC-$(SUBS):disconnect-counter")
   field(CALC, "(A=0&&B=1)?C+1:C")
 }
 
-record(waveform, PLC-DBE:Status:Buffer) {
+record(waveform, PLC-$(SUBS):Status:Buffer) {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:DBE/0 T=UINT16")
+  field(INP, "@PLC:$(SUBS)/0 T=UINT16")
   field(FTVL, "SHORT")
   field(NELM, "86")
   field(SCAN, "I/O Intr")
 }
 
- record(mbbi, "HPRF-DBE:Ampl:sType") {
+ record(mbbi, "HPRF-$(SUBS):Ampl:sType") {
   field (DTYP, "S7plc")
-  field (INP,  "@$PLC:DBE/13 T=BYTE")
+  field (INP,  "@$PLC:$(SUBS)/13 T=BYTE")
   field (SCAN, "I/O Intr")
   field (NOBT, "2")
   field (SHFT, "0")
