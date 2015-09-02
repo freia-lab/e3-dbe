@@ -1,7 +1,9 @@
 #!/bin/sh
 # the next line restarts using wish \
 exec wish "$0" "$@"
-set upsize 172
+# Data buffer length in bytes PLC->Epics
+set upsize 198
+# Data buffer length in bytes Epics->PLC
 set downsize 20
 
 option add *font {courier 12}
@@ -55,7 +57,7 @@ proc makeGUI {{parent {}}} {
     set maxrow [expr ($downsize-1)/16+1]
     set baserow $row
     for {set row 0} {$row < $maxrow} {incr row} {
-	set lbl [label $lf.l_$row$row -text [expr 16*$row]]
+	set lbl [label $lf.ld_$row -text [expr 16*$row]]
 	grid $lbl -row [expr $row+$baserow] -column 0	
         for {set col 0} {$col < 16} {incr col} {
             set e [label $f.hexlabel_${row}_$col \

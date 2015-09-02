@@ -61,7 +61,7 @@
     <visible>true</visible>
     <scripts />
     <tab_1_enabled>true</tab_1_enabled>
-    <height>850</height>
+    <height>876</height>
     <horizontal_tabs>true</horizontal_tabs>
     <tab_1_font>
       <opifont.name fontName="arial" height="10" style="0">IO Normal</opifont.name>
@@ -100,7 +100,7 @@
       <visible>true</visible>
       <wuid>49f0507:14f3d87f17a:-6046</wuid>
       <scripts />
-      <height>816</height>
+      <height>842</height>
       <name>System 1</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -143,12 +143,12 @@
         <auto_size>false</auto_size>
         <scripts />
         <zoom_to_fit>true</zoom_to_fit>
-        <height>791</height>
+        <height>836</height>
         <name>Linking Container Template</name>
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
+          <keep_wh_ratio>true</keep_wh_ratio>
         </scale_options>
         <opi_file>dbe-sample.opi</opi_file>
         <foreground_color>
@@ -163,16 +163,16 @@
         <font>
           <opifont.name fontName="arial" height="10" style="0">IO Normal</opifont.name>
         </font>
-        <width>1100</width>
+        <width>1171</width>
         <border_style>0</border_style>
         <rules />
         <border_width>2</border_width>
         <border_color>
           <color name="IO Border" red="215" green="215" blue="215" />
         </border_color>
-        <y>15</y>
+        <y>0</y>
         <actions hook="false" hook_all="false" />
-        <x>20</x>
+        <x>0</x>
         <tooltip></tooltip>
       </widget>
     </widget>
@@ -183,7 +183,7 @@
       <visible>false</visible>
       <wuid>49f0507:14f3d87f17a:-5dfa</wuid>
       <scripts />
-      <height>816</height>
+      <height>842</height>
       <name>System 2</name>
       <scale_options>
         <width_scalable>true</width_scalable>
