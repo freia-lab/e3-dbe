@@ -5,12 +5,21 @@ exec wish "$0" "$@"
 set upsize 198
 # Data buffer length in bytes Epics->PLC
 set downsize 20
+# Default port (can be changed by supplying another port in the command line)
+set myport 2000
 
 option add *font {courier 12}
 option add *highlightThickness 1
 option add *highlightThickness 1
 option add *borderWidth 1
 
+set i 0; foreach n $argv {set [incr i] $n}
+
+if {$argc >=1} { 
+if {[string is integer -strict $1]} {
+       	set myport $1
+    }
+}
 # may also load updata from file
 
 set downdata [string repeat "\0" $downsize]
@@ -166,7 +175,7 @@ bind InputString <Up> {focus [tk_focusPrev %W]}
 
 makeGUI
 
-set serversocket [socket -server connect 2000]
+set serversocket [socket -server connect $myport]
 
 proc connect {sock addr port} {
  
