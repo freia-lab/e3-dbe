@@ -2,9 +2,9 @@
 # the next line restarts using wish \
 exec wish "$0" "$@"
 # Data buffer length in bytes PLC->Epics
-set upsize 198
+set upsize 220
 # Data buffer length in bytes Epics->PLC
-set downsize 20
+set downsize 50
 # Default port (can be changed by supplying another port in the command line)
 set myport 2000
 

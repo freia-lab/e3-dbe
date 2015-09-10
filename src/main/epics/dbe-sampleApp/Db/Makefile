@@ -15,6 +15,7 @@ DB += DBE.db
 DB += binout.template
 DB += binin.template
 DB += analogin.template
+DB += analogout.template
 DB += DBE.substitutions
 
 #----------------------------------------------------
