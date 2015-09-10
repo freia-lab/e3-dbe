@@ -39,6 +39,13 @@ record(ai, "$(SYS)-$(SUBS):$(DEV):sSetV") {
   field (EGUL, "$(EGUL)")
   field (EGUF, "$(MAXVAL)")
   field(PINI, "YES")
-#  field(FLNK, "CstatH-$(SUBS):$(DEV):sRdV-cSetV-link")
+  field(FLNK, "$(SYS)-$(SUBS):$(DEV):sSetV-cSetV-link")
   field(EGU, "$(EGU)")
+}
+
+record(calcout, "$(SYS)-$(SUBS):$(DEV):sSetV-cSetV-link") {
+  field(INPA, "$(SYS)-$(SUBS):$(DEV):sSetV NPP")
+  field(CALC, "A")
+  field(OOPT, "On Change")
+  field(OUT, "$(SYS)-$(SUBS):$(DEV):cSetV PP")
 }
