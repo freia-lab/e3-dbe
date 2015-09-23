@@ -53,10 +53,13 @@ file "binin.template" { pattern
 file "analogin.template"  { pattern
 {SYS,	SUBS,	T,      EGUL,	DEV,	SIG,	OFFS,	EGU,	MAXVAL,  PREC, DESC}
 {HPRF,	DBE,	UINT16,	0,	Fil,	sV,	50,	"V", 	"65535",  0,   "Filament Voltage"}
+{HPRF,	DBE,	UINT16,	0,	Fil-V,	sRdV,	50,	"V", 	"65535",  0,   "Filament Voltage"}
 {HPRF,	DBE,	UINT16,	0,	Fil,	sI,	52,	"A", 	"65535", 0,   "Filament Current"}
 {HPRF,	DBE,	INT16,	-32767,	Grid-1,	sV,	54,	"V", 	"32767", 0,   "Grid 1 Voltage"}
+{HPRF,	DBE,	INT16,	-32767,	G1-V,	sRdV,	54,	"V", 	"32767", 0,   "Grid 1 Voltage"}
 {HPRF,	DBE,	UINT16,	0,	Grid-1,	sI,	56,	"mA", 	"65535", 0,   "Grid 1 Current"}
 {HPRF,	DBE,	UINT16,	0,	Grid-2,	sV,	58,	"V", 	"65535", 0,   "Grid 2 Voltage"}
+{HPRF,	DBE,	UINT16,	0,	G2-V,	sRdV,	58,	"V", 	"65535", 0,   "Grid 2 Voltage"}
 {HPRF,	DBE,	UINT16,	0,	Grid-2,	sI,	60,	"mA", 	"65535", 0,   "Grid 2 Current"}
 {HPRF,	DBE,	UINT16,	0,	APS,	sV,	62,	"V", 	"65535", 0,   "Anodic Voltage"}
 {HPRF,	DBE,	UINT16,	0,	APS,	sI,	64,	"mA", 	"6553.5", 1,   "Anodic Current"}
@@ -130,4 +133,10 @@ file "analogout.template"  { pattern
 {HPRF,	DBE2,	G2-MaxI, UINT16, 0,	"6553.5",0,     100, 	 1,    "mA",  "35",    "26",   "186"}
 {HPRF,	DBE1,	Fil-MinI,UINT16, 0,	"65535", 0,     100, 	 0,    "A",   "37",    "28",   "188"}
 {HPRF,	DBE2,	Fil-MinI,UINT16, 0,	"65535", 0,     100, 	 0,    "A",   "37",    "28",   "188"}
+{HPRF,	DBE1,	G1-V,	 INT16,  -32767,"32767", -500,  0, 	 0,    "V",   "45",    "38",   "208"}
+{HPRF,	DBE2,	G1-V,	 INT16,  -32767,"32767", -500,  0, 	 0,    "V",   "45",    "38",   "208"}
+{HPRF,	DBE1,	G2-V,	 UINT16,  0,    "65535", 0,  	2000, 	 0,    "V",   "47",    "40",   "210"}
+{HPRF,	DBE2,	G2-V,	 UINT16,  0,    "65535", 0,  	2000, 	 0,    "V",   "47",    "40",   "210"}
+{HPRF,	DBE1,	Fil-V,	 UINT16,  0,	"65535", 0,     50, 	 0,    "V",   "49",    "42",   "212"}
+{HPRF,	DBE2,	Fil-V,	 UINT16,  0,	"65535", 0,     50, 	 0,    "V",   "49",    "42",   "212"}
 }

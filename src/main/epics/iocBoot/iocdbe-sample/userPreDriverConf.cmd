@@ -22,7 +22,7 @@
 #<recvTimeout>   : time to wait for input before disconnecting [ms]
 #<sendIntervall> : time to wait before sending new data to PLC [ms]
 
-#s7plcConfigure PLC:DBE1,192.168.1.248,2000,220,50,1,1000,500
-s7plcConfigure PLC:DBE1,127.0.0.1,2000,220,50,1,2000,500
-#s7plcConfigure PLC:DBE1,192.168.1.248,2000,220,50,1,1000,500
-s7plcConfigure PLC:DBE2,127.0.0.1,2001,220,50,1,2000,500
+#s7plcConfigure PLC:DBE1,192.168.1.248,2000,220,56,1,1000,500
+s7plcConfigure PLC:DBE1,127.0.0.1,2000,220,56,1,2000,500
+#s7plcConfigure PLC:DBE1,192.168.1.248,2000,220,56,1,1000,500
+s7plcConfigure PLC:DBE2,127.0.0.1,2001,220,56,1,2000,500
