@@ -26,7 +26,7 @@ record(waveform, PLC-$(SUBS):Status:Buffer) {
   field(DTYP, "S7plc")
   field(INP, "@PLC:$(SUBS)/0 T=UINT16")
   field(FTVL, "SHORT")
-  field(NELM, "86")
+  field(NELM, "110")
   field(SCAN, "I/O Intr")
 }
 
