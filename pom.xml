@@ -23,7 +23,7 @@
     <groupId>org.iter.codac.units</groupId>
     <artifactId>epics-dbe-sample</artifactId>
     <packaging>codac</packaging>
-    <version>0.2</version>
+    <version>0.3</version>
     <name>CODAC Core System epics-dbe-sample module</name>
     <description>CODAC Core System epics-dbe-sample module</description>
     <url>http://www.iter.org/</url>
@@ -66,10 +66,10 @@
                         <package name="opi">
                             <include type="boy" file="*" />
                             <include type="databrowser" file="*" />
-                            <include type="boy" file="dbe-sample.opi" topopi="true" />
+                            <include type="boy" file="DBE_main.opi" topopi="true" />
                         </package>
                         <package name="ioc">
-                            <include type="ioc" name="dbe-sample" runlevels="-" />
+                            <include type="ioc" name="dbe-sample" runlevels="345" />
                         </package>
                         <package name="src">
                        	    <include type="source" source="./src/main/epics" target="epics/apps/${module.name}/src"/>
