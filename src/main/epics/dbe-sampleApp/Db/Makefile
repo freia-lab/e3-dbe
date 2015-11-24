@@ -11,7 +11,7 @@ include $(TOP)/configure/CONFIG
 # Create and install (or just install)
 # databases, templates, substitutions like this
 
-DB += DBE.db
+DB += DBE_stat.db
 DB += binout.template
 DB += binin.template
 DB += analogin.template
