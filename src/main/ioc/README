@@ -1,0 +1,20 @@
+To start the ioc automatically (when not using the ioc factory) create env.sh
+and st.cmd files in /opt/startup/ioc/<target_name>/<ioc_name>/
+Example:
+
+env.sh:
+======
+# General configuration
+BASE=3.14.12.5
+EPICS_BASE=/opt/epics/bases/base-3.14.12.5
+EPICS_HOST_ARCH=centos7-x86_64
+EPICS_MODULES_PATH=/opt/epics/modules
+ENVIRONMENT_VERSION=1.6.0
+# Specific configuration
+PROCSERV_PORT=2000
+
+st.cmd: <VERSION> is optional if ther is a properly versioned module
+======
+require dbe_sample[,<VERSION>]
+
+< "/opt/epics/modules/dbe_sample/<VERSION>/startup/dbe-sample.cmd"
