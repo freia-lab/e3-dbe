@@ -25,9 +25,9 @@ require s7plc
 #<sendIntervall> : time to wait before sending new data to PLC [ms]
 
 #s7plcConfigure PLC:DBE1,192.168.1.248,2000,220,56,1,1000,500
-s7plcConfigure PLC:DBE1,192.168.10.107,2000,220,56,1,2000,500
+s7plcConfigure PLC:DBE1,192.168.1.102,2000,220,56,1,2000,500
 #s7plcConfigure PLC:DBE2,192.168.1.247,2000,220,56,1,1000,500
-s7plcConfigure PLC:DBE2,192.168.10.107,2001,220,56,1,2000,500
+s7plcConfigure PLC:DBE2,192.168.1.102,2001,220,56,1,2000,500
 
 #############################################
 ## DB loading                              ##
