@@ -21,7 +21,7 @@ file "binin.template" { pattern
 {HPRF,	DBE,	Ampl,	sFault,	9,	"OK", 	   "Fault",  NO_ALARM,  MAJOR, "Fault"}
 {HPRF,	DBE,	Ampl,	sMode,	11,	"CW", 	   "Pulse",  NO_ALARM,  NO_ALARM, "Pulse/CW"}
 {HPRF,	DBE,	Ampl,	sAlrm-AirCavP,	15,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Cavity Air P"}
-{HPRF,	DBE,	Ampl,	sAlrm-AirFilP,	17,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Filament Air P"}
+{HPRF,	DBE,	Ampl,	sAlrm-TotalReflPwr,	17,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Total Reflected Pwr"}
 {HPRF,	DBE,	Ampl,	sAlrm-TubeLqdFlow,	19,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Tube Lqd Flow"}
 {HPRF,	DBE,	Ampl,	sAlrm-TubeLqdP,	21,	"OK", 	   "Too low",  NO_ALARM,  MAJOR, "Alarm Tube Lqd Press."}
 {HPRF,	DBE,	Ampl,	sAlrm-TubeLqdT,	23,	"OK", 	   "Too high",  NO_ALARM,  MAJOR, "Alarm Tube Lqd Temp."}

@@ -9,11 +9,11 @@ BASE=3.14.12.5
 EPICS_BASE=/opt/epics/bases/base-3.14.12.5
 EPICS_HOST_ARCH=centos7-x86_64
 EPICS_MODULES_PATH=/opt/epics/modules
-ENVIRONMENT_VERSION=1.7.0
+ENVIRONMENT_VERSION=1.8.0
 # Specific configuration
 PROCSERV_PORT=2000
 
 st.cmd: <VERSION> is optional if there is a properly versioned module
 ======
 require ioc-dbe-freia[,<VERSION>]
-requireSnippet(dbe-sample.cmd)
+requireSnippet(dbe-sample.cmd,"PLC1_IPADDR=<IP_ADDR1>,PLC1_PORT=<PORT1>, PLC2_IPADDR=<IP_ADDR2>,PLC2_PORT=<PORT2>")
