@@ -17,20 +17,20 @@
     </graph_settings>
     <scroll>true</scroll>
     <update_period>3.0</update_period>
-    <start>-16 minutes -55.345 seconds</start>
+    <start>-12 hours 0.0 seconds</start>
     <end>now</end>
     <time_axis>
         <axis>
             <name>Time</name>
-            <font>1|Sans|20.0|1|GTK|1|</font>
-            <scale_font>1|Sans|20.0|0|GTK|1|</scale_font>
+            <font>1|Sans|12.0|1|GTK|1|</font>
+            <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>0</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>1.446587006808E12</min>
-            <max>1.446588022153E12</max>
+            <min>1.46420805044E12</min>
+            <max>1.46425125044E12</max>
             <log_scale>false</log_scale>
             <autoscale>true</autoscale>
             <visible>true</visible>
@@ -46,7 +46,7 @@
             <format>
                 <auto_format>true</auto_format>
                 <time_format>true</time_format>
-                <format_pattern>HH:mm:ss</format_pattern>
+                <format_pattern>HH:mm</format_pattern>
             </format>
         </axis>
     </time_axis>
@@ -59,15 +59,15 @@
     <axes>
         <axis>
             <name>HPRF-DBE1:SSA:sFwdPwr</name>
-            <font>1|Sans|20.0|1|GTK|1|</font>
-            <scale_font>1|Sans|20.0|0|GTK|1|</scale_font>
+            <font>1|Sans|12.0|1|GTK|1|</font>
+            <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>21</red>
                 <green>21</green>
                 <blue>196</blue>
             </color>
             <min>0.0</min>
-            <max>9227.0</max>
+            <max>4926.4501</max>
             <log_scale>false</log_scale>
             <autoscale>true</autoscale>
             <visible>true</visible>
@@ -88,21 +88,26 @@
         </axis>
         <axis>
             <name>HPRF-DBE1:Grid-1:sV</name>
-            <font>1|Sans|20.0|1|GTK|1|</font>
-            <scale_font>1|Sans|20.0|0|GTK|1|</scale_font>
+            <font>1|Sans|12.0|1|GTK|1|</font>
+            <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>33</red>
                 <green>179</green>
                 <blue>33</blue>
             </color>
-            <min>170.0</min>
-            <max>370.0</max>
+            <min>-244.09</min>
+            <max>0.0</max>
             <log_scale>false</log_scale>
-            <autoscale>false</autoscale>
+            <autoscale>true</autoscale>
             <visible>true</visible>
             <grid_line>
                 <show_grid_line>false</show_grid_line>
                 <dash_grid_line>true</dash_grid_line>
+                <color>
+                    <red>200</red>
+                    <green>200</green>
+                    <blue>200</blue>
+                </color>
             </grid_line>
             <format>
                 <auto_format>true</auto_format>
@@ -112,21 +117,26 @@
         </axis>
         <axis>
             <name>HPRF-DBE1:Grid-2:sV</name>
-            <font>1|Sans|20.0|1|GTK|1|</font>
-            <scale_font>1|Sans|20.0|0|GTK|1|</scale_font>
+            <font>1|Sans|12.0|1|GTK|1|</font>
+            <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>0</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
             <min>0.0</min>
-            <max>1150.0</max>
+            <max>950.0</max>
             <log_scale>false</log_scale>
-            <autoscale>false</autoscale>
+            <autoscale>true</autoscale>
             <visible>true</visible>
             <grid_line>
                 <show_grid_line>false</show_grid_line>
                 <dash_grid_line>true</dash_grid_line>
+                <color>
+                    <red>200</red>
+                    <green>200</green>
+                    <blue>200</blue>
+                </color>
             </grid_line>
             <format>
                 <auto_format>true</auto_format>
@@ -136,21 +146,26 @@
         </axis>
         <axis>
             <name>HPRF-DBE1:Grid-2:sI</name>
-            <font>1|Sans|20.0|1|GTK|1|</font>
-            <scale_font>1|Sans|20.0|0|GTK|1|</scale_font>
+            <font>1|Sans|12.0|1|GTK|1|</font>
+            <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>128</red>
                 <green>0</green>
                 <blue>255</blue>
             </color>
             <min>0.0</min>
-            <max>1900.0</max>
+            <max>773.56</max>
             <log_scale>false</log_scale>
-            <autoscale>false</autoscale>
+            <autoscale>true</autoscale>
             <visible>true</visible>
             <grid_line>
                 <show_grid_line>false</show_grid_line>
                 <dash_grid_line>true</dash_grid_line>
+                <color>
+                    <red>200</red>
+                    <green>200</green>
+                    <blue>200</blue>
+                </color>
             </grid_line>
             <format>
                 <auto_format>true</auto_format>
@@ -160,21 +175,26 @@
         </axis>
         <axis>
             <name>Gain</name>
-            <font>1|Sans|20.0|1|GTK|1|</font>
-            <scale_font>1|Sans|20.0|0|GTK|1|</scale_font>
+            <font>1|Sans|12.0|1|GTK|1|</font>
+            <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>255</red>
                 <green>0</green>
                 <blue>240</blue>
             </color>
-            <min>3.4316782452556978</min>
-            <max>15.56749593311628</max>
+            <min>1.011760356793158</min>
+            <max>22.890944242068105</max>
             <log_scale>false</log_scale>
             <autoscale>true</autoscale>
             <visible>true</visible>
             <grid_line>
                 <show_grid_line>false</show_grid_line>
                 <dash_grid_line>true</dash_grid_line>
+                <color>
+                    <red>200</red>
+                    <green>200</green>
+                    <blue>200</blue>
+                </color>
             </grid_line>
             <format>
                 <auto_format>true</auto_format>
@@ -204,7 +224,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>RDB</name>
-                <url>jdbc:postgresql://192.168.10.107/css_archive_3_0_0</url>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
                 <key>1</key>
             </archive>
         </pv>
@@ -226,7 +246,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>RDB</name>
-                <url>jdbc:postgresql://192.168.10.107/css_archive_3_0_0</url>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
                 <key>1</key>
             </archive>
         </pv>
@@ -248,7 +268,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>RDB</name>
-                <url>jdbc:postgresql://192.168.10.107/css_archive_3_0_0</url>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
                 <key>1</key>
             </archive>
         </pv>
@@ -270,7 +290,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>RDB</name>
-                <url>jdbc:postgresql://192.168.10.107/css_archive_3_0_0</url>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
                 <key>1</key>
             </archive>
         </pv>
@@ -292,7 +312,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>RDB</name>
-                <url>jdbc:postgresql://192.168.10.107/css_archive_3_0_0</url>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
                 <key>1</key>
             </archive>
         </pv>
@@ -314,7 +334,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>RDB</name>
-                <url>jdbc:postgresql://192.168.10.107/css_archive_3_0_0</url>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
                 <key>1</key>
             </archive>
         </pv>

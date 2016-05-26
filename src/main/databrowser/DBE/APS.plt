@@ -17,25 +17,25 @@
     </graph_settings>
     <scroll>true</scroll>
     <update_period>3.0</update_period>
-    <start>-1 hours 0.0 seconds</start>
+    <start>-12 hours 0.0 seconds</start>
     <end>now</end>
     <time_axis>
         <axis>
             <name>Time</name>
-            <font>1|Sans|20.0|1|GTK|1|</font>
-            <scale_font>1|Sans|20.0|0|GTK|1|</scale_font>
+            <font>1|Sans|12.0|1|GTK|1|</font>
+            <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>0</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>1.446570678174E12</min>
-            <max>1.446574278174E12</max>
+            <min>1.464239239753E12</min>
+            <max>1.464251332086E12</max>
             <log_scale>false</log_scale>
             <autoscale>true</autoscale>
             <visible>true</visible>
             <grid_line>
-                <show_grid_line>false</show_grid_line>
+                <show_grid_line>true</show_grid_line>
                 <dash_grid_line>true</dash_grid_line>
                 <color>
                     <red>200</red>
@@ -59,8 +59,8 @@
     <axes>
         <axis>
             <name>HPRF-DBE1:APS:sV</name>
-            <font>1|Sans|20.0|1|GTK|1|</font>
-            <scale_font>1|Sans|20.0|0|GTK|1|</scale_font>
+            <font>1|Sans|12.0|1|GTK|1|</font>
+            <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>21</red>
                 <green>21</green>
@@ -108,7 +108,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>RDB</name>
-                <url>jdbc:postgresql://192.168.10.107/css_archive_3_0_0</url>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
                 <key>1</key>
             </archive>
         </pv>
@@ -130,7 +130,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>RDB</name>
-                <url>jdbc:postgresql://192.168.10.107/css_archive_3_0_0</url>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
                 <key>1</key>
             </archive>
         </pv>

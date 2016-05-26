@@ -17,25 +17,25 @@
     </graph_settings>
     <scroll>true</scroll>
     <update_period>3.0</update_period>
-    <start>-1 days 0.0 seconds</start>
+    <start>-1 hours 0.0 seconds</start>
     <end>now</end>
     <time_axis>
         <axis>
             <name>Time</name>
-            <font>1|Sans|12.0|1|GTK|1|</font>
+            <font>1|Sans|10.0|1|GTK|1|</font>
             <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>0</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>1.464165205098E12</min>
-            <max>1.464251605098E12</max>
+            <min>1.464184028546E12</min>
+            <max>1.464187628546E12</max>
             <log_scale>false</log_scale>
             <autoscale>true</autoscale>
             <visible>true</visible>
             <grid_line>
-                <show_grid_line>false</show_grid_line>
+                <show_grid_line>true</show_grid_line>
                 <dash_grid_line>true</dash_grid_line>
                 <color>
                     <red>200</red>
@@ -58,8 +58,8 @@
     <archive_rescale>NONE</archive_rescale>
     <axes>
         <axis>
-            <name>HPRF-DBE1:Ampl:sFwdPwr</name>
-            <font>1|Sans|12.0|1|GTK|1|</font>
+            <name>HPRF-DBE2:Grid-2:sV</name>
+            <font>1|Sans|10.0|1|GTK|1|</font>
             <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
             <color>
                 <red>21</red>
@@ -67,17 +67,46 @@
                 <blue>196</blue>
             </color>
             <min>0.0</min>
-            <max>410.0</max>
+            <max>951.0</max>
             <log_scale>false</log_scale>
-            <autoscale>false</autoscale>
+            <autoscale>true</autoscale>
             <visible>true</visible>
             <grid_line>
                 <show_grid_line>true</show_grid_line>
                 <dash_grid_line>true</dash_grid_line>
                 <color>
-                    <red>200</red>
-                    <green>200</green>
-                    <blue>200</blue>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>255</blue>
+                </color>
+            </grid_line>
+            <format>
+                <auto_format>true</auto_format>
+                <time_format>false</time_format>
+                <format_pattern>############.##</format_pattern>
+            </format>
+        </axis>
+        <axis>
+            <name>HPRF-DBE2:Grid-2:sI</name>
+            <font>1|Sans|10.0|1|GTK|1|</font>
+            <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
+            <color>
+                <red>242</red>
+                <green>26</green>
+                <blue>26</blue>
+            </color>
+            <min>0.0</min>
+            <max>269.66741</max>
+            <log_scale>false</log_scale>
+            <autoscale>true</autoscale>
+            <visible>true</visible>
+            <grid_line>
+                <show_grid_line>true</show_grid_line>
+                <dash_grid_line>true</dash_grid_line>
+                <color>
+                    <red>255</red>
+                    <green>0</green>
+                    <blue>0</blue>
                 </color>
             </grid_line>
             <format>
@@ -91,8 +120,8 @@
     </annotations>
     <pvlist>
         <pv>
-            <name>HPRF-DBE2:Ampl:sFwdPwr</name>
-            <display_name>HPRF-DBE2:Ampl:sFwdPwr</display_name>
+            <name>HPRF-DBE1:Grid-2:sV</name>
+            <display_name>HPRF-DBE1:Grid-2:sV</display_name>
             <visible>true</visible>
             <axis>0</axis>
             <linewidth>2</linewidth>
@@ -113,15 +142,59 @@
             </archive>
         </pv>
         <pv>
-            <name>HPRF-DBE1:Ampl:sFwdPwr</name>
-            <display_name>HPRF-DBE1:Ampl:sFwdPwr</display_name>
+            <name>HPRF-DBE1:Grid-2:sI</name>
+            <display_name>HPRF-DBE1:Grid-2:sI</display_name>
+            <visible>true</visible>
+            <axis>1</axis>
+            <linewidth>2</linewidth>
+            <color>
+                <red>242</red>
+                <green>26</green>
+                <blue>26</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
+            <archive>
+                <name>RDB</name>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
+                <key>1</key>
+            </archive>
+        </pv>
+        <pv>
+            <name>HPRF-DBE2:Grid-2:sV</name>
+            <display_name>HPRF-DBE2:Grid-2:sV</display_name>
             <visible>true</visible>
             <axis>0</axis>
             <linewidth>2</linewidth>
             <color>
-                <red>255</red>
-                <green>0</green>
-                <blue>0</blue>
+                <red>30</red>
+                <green>144</green>
+                <blue>255</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
+            <archive>
+                <name>RDB</name>
+                <url>jdbc:postgresql://192.168.10.108/css_archive_3_0_0</url>
+                <key>1</key>
+            </archive>
+        </pv>
+        <pv>
+            <name>HPRF-DBE2:Grid-2:sI</name>
+            <display_name>HPRF-DBE2:Grid-2:sI</display_name>
+            <visible>true</visible>
+            <axis>1</axis>
+            <linewidth>2</linewidth>
+            <color>
+                <red>165</red>
+                <green>42</green>
+                <blue>42</blue>
             </color>
             <trace_type>AREA</trace_type>
             <waveform_index>0</waveform_index>
