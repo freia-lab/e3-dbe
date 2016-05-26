@@ -62,7 +62,7 @@ file "analogin.template"  { pattern
 {HPRF,	DBE,	UINT16,	0,	G2-V,	sRdV,	58,	"V", 	"65535", 0,   "Grid 2 Voltage"}
 {HPRF,	DBE,	UINT16,	0,	Grid-2,	sI,	60,	"mA", 	"65535", 0,   "Grid 2 Current"}
 {HPRF,	DBE,	UINT16,	0,	APS,	sV,	62,	"V", 	"65535", 0,   "Anodic Voltage"}
-{HPRF,	DBE,	UINT16,	0,	APS,	sI,	64,	"mA", 	"6553.5", 1,   "Anodic Current"}
+{HPRF,	DBE,	UINT16,	0,	APS,	sI,	64,	"A", 	"6553.5", 1,   "Anodic Current"}
 {HPRF,	DBE,	UINT16,	0,	Ampl,	sFwdPwr,	66,	"kW", 	"6553.5", 1,   "Forward Power"}
 {HPRF,	DBE,	UINT16,	0,	Ampl,	sReflPwr,	68,	"kW", 	"6553.5", 1,   "Reflected Power"}
 {HPRF,	DBE,	UINT16,	0,	SSA,	sFwdPwr,	70,	"W", 	"65535",  0,   "Forward Power"}
