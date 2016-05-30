@@ -5484,8 +5484,8 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>false</include_parent_macros>
-      <nr>2</nr>
-      <P>HPRF-DBE2</P>
+      <nr>1</nr>
+      <P>HPRF-DBE1</P>
     </macros>
     <visible>true</visible>
     <wuid>41a88260:15470e7a694:-5bf5</wuid>
@@ -8918,8 +8918,8 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>false</include_parent_macros>
-      <nr>1</nr>
-      <P>HPRF-DBE1</P>
+      <nr>2</nr>
+      <P>HPRF-DBE2</P>
     </macros>
     <visible>true</visible>
     <wuid>41a88260:15470e7a694:-1b7b</wuid>
@@ -14168,7 +14168,7 @@ $(pv_value)</tooltip>
     <wuid>41a88260:154c32fd456:-6d</wuid>
     <scripts />
     <height>185</height>
-    <name>Panel 2_1</name>
+    <name>Panel_Tot_pwr_sys1</name>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -15398,7 +15398,7 @@ $(pv_value)</tooltip>
     <wuid>-2b5f993d:154c450d180:-31ab</wuid>
     <scripts />
     <height>185</height>
-    <name>Panel 2_6</name>
+    <name>Panel_Tot_pwr_sys2</name>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
