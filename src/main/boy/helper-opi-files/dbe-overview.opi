@@ -11746,7 +11746,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -11850,7 +11850,7 @@ $(pv_value)</tooltip>
       <indicator_mode>false</indicator_mode>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
-      <level_lo>20.0</level_lo>
+      <level_lo>0.0</level_lo>
       <border_alarm_sensitive>true</border_alarm_sensitive>
       <visible>true</visible>
       <color_fillbackground>
@@ -11881,7 +11881,7 @@ $(pv_value)</tooltip>
       <pv_value />
       <show_markers>false</show_markers>
       <show_hi>true</show_hi>
-      <maximum>5.0</maximum>
+      <maximum>4000.0</maximum>
       <border_width>2</border_width>
       <horizontal>true</horizontal>
       <log_scale>false</log_scale>
@@ -11909,11 +11909,11 @@ $(pv_value)</tooltip>
       </foreground_color>
       <show_label>true</show_label>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <level_hi>80.0</level_hi>
+      <level_hi>1800.0</level_hi>
       <scale_font>
         <opifont.name fontName="arial" height="10" style="0">IO Scale 1</opifont.name>
       </scale_font>
-      <level_hihi>90.0</level_hihi>
+      <level_hihi>1900.0</level_hihi>
       <origin>0.0</origin>
       <color_lolo>
         <color name="Major" red="255" green="0" blue="0" />
@@ -11935,7 +11935,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <level_lolo>10.0</level_lolo>
+      <level_lolo>0.0</level_lolo>
       <y>54</y>
       <actions hook="false" hook_all="false" />
       <x>0</x>
@@ -13044,7 +13044,7 @@ $(pv_value)</tooltip>
       <indicator_mode>false</indicator_mode>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
-      <level_lo>20.0</level_lo>
+      <level_lo>0.0</level_lo>
       <border_alarm_sensitive>true</border_alarm_sensitive>
       <visible>true</visible>
       <color_fillbackground>
@@ -13075,7 +13075,7 @@ $(pv_value)</tooltip>
       <pv_value />
       <show_markers>false</show_markers>
       <show_hi>true</show_hi>
-      <maximum>10.0</maximum>
+      <maximum>6000.0</maximum>
       <border_width>2</border_width>
       <horizontal>true</horizontal>
       <log_scale>false</log_scale>
@@ -13103,11 +13103,11 @@ $(pv_value)</tooltip>
       </foreground_color>
       <show_label>true</show_label>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <level_hi>80.0</level_hi>
+      <level_hi>1800.0</level_hi>
       <scale_font>
         <opifont.name fontName="arial" height="10" style="0">IO Scale 1</opifont.name>
       </scale_font>
-      <level_hihi>90.0</level_hihi>
+      <level_hihi>1900.0</level_hihi>
       <origin>0.0</origin>
       <color_lolo>
         <color name="Major" red="255" green="0" blue="0" />
@@ -13129,7 +13129,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <level_lolo>10.0</level_lolo>
+      <level_lolo>0.0</level_lolo>
       <y>129</y>
       <actions hook="false" hook_all="false" />
       <x>19</x>
@@ -13383,7 +13383,7 @@ $(pv_value)</tooltip>
         </foreground_color>
         <widget_type>Label</widget_type>
         <enabled>false</enabled>
-        <text>Total Refl Pwr [kW]</text>
+        <text>Total Refl Pwr [W]</text>
         <font>
           <opifont.name fontName="Sans" height="12" style="1">Header 3</opifont.name>
         </font>
@@ -14170,7 +14170,7 @@ $(pv_value)</tooltip>
       </rule>
     </rules>
     <fc>false</fc>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -14274,7 +14274,7 @@ $(pv_value)</tooltip>
       <indicator_mode>false</indicator_mode>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
-      <level_lo>20.0</level_lo>
+      <level_lo>0.0</level_lo>
       <border_alarm_sensitive>true</border_alarm_sensitive>
       <visible>true</visible>
       <color_fillbackground>
@@ -14305,7 +14305,7 @@ $(pv_value)</tooltip>
       <pv_value />
       <show_markers>false</show_markers>
       <show_hi>true</show_hi>
-      <maximum>10.0</maximum>
+      <maximum>6000.0</maximum>
       <border_width>2</border_width>
       <horizontal>true</horizontal>
       <log_scale>false</log_scale>
@@ -14333,11 +14333,11 @@ $(pv_value)</tooltip>
       </foreground_color>
       <show_label>true</show_label>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <level_hi>80.0</level_hi>
+      <level_hi>1800.0</level_hi>
       <scale_font>
         <opifont.name fontName="arial" height="10" style="0">IO Scale 1</opifont.name>
       </scale_font>
-      <level_hihi>90.0</level_hihi>
+      <level_hihi>1900.0</level_hihi>
       <origin>0.0</origin>
       <color_lolo>
         <color name="Major" red="255" green="0" blue="0" />
@@ -14359,7 +14359,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <level_lolo>10.0</level_lolo>
+      <level_lolo>0.0</level_lolo>
       <y>129</y>
       <actions hook="false" hook_all="false" />
       <x>19</x>
@@ -14613,7 +14613,7 @@ $(pv_value)</tooltip>
         </foreground_color>
         <widget_type>Label</widget_type>
         <enabled>false</enabled>
-        <text>Total Refl Pwr [kW]</text>
+        <text>Total Refl Pwr [W]</text>
         <font>
           <opifont.name fontName="Sans" height="12" style="1">Header 3</opifont.name>
         </font>
@@ -14723,7 +14723,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <rules />
     <fc>false</fc>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -14827,7 +14827,7 @@ $(pv_value)</tooltip>
       <indicator_mode>false</indicator_mode>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
-      <level_lo>20.0</level_lo>
+      <level_lo>0.0</level_lo>
       <border_alarm_sensitive>true</border_alarm_sensitive>
       <visible>true</visible>
       <color_fillbackground>
@@ -14858,7 +14858,7 @@ $(pv_value)</tooltip>
       <pv_value />
       <show_markers>false</show_markers>
       <show_hi>true</show_hi>
-      <maximum>5.0</maximum>
+      <maximum>4000.0</maximum>
       <border_width>2</border_width>
       <horizontal>true</horizontal>
       <log_scale>false</log_scale>
@@ -14886,11 +14886,11 @@ $(pv_value)</tooltip>
       </foreground_color>
       <show_label>true</show_label>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <level_hi>80.0</level_hi>
+      <level_hi>1800.0</level_hi>
       <scale_font>
         <opifont.name fontName="arial" height="10" style="0">IO Scale 1</opifont.name>
       </scale_font>
-      <level_hihi>90.0</level_hihi>
+      <level_hihi>1900.0</level_hihi>
       <origin>0.0</origin>
       <color_lolo>
         <color name="Major" red="255" green="0" blue="0" />
@@ -14912,7 +14912,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <level_lolo>10.0</level_lolo>
+      <level_lolo>0.0</level_lolo>
       <y>54</y>
       <actions hook="false" hook_all="false" />
       <x>0</x>
@@ -15737,7 +15737,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <widget_type>Label</widget_type>
       <enabled>false</enabled>
-      <text>Refl Pwr [kW]</text>
+      <text>Refl Pwr [W]</text>
       <font>
         <opifont.name fontName="Sans" height="12" style="1">Header 3</opifont.name>
       </font>
@@ -15878,7 +15878,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <widget_type>Label</widget_type>
       <enabled>false</enabled>
-      <text>Refl Pwr [kW]</text>
+      <text>Refl Pwr [W]</text>
       <font>
         <opifont.name fontName="Sans" height="12" style="1">Header 3</opifont.name>
       </font>
