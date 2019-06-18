@@ -10,7 +10,7 @@
   <background_color>
     <color name="IO Shape Fill" red="188" green="188" blue="188" />
   </background_color>
-  <boy_version>5.1.0.201703221304</boy_version>
+  <boy_version>5.1.0</boy_version>
   <foreground_color>
     <color name="IO Grid" red="215" green="215" blue="215" />
   </foreground_color>
@@ -167,7 +167,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>44</width>
+      <width>45</width>
       <wrap_words>true</wrap_words>
       <wuid>-1329e1e0:14efdedba50:-64e0</wuid>
       <x>25</x>
@@ -290,7 +290,7 @@ $(pv_value)</tooltip>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>26</width>
+        <width>27</width>
         <wrap_words>true</wrap_words>
         <wuid>-1329e1e0:14efdedba50:-6b9e</wuid>
         <x>145</x>
@@ -669,7 +669,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>26</width>
+          <width>27</width>
           <wrap_words>true</wrap_words>
           <wuid>-1329e1e0:14efdedba50:-6972</wuid>
           <x>145</x>
@@ -952,7 +952,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>26</width>
+          <width>27</width>
           <wrap_words>true</wrap_words>
           <wuid>-152f3d99:155021b1818:-6d6f</wuid>
           <x>145</x>
@@ -1208,7 +1208,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>71</width>
+          <width>70</width>
           <wrap_words>true</wrap_words>
           <wuid>-152f3d99:155021b1818:-6d6a</wuid>
           <x>21</x>
@@ -2803,7 +2803,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>54</width>
+      <width>56</width>
       <wrap_words>true</wrap_words>
       <wuid>6d6e2db0:14f82ea251c:-4b04</wuid>
       <x>205</x>
@@ -3033,7 +3033,7 @@ $(pv_value)</tooltip>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>46</width>
+        <width>48</width>
         <wrap_words>true</wrap_words>
         <wuid>60c8b7b5:14f98613640:-6a8d</wuid>
         <x>0</x>
@@ -3224,7 +3224,7 @@ $(pv_value)</tooltip>
         </font>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
         <foreground_color>
-          <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+          <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
         </foreground_color>
         <format_type>0</format_type>
         <height>25</height>
@@ -3442,7 +3442,7 @@ $(pv_value)</tooltip>
         </font>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
         <foreground_color>
-          <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+          <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
         </foreground_color>
         <format_type>0</format_type>
         <height>25</height>
@@ -3660,7 +3660,7 @@ $(pv_value)</tooltip>
         </font>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
         <foreground_color>
-          <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+          <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
         </foreground_color>
         <format_type>0</format_type>
         <height>25</height>
@@ -3878,7 +3878,7 @@ $(pv_value)</tooltip>
         </font>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
         <foreground_color>
-          <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+          <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
         </foreground_color>
         <format_type>0</format_type>
         <height>25</height>
@@ -6592,7 +6592,7 @@ $(pv_value)</tooltip>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>46</width>
+        <width>48</width>
         <wrap_words>true</wrap_words>
         <wuid>41a88260:15470e7a694:-2519</wuid>
         <x>0</x>
@@ -6783,7 +6783,7 @@ $(pv_value)</tooltip>
         </font>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
         <foreground_color>
-          <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+          <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
         </foreground_color>
         <format_type>0</format_type>
         <height>25</height>
@@ -7001,7 +7001,7 @@ $(pv_value)</tooltip>
         </font>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
         <foreground_color>
-          <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+          <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
         </foreground_color>
         <format_type>0</format_type>
         <height>25</height>
@@ -7219,7 +7219,7 @@ $(pv_value)</tooltip>
         </font>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
         <foreground_color>
-          <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+          <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
         </foreground_color>
         <format_type>0</format_type>
         <height>25</height>
@@ -7437,7 +7437,7 @@ $(pv_value)</tooltip>
         </font>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
         <foreground_color>
-          <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+          <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
         </foreground_color>
         <format_type>0</format_type>
         <height>25</height>
@@ -11620,7 +11620,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>54</width>
+      <width>56</width>
       <wrap_words>true</wrap_words>
       <wuid>41a88260:15470e7a694:-4f8</wuid>
       <x>205</x>
@@ -13008,7 +13008,7 @@ $(pv_value)</tooltip>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>71</width>
+        <width>70</width>
         <wrap_words>true</wrap_words>
         <wuid>41a88260:154c32fd456:662c</wuid>
         <x>21</x>
@@ -14397,7 +14397,7 @@ $(pv_value)</tooltip>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>71</width>
+        <width>70</width>
         <wrap_words>true</wrap_words>
         <wuid>41a88260:154c32fd456:66fe</wuid>
         <x>21</x>
@@ -14527,7 +14527,7 @@ $(pv_value)</tooltip>
       <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
-      <color name="Disconnected" red="255" green="0" blue="255" />
+      <color name="Disconnected" red="200" green="100" blue="200" />
     </foreground_color>
     <height>71</height>
     <lock_children>true</lock_children>
@@ -14570,7 +14570,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>23</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label Template_5</name>
       <rules />
@@ -14587,7 +14587,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>119</width>
+      <width>115</width>
       <wrap_words>true</wrap_words>
       <wuid>41a88260:154c32fd456:7c27</wuid>
       <x>0</x>
@@ -14669,7 +14669,7 @@ $(pv_value)</tooltip>
       <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
-      <color name="Disconnected" red="255" green="0" blue="255" />
+      <color name="Disconnected" red="200" green="100" blue="200" />
     </foreground_color>
     <height>71</height>
     <lock_children>true</lock_children>
@@ -14712,7 +14712,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>23</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label Template_5</name>
       <rules />
@@ -14729,7 +14729,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>119</width>
+      <width>115</width>
       <wrap_words>true</wrap_words>
       <wuid>41a88260:154c32fd456:7c3e</wuid>
       <x>0</x>
@@ -14860,13 +14860,13 @@ $(pv_value)</tooltip>
         <color name="IO PV OFF" red="77" green="77" blue="77" />
       </color_fillbackground>
       <color_hi>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </color_hi>
       <color_hihi>
         <color name="Major" red="255" green="0" blue="0" />
       </color_hihi>
       <color_lo>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </color_lo>
       <color_lolo>
         <color name="Major" red="255" green="0" blue="0" />
@@ -14955,13 +14955,13 @@ $(pv_value)</tooltip>
         <color name="IO PV OFF" red="77" green="77" blue="77" />
       </color_fillbackground>
       <color_hi>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </color_hi>
       <color_hihi>
         <color name="Major" red="255" green="0" blue="0" />
       </color_hihi>
       <color_lo>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </color_lo>
       <color_lolo>
         <color name="Major" red="255" green="0" blue="0" />
@@ -15090,7 +15090,7 @@ $(pv_value)</tooltip>
         <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
-        <color name="Disconnected" red="255" green="0" blue="255" />
+        <color name="Disconnected" red="200" green="100" blue="200" />
       </foreground_color>
       <height>70</height>
       <lock_children>true</lock_children>
@@ -15232,7 +15232,7 @@ $(pv_value)</tooltip>
         <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
-        <color name="Disconnected" red="255" green="0" blue="255" />
+        <color name="Disconnected" red="200" green="100" blue="200" />
       </foreground_color>
       <height>70</height>
       <lock_children>true</lock_children>
@@ -15401,7 +15401,7 @@ $(pv_value)</tooltip>
     <show_scrollbar>false</show_scrollbar>
     <tooltip></tooltip>
     <transparent>true</transparent>
-    <visible>false</visible>
+    <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
     <width>442</width>
     <wuid>-2b5f993d:154c450d180:891</wuid>
@@ -15424,13 +15424,13 @@ $(pv_value)</tooltip>
         <color name="IO PV OFF" red="77" green="77" blue="77" />
       </color_fillbackground>
       <color_hi>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </color_hi>
       <color_hihi>
         <color name="Major" red="255" green="0" blue="0" />
       </color_hihi>
       <color_lo>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </color_lo>
       <color_lolo>
         <color name="Major" red="255" green="0" blue="0" />
@@ -15519,13 +15519,13 @@ $(pv_value)</tooltip>
         <color name="IO PV OFF" red="77" green="77" blue="77" />
       </color_fillbackground>
       <color_hi>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </color_hi>
       <color_hihi>
         <color name="Major" red="255" green="0" blue="0" />
       </color_hihi>
       <color_lo>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </color_lo>
       <color_lolo>
         <color name="Major" red="255" green="0" blue="0" />
@@ -15654,7 +15654,7 @@ $(pv_value)</tooltip>
         <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
-        <color name="Disconnected" red="255" green="0" blue="255" />
+        <color name="Disconnected" red="200" green="100" blue="200" />
       </foreground_color>
       <height>70</height>
       <lock_children>true</lock_children>
@@ -15796,7 +15796,7 @@ $(pv_value)</tooltip>
         <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
-        <color name="Disconnected" red="255" green="0" blue="255" />
+        <color name="Disconnected" red="200" green="100" blue="200" />
       </foreground_color>
       <height>70</height>
       <lock_children>true</lock_children>
@@ -16056,7 +16056,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>44</width>
+      <width>45</width>
       <wrap_words>true</wrap_words>
       <wuid>-152f3d99:155021b1818:-6641</wuid>
       <x>25</x>
@@ -16179,7 +16179,7 @@ $(pv_value)</tooltip>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>26</width>
+        <width>27</width>
         <wrap_words>true</wrap_words>
         <wuid>-152f3d99:155021b1818:-663e</wuid>
         <x>145</x>
@@ -16558,7 +16558,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>26</width>
+          <width>27</width>
           <wrap_words>true</wrap_words>
           <wuid>-152f3d99:155021b1818:-6636</wuid>
           <x>145</x>
@@ -16841,7 +16841,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>26</width>
+          <width>27</width>
           <wrap_words>true</wrap_words>
           <wuid>-152f3d99:155021b1818:-6630</wuid>
           <x>145</x>
@@ -17097,7 +17097,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>71</width>
+          <width>70</width>
           <wrap_words>true</wrap_words>
           <wuid>-152f3d99:155021b1818:-662b</wuid>
           <x>21</x>
@@ -17122,7 +17122,7 @@ $(pv_value)</tooltip>
       <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
-      <color name="Disconnected" red="255" green="0" blue="255" />
+      <color name="Disconnected" red="200" green="100" blue="200" />
     </foreground_color>
     <height>71</height>
     <lock_children>true</lock_children>
@@ -17264,7 +17264,7 @@ $(pv_value)</tooltip>
       <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
-      <color name="Disconnected" red="255" green="0" blue="255" />
+      <color name="Disconnected" red="200" green="100" blue="200" />
     </foreground_color>
     <height>71</height>
     <lock_children>true</lock_children>
@@ -18033,7 +18033,7 @@ $(pv_value)</tooltip>
       <height>30</height>
       <name>LED Template_5</name>
       <off_color>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </off_color>
       <off_label>CW</off_label>
       <on_color>
@@ -19491,7 +19491,7 @@ $(pv_value)</tooltip>
       <height>30</height>
       <name>LED Template_5</name>
       <off_color>
-        <color name="Minor" red="255" green="128" blue="0" />
+        <color name="Minor" red="255" green="255" blue="0" />
       </off_color>
       <off_label>CW</off_label>
       <on_color>
