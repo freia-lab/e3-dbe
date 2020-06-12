@@ -520,7 +520,7 @@
       <x>9</x>
       <y>249</y>
       <width>85</width>
-      <height>13</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6990,9 +6990,14 @@ $(pv_value)</tooltip>
             <DESC>CM Cavity #2</DESC>
             <P>HPRF-DBE:ExtIntlkHNOSS</P>
           </macros>
-          <target>tab</target>
+          <target>window</target>
+          <description>Show the interlocks</description>
         </action>
       </actions>
+      <tooltip>Right click to open pop-up menu.
+Select "Show the intelocks" to see the details.
+$(pv_name)
+$(pv_value)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_2</name>
@@ -8121,12 +8126,12 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_10</name>
       <text>Crowbar trips</text>
-      <x>7</x>
-      <y>250</y>
-      <width>74</width>
-      <height>17</height>
+      <x>9</x>
+      <y>249</y>
+      <width>85</width>
+      <height>18</height>
       <font>
-        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
