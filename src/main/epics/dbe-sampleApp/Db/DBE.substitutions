@@ -1,3 +1,8 @@
+file "hv-toggle.template" { pattern
+{P}
+{HPRF-DBE:Ampl}
+}
+
 file "binout.template" { pattern
 {SYS,	SUBS,	DEV,	SIG,		OFFS,	ZNAM,	ONAM,		DESC}
 {HPRF,	DBE,	Ampl,	CmdOn, 		1,	Idle,	Ampl_ON, 	"ON Command"}
