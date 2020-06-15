@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <width>1280</width>
-  <height>1024</height>
+  <width>1480</width>
+  <height>1140</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -21,9 +21,8 @@
             <macros>
               <nr>1</nr>
             </macros>
-            <width>1174</width>
-            <height>842</height>
-            <resize>1</resize>
+            <width>1415</width>
+            <height>1024</height>
             <actions>
             </actions>
             <border_color>
@@ -36,19 +35,6 @@
       <tab>
         <name>Overview - CW</name>
         <children>
-          <widget type="embedded" version="2.0.0">
-            <name>Linking Container Template</name>
-            <file>helper-opi-files/dbe-overview-cw.opi</file>
-            <width>1174</width>
-            <height>842</height>
-            <resize>1</resize>
-            <actions>
-            </actions>
-            <border_color>
-              <color name="IO Border" red="215" green="215" blue="215">
-              </color>
-            </border_color>
-          </widget>
         </children>
       </tab>
       <tab>
@@ -60,9 +46,8 @@
             <macros>
               <nr>1</nr>
             </macros>
-            <width>1174</width>
-            <height>842</height>
-            <resize>1</resize>
+            <width>1415</width>
+            <height>1024</height>
             <actions>
             </actions>
             <border_color>
@@ -81,9 +66,8 @@
             <macros>
               <nr>2</nr>
             </macros>
-            <width>1174</width>
-            <height>842</height>
-            <resize>1</resize>
+            <width>1415</width>
+            <height>1024</height>
             <actions>
             </actions>
             <border_color>
@@ -96,8 +80,8 @@
     </tabs>
     <x>10</x>
     <y>55</y>
-    <width>1180</width>
-    <height>876</height>
+    <width>1430</width>
+    <height>1070</height>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
@@ -112,8 +96,8 @@
     <text>DB Elettronica RF Power Station</text>
     <x>370</x>
     <y>10</y>
-    <width>497</width>
-    <height>46</height>
+    <width>483</width>
+    <height>47</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="35.0">
       </font>
@@ -294,5 +278,19 @@
     <square>true</square>
     <actions>
     </actions>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container Template</name>
+    <file>helper-opi-files/dbe-overview-cw.opi</file>
+    <x>15</x>
+    <y>90</y>
+    <width>1415</width>
+    <height>1024</height>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
   </widget>
 </display>
