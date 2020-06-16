@@ -502,7 +502,7 @@
       <text>Mask</text>
       <x>35</x>
       <width>31</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -529,6 +529,7 @@
       <pv_name>$(P):sInp-B7</pv_name>
       <x>58</x>
       <y>28</y>
+      <width>174</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
@@ -543,6 +544,7 @@
       <pv_name>$(P):sInp-B6</pv_name>
       <x>59</x>
       <y>53</y>
+      <width>174</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
@@ -557,6 +559,7 @@
       <pv_name>$(P):sInp-B5</pv_name>
       <x>58</x>
       <y>77</y>
+      <width>174</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
@@ -571,6 +574,7 @@
       <pv_name>$(P):sInp-B3</pv_name>
       <x>58</x>
       <y>125</y>
+      <width>174</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
@@ -585,6 +589,7 @@
       <pv_name>$(P):sInp-B4</pv_name>
       <x>58</x>
       <y>100</y>
+      <width>174</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
@@ -599,6 +604,7 @@
       <pv_name>$(P):sInp-B2</pv_name>
       <x>59</x>
       <y>150</y>
+      <width>174</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
@@ -613,6 +619,7 @@
       <pv_name>$(P):sInp-B0</pv_name>
       <x>59</x>
       <y>197</y>
+      <width>174</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
@@ -627,6 +634,7 @@
       <pv_name>$(P):sInp-B1</pv_name>
       <x>59</x>
       <y>173</y>
+      <width>174</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>

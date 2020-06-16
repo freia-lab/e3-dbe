@@ -14511,7 +14511,7 @@ $(pv_value)</tooltip>
     <show_scrollbar>false</show_scrollbar>
     <tooltip></tooltip>
     <transparent>true</transparent>
-    <visible>true</visible>
+    <visible>false</visible>
     <widget_type>Grouping Container</widget_type>
     <width>442</width>
     <wuid>-2b5f993d:154c450d180:-31ab</wuid>
