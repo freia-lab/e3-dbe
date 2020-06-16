@@ -342,10 +342,10 @@
       <name>Check Box Template_7</name>
       <pv_name>$(P):cMask</pv_name>
       <bit>7</bit>
-      <label>n.u.</label>
+      <label></label>
       <x>32</x>
       <y>24</y>
-      <width>200</width>
+      <width>32</width>
       <height>25</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -362,10 +362,10 @@
       <name>Check Box Template_6</name>
       <pv_name>$(P):cMask</pv_name>
       <bit>6</bit>
-      <label>n.u.</label>
+      <label></label>
       <x>32</x>
       <y>48</y>
-      <width>200</width>
+      <width>32</width>
       <height>25</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -382,10 +382,10 @@
       <name>Check Box Template_5</name>
       <pv_name>$(P):cMask</pv_name>
       <bit>5</bit>
-      <label>n.u.</label>
+      <label></label>
       <x>32</x>
       <y>72</y>
-      <width>200</width>
+      <width>32</width>
       <height>25</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -402,10 +402,10 @@
       <name>Check Box Template_4</name>
       <pv_name>$(P):cMask</pv_name>
       <bit>4</bit>
-      <label>n.u.</label>
+      <label></label>
       <x>32</x>
       <y>96</y>
-      <width>200</width>
+      <width>32</width>
       <height>25</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -422,10 +422,10 @@
       <name>Check Box Template_3</name>
       <pv_name>$(P):cMask</pv_name>
       <bit>3</bit>
-      <label>n.u.</label>
+      <label></label>
       <x>32</x>
       <y>120</y>
-      <width>200</width>
+      <width>32</width>
       <height>25</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -442,10 +442,10 @@
       <name>Check Box Template_2</name>
       <pv_name>$(P):cMask</pv_name>
       <bit>2</bit>
-      <label>n.u.</label>
+      <label></label>
       <x>32</x>
       <y>144</y>
-      <width>200</width>
+      <width>32</width>
       <height>25</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -462,10 +462,10 @@
       <name>Check Box Template_1</name>
       <pv_name>$(P):cMask</pv_name>
       <bit>1</bit>
-      <label>n.u.</label>
+      <label></label>
       <x>32</x>
       <y>168</y>
-      <width>200</width>
+      <width>32</width>
       <height>25</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -481,10 +481,10 @@
     <widget type="checkbox" version="2.0.0">
       <name>Check Box Template</name>
       <pv_name>$(P):cMask</pv_name>
-      <label>n.u.</label>
+      <label></label>
       <x>32</x>
       <y>192</y>
-      <width>200</width>
+      <width>32</width>
       <height>25</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -523,6 +523,118 @@
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
       </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P):sInp-B7</pv_name>
+      <x>58</x>
+      <y>28</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):sInp-B6</pv_name>
+      <x>59</x>
+      <y>53</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P):sInp-B5</pv_name>
+      <x>58</x>
+      <y>77</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(P):sInp-B3</pv_name>
+      <x>58</x>
+      <y>125</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P):sInp-B4</pv_name>
+      <x>58</x>
+      <y>100</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(P):sInp-B2</pv_name>
+      <x>59</x>
+      <y>150</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(P):sInp-B0</pv_name>
+      <x>59</x>
+      <y>197</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(P):sInp-B1</pv_name>
+      <x>59</x>
+      <y>173</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
     </widget>
   </widget>
 </display>

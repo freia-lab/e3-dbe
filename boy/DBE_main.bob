@@ -35,6 +35,18 @@
       <tab>
         <name>Overview - CW</name>
         <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Linking Container Template</name>
+            <file>helper-opi-files/dbe-overview-cw.opi</file>
+            <width>1415</width>
+            <height>1024</height>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
         </children>
       </tab>
       <tab>
@@ -97,7 +109,7 @@
     <x>370</x>
     <y>10</y>
     <width>483</width>
-    <height>47</height>
+    <height>44</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="35.0">
       </font>
@@ -164,6 +176,40 @@
         </color>
       </foreground_color>
     </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_1</name>
+      <pv_name>$(PI):Intlk:sTriggered-$(N)</pv_name>
+      <bit>0</bit>
+      <x>88</x>
+      <y>5</y>
+      <width>61</width>
+      <height>21</height>
+      <off_label>OK</off_label>
+      <off_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </off_color>
+      <on_label>FAULT</on_label>
+      <on_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>RF Interlock Output $(N)</name>
@@ -210,87 +256,39 @@
         </color>
       </foreground_color>
     </widget>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_1</name>
-    <pv_name>$(PI):Intlk:sTriggered-$(N)</pv_name>
-    <bit>0</bit>
-    <x>961</x>
-    <y>44</y>
-    <width>61</width>
-    <height>21</height>
-    <off_label>OK</off_label>
-    <off_color>
-      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-      </color>
-    </off_color>
-    <on_label>FAULT</on_label>
-    <on_color>
-      <color name="RED" red="252" green="13" blue="27">
-      </color>
-    </on_color>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+    <widget type="led" version="2.0.0">
+      <name>LED Template_1</name>
+      <pv_name>$(PI):Intlk:sTriggered-$(N)</pv_name>
+      <bit>0</bit>
+      <x>90</x>
+      <y>5</y>
+      <width>61</width>
+      <height>21</height>
+      <off_label>OK</off_label>
+      <off_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </off_color>
+      <on_label>FAULT</on_label>
+      <on_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
       </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <line_color>
-      <color name="GRAY" red="169" green="169" blue="169">
-      </color>
-    </line_color>
-    <square>true</square>
-    <actions>
-    </actions>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_1</name>
-    <pv_name>$(PI):Intlk:sTriggered-$(N)</pv_name>
-    <bit>0</bit>
-    <x>1125</x>
-    <y>44</y>
-    <width>61</width>
-    <height>21</height>
-    <off_label>OK</off_label>
-    <off_color>
-      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-      </color>
-    </off_color>
-    <on_label>FAULT</on_label>
-    <on_color>
-      <color name="RED" red="252" green="13" blue="27">
-      </color>
-    </on_color>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <line_color>
-      <color name="GRAY" red="169" green="169" blue="169">
-      </color>
-    </line_color>
-    <square>true</square>
-    <actions>
-    </actions>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Linking Container Template</name>
-    <file>helper-opi-files/dbe-overview-cw.opi</file>
-    <x>15</x>
-    <y>90</y>
-    <width>1415</width>
-    <height>1024</height>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
   </widget>
 </display>

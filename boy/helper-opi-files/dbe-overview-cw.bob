@@ -1381,7 +1381,7 @@ $(pv_value)</tooltip>
         <x>1</x>
         <y>1</y>
         <width>43</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -2850,7 +2850,7 @@ $(pv_value)</tooltip>
         <x>1</x>
         <y>1</y>
         <width>43</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -5475,7 +5475,7 @@ $(pv_value)</tooltip>
         <x>3</x>
         <y>2</y>
         <width>55</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5526,7 +5526,7 @@ $(pv_value)</tooltip>
         <x>3</x>
         <y>27</y>
         <width>55</width>
-        <height>19</height>
+        <height>18</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5599,7 +5599,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>2</y>
         <width>54</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5650,7 +5650,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>27</y>
         <width>54</width>
-        <height>19</height>
+        <height>18</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -6173,7 +6173,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>2</y>
         <width>55</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -6224,7 +6224,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>27</y>
         <width>55</width>
-        <height>19</height>
+        <height>18</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -6297,7 +6297,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>2</y>
         <width>54</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -6348,7 +6348,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>27</y>
         <width>54</width>
-        <height>19</height>
+        <height>18</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -6613,6 +6613,35 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):Ampl:sFwdPwr</pv_name>
+      <x>5</x>
+      <y>24</y>
+      <width>116</width>
+      <height>41</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Panel 2_1</name>
@@ -6661,490 +6690,34 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Panel_Tot_Pwr_2</name>
-    <macros>
-      <P>HPRF-DBE2</P>
-    </macros>
-    <x>10</x>
-    <y>10</y>
-    <width>442</width>
-    <height>185</height>
-    <visible>false</visible>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="Visible" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0 == 1">
-          <value>true</value>
-        </exp>
-        <pv_name>$(P):Ampl:sTotPwrMeasOn</pv_name>
-      </rule>
-    </rules>
-    <widget type="progressbar" version="2.0.0">
-      <name>Progress Bar Template</name>
-      <pv_name>$(P):Ampl:sTotFwdPwr</pv_name>
-      <x>19</x>
-      <y>75</y>
-      <width>422</width>
-      <height>55</height>
-      <fill_color>
-        <color name="IO PV ON" red="0" green="0" blue="225">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>40.0</maximum>
-    </widget>
-    <widget type="progressbar" version="2.0.0">
-      <name>Progress Bar Template_1</name>
-      <pv_name>$(P):Ampl:sTotReflPwr</pv_name>
-      <x>19</x>
-      <y>129</y>
-      <width>422</width>
-      <height>55</height>
-      <fill_color>
-        <color name="IO PV ON" red="0" green="0" blue="225">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>6000.0</maximum>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_5</name>
-      <text>To t a  l</text>
-      <y>75</y>
-      <width>20</width>
-      <height>106</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):Ampl:sFwdPwr</pv_name>
+      <x>5</x>
+      <y>24</y>
+      <width>116</width>
+      <height>41</height>
       <font>
-        <font name="IO Title" family="arial" style="BOLD" size="13.861386138613861">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
+      <transparent>true</transparent>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Panel 2_6</name>
-      <macros>
-        <P>HPRF-DBE1</P>
-      </macros>
-      <x>19</x>
-      <width>197</width>
-      <height>70</height>
-      <style>2</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="211" green="236" blue="181">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_5</name>
-        <text>Total Fwd Pwr [kW]</text>
-        <width>192</width>
-        <height>19</height>
-        <font>
-          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="IO Background" red="255" green="255" blue="205">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template</name>
-        <pv_name>$(P):Ampl:sTotFwdPwr</pv_name>
-        <x>2</x>
-        <y>27</y>
-        <width>188</width>
-        <height>36</height>
-        <font>
-          <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="IO InputPV Fg" red="0" green="32" blue="92">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="IO InputPV Bg" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <transparent>true</transparent>
-        <precision>0</precision>
-        <show_units>false</show_units>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-          </rule>
-        </rules>
-        <border_width>2</border_width>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Panel 2_7</name>
-      <macros>
-        <P>HPRF-DBE1</P>
-      </macros>
-      <x>242</x>
-      <width>197</width>
-      <height>70</height>
-      <style>2</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="205" blue="205">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_5</name>
-        <text>Total Refl Pwr [W]</text>
-        <width>192</width>
-        <height>19</height>
-        <font>
-          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="IO Background" red="255" green="255" blue="205">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template</name>
-        <pv_name>$(P):Ampl:sTotReflPwr</pv_name>
-        <x>2</x>
-        <y>27</y>
-        <width>188</width>
-        <height>36</height>
-        <font>
-          <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="IO InputPV Fg" red="0" green="32" blue="92">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="IO InputPV Bg" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <transparent>true</transparent>
-        <precision>0</precision>
-        <show_units>false</show_units>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-          </rule>
-        </rules>
-        <border_width>2</border_width>
-      </widget>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Panel_Tot_pwr_1</name>
-    <macros>
-      <P>HPRF-DBE1</P>
-    </macros>
-    <x>10</x>
-    <y>10</y>
-    <width>442</width>
-    <height>185</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="Visible" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0 == 1">
-          <value>true</value>
-        </exp>
-        <pv_name>$(P):Ampl:sTotPwrMeasOn</pv_name>
-      </rule>
-    </rules>
-    <widget type="progressbar" version="2.0.0">
-      <name>Progress Bar Template</name>
-      <pv_name>$(P):Ampl:sTotFwdPwr</pv_name>
-      <x>19</x>
-      <y>75</y>
-      <width>422</width>
-      <height>55</height>
-      <fill_color>
-        <color name="IO PV ON" red="0" green="0" blue="225">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>400.0</maximum>
-    </widget>
-    <widget type="progressbar" version="2.0.0">
-      <name>Progress Bar Template_1</name>
-      <pv_name>$(P):Ampl:sTotReflPwr</pv_name>
-      <x>19</x>
-      <y>129</y>
-      <width>422</width>
-      <height>55</height>
-      <fill_color>
-        <color name="IO PV ON" red="0" green="0" blue="225">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>6000.0</maximum>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Panel 2_6</name>
-      <macros>
-        <P>HPRF-DBE1</P>
-      </macros>
-      <x>19</x>
-      <width>205</width>
-      <height>70</height>
-      <style>2</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="211" green="236" blue="181">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_5</name>
-        <text>Total Fwd Pwr [kW]</text>
-        <x>6</x>
-        <width>192</width>
-        <height>19</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template</name>
-        <pv_name>$(P):Ampl:sTotFwdPwr</pv_name>
-        <x>8</x>
-        <y>27</y>
-        <width>187</width>
-        <height>36</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <transparent>true</transparent>
-        <precision>0</precision>
-        <show_units>false</show_units>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_width>2</border_width>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Panel 2_7</name>
-      <macros>
-        <P>HPRF-DBE1</P>
-      </macros>
-      <x>242</x>
-      <width>205</width>
-      <height>70</height>
-      <style>2</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_5</name>
-        <text>Total Refl Pwr [W]</text>
-        <x>3</x>
-        <width>192</width>
-        <height>19</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template</name>
-        <pv_name>$(P):Ampl:sTotReflPwr</pv_name>
-        <x>8</x>
-        <y>27</y>
-        <width>187</width>
-        <height>36</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <transparent>true</transparent>
-        <precision>0</precision>
-        <show_units>false</show_units>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_width>2</border_width>
-      </widget>
+      <border_width>2</border_width>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -7625,6 +7198,35 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):Ampl:sReflPwr</pv_name>
+      <x>5</x>
+      <y>24</y>
+      <width>116</width>
+      <height>41</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Panel 2_9</name>
@@ -7671,6 +7273,35 @@ $(pv_value)</tooltip>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
       </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):Ampl:sReflPwr</pv_name>
+      <x>5</x>
+      <y>24</y>
+      <width>116</width>
+      <height>41</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -9122,33 +8753,6 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label Template_5</name>
-    <text>T o t a  l</text>
-    <x>10</x>
-    <y>77</y>
-    <width>17</width>
-    <height>126</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="17.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>Label Template</name>
     <text>Fwd:</text>
     <x>126</x>
@@ -9483,122 +9087,6 @@ $(pv_value)</tooltip>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
     </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template</name>
-    <pv_name>$(P):Ampl:sFwdPwr</pv_name>
-    <x>1286</x>
-    <y>355</y>
-    <width>116</width>
-    <height>36</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template</name>
-    <pv_name>$(P):Ampl:sReflPwr</pv_name>
-    <x>1286</x>
-    <y>433</y>
-    <width>116</width>
-    <height>36</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template</name>
-    <pv_name>$(P):Ampl:sReflPwr</pv_name>
-    <x>808</x>
-    <y>433</y>
-    <width>116</width>
-    <height>36</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template</name>
-    <pv_name>$(P):Ampl:sFwdPwr</pv_name>
-    <x>808</x>
-    <y>355</y>
-    <width>116</width>
-    <height>36</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <precision>0</precision>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_6</name>
@@ -10173,5 +9661,345 @@ $(pv_value)</tooltip>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
     </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Panel_Tot_Pwr_2</name>
+    <macros>
+      <P>HPRF-DBE2</P>
+    </macros>
+    <x>10</x>
+    <y>39</y>
+    <width>442</width>
+    <height>185</height>
+    <visible>false</visible>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="progressbar" version="2.0.0">
+      <name>Progress Bar Template_4</name>
+      <pv_name>$(P):Ampl:sTotReflPwr</pv_name>
+      <x>19</x>
+      <y>129</y>
+      <width>422</width>
+      <height>55</height>
+      <fill_color>
+        <color name="IO PV ON" red="0" green="0" blue="225">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>6000.0</maximum>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Panel 2_16</name>
+      <macros>
+        <P>HPRF-DBE1</P>
+      </macros>
+      <x>242</x>
+      <width>197</width>
+      <height>70</height>
+      <style>2</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="205" blue="205">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_25</name>
+        <text>Total Refl Pwr [W]</text>
+        <width>192</width>
+        <height>19</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Panel_Tot_pwr_sys1</name>
+    <macros>
+      <P>HPRF-DBE1</P>
+    </macros>
+    <x>10</x>
+    <y>10</y>
+    <width>442</width>
+    <height>185</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Visible" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 == 1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(P):Ampl:sTotPwrMeasOn</pv_name>
+      </rule>
+    </rules>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_5</name>
+      <pv_name>$(P):Ampl:sTotFwdPwr</pv_name>
+      <x>19</x>
+      <y>70</y>
+      <width>200</width>
+      <height>115</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>400.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_6</name>
+      <pv_name>$(P):Ampl:sTotReflPwr</pv_name>
+      <x>238</x>
+      <y>70</y>
+      <width>200</width>
+      <height>115</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>6000.0</maximum>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Panel 2_17</name>
+      <macros>
+        <P>HPRF-DBE1</P>
+      </macros>
+      <x>20</x>
+      <width>205</width>
+      <height>70</height>
+      <style>2</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_26</name>
+        <text>Total Fwd Pwr [kW]</text>
+        <x>2</x>
+        <width>192</width>
+        <height>19</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_5</name>
+        <pv_name>$(P):Ampl:sTotFwdPwr</pv_name>
+        <x>7</x>
+        <y>27</y>
+        <width>188</width>
+        <height>36</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Panel 2_18</name>
+      <macros>
+        <P>HPRF-DBE1</P>
+      </macros>
+      <x>238</x>
+      <width>205</width>
+      <height>70</height>
+      <style>2</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_27</name>
+        <text>Total Refl Pwr [W]</text>
+        <x>2</x>
+        <width>192</width>
+        <height>19</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_7</name>
+        <pv_name>$(P):Ampl:sTotReflPwr</pv_name>
+        <x>8</x>
+        <y>25</y>
+        <width>188</width>
+        <height>36</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_28</name>
+      <text>T o  t  a   l</text>
+      <y>65</y>
+      <width>20</width>
+      <height>127</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="17.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
   </widget>
 </display>

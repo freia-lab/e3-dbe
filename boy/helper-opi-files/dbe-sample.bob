@@ -3418,7 +3418,7 @@ $(pv_value)</tooltip>
         <x>4</x>
         <y>27</y>
         <width>54</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -4243,7 +4243,7 @@ $(pv_value)</tooltip>
       <x>213</x>
       <y>537</y>
       <width>54</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5598,7 +5598,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>26</y>
         <width>54</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
