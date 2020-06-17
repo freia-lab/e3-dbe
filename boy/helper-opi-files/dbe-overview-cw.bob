@@ -653,7 +653,7 @@ $(pv_value)</tooltip>
       <x>67</x>
       <y>68</y>
       <width>92</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -681,7 +681,7 @@ $(pv_value)</tooltip>
       <x>237</x>
       <y>68</y>
       <width>89</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -981,7 +981,7 @@ $(pv_value)</tooltip>
       <x>67</x>
       <y>143</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -1009,7 +1009,7 @@ $(pv_value)</tooltip>
       <x>237</x>
       <y>143</y>
       <width>52</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -1090,7 +1090,7 @@ $(pv_value)</tooltip>
       <x>21</x>
       <y>90</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1118,7 +1118,7 @@ $(pv_value)</tooltip>
       <x>21</x>
       <y>115</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1146,7 +1146,7 @@ $(pv_value)</tooltip>
       <x>29</x>
       <y>165</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1174,7 +1174,7 @@ $(pv_value)</tooltip>
       <x>29</x>
       <y>190</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1202,7 +1202,7 @@ $(pv_value)</tooltip>
       <x>181</x>
       <y>23</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1230,7 +1230,7 @@ $(pv_value)</tooltip>
       <x>186</x>
       <y>90</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1258,7 +1258,7 @@ $(pv_value)</tooltip>
       <x>186</x>
       <y>115</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1286,7 +1286,7 @@ $(pv_value)</tooltip>
       <x>188</x>
       <y>163</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1314,7 +1314,7 @@ $(pv_value)</tooltip>
       <x>188</x>
       <y>188</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1381,7 +1381,7 @@ $(pv_value)</tooltip>
         <x>1</x>
         <y>1</y>
         <width>43</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -1409,7 +1409,7 @@ $(pv_value)</tooltip>
         <x>58</x>
         <y>1</y>
         <width>32</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -1437,7 +1437,7 @@ $(pv_value)</tooltip>
         <x>152</x>
         <y>1</y>
         <width>31</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -1465,7 +1465,7 @@ $(pv_value)</tooltip>
         <x>246</x>
         <y>1</y>
         <width>28</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -1492,7 +1492,7 @@ $(pv_value)</tooltip>
         <text>  APS  V</text>
         <y>22</y>
         <width>42</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -1588,7 +1588,7 @@ $(pv_value)</tooltip>
         <text>  G1 V</text>
         <y>51</y>
         <width>32</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -1684,7 +1684,7 @@ $(pv_value)</tooltip>
         <text>  G2  V</text>
         <y>80</y>
         <width>35</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -1780,7 +1780,7 @@ $(pv_value)</tooltip>
         <text>  Fil V</text>
         <y>109</y>
         <width>30</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -2850,7 +2850,7 @@ $(pv_value)</tooltip>
         <x>1</x>
         <y>1</y>
         <width>43</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -2878,7 +2878,7 @@ $(pv_value)</tooltip>
         <x>58</x>
         <y>1</y>
         <width>32</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -2906,7 +2906,7 @@ $(pv_value)</tooltip>
         <x>152</x>
         <y>1</y>
         <width>31</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -2934,7 +2934,7 @@ $(pv_value)</tooltip>
         <x>248</x>
         <y>1</y>
         <width>28</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="ITALIC" size="14.0">
           </font>
@@ -2962,7 +2962,7 @@ $(pv_value)</tooltip>
         <x>1</x>
         <y>22</y>
         <width>42</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3059,7 +3059,7 @@ $(pv_value)</tooltip>
         <x>1</x>
         <y>51</y>
         <width>32</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3156,7 +3156,7 @@ $(pv_value)</tooltip>
         <x>1</x>
         <y>80</y>
         <width>35</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3253,7 +3253,7 @@ $(pv_value)</tooltip>
         <x>1</x>
         <y>109</y>
         <width>30</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -4394,7 +4394,7 @@ $(pv_value)</tooltip>
         <text>Current</text>
         <y>2</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -4513,7 +4513,7 @@ $(pv_value)</tooltip>
       <x>67</x>
       <y>66</y>
       <width>92</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -4541,7 +4541,7 @@ $(pv_value)</tooltip>
       <x>238</x>
       <y>66</y>
       <width>89</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -4841,7 +4841,7 @@ $(pv_value)</tooltip>
       <x>67</x>
       <y>144</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -4869,7 +4869,7 @@ $(pv_value)</tooltip>
       <x>238</x>
       <y>144</y>
       <width>52</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -4950,7 +4950,7 @@ $(pv_value)</tooltip>
       <x>14</x>
       <y>88</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -4978,7 +4978,7 @@ $(pv_value)</tooltip>
       <x>14</x>
       <y>113</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5006,7 +5006,7 @@ $(pv_value)</tooltip>
       <x>22</x>
       <y>163</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5034,7 +5034,7 @@ $(pv_value)</tooltip>
       <x>22</x>
       <y>188</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5062,7 +5062,7 @@ $(pv_value)</tooltip>
       <x>190</x>
       <y>88</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5090,7 +5090,7 @@ $(pv_value)</tooltip>
       <x>190</x>
       <y>113</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5118,7 +5118,7 @@ $(pv_value)</tooltip>
       <x>192</x>
       <y>163</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5146,7 +5146,7 @@ $(pv_value)</tooltip>
       <x>192</x>
       <y>188</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5351,7 +5351,7 @@ $(pv_value)</tooltip>
         <x>4</x>
         <y>2</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5402,7 +5402,7 @@ $(pv_value)</tooltip>
         <x>190</x>
         <y>2</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -6049,7 +6049,7 @@ $(pv_value)</tooltip>
         <text>Voltage</text>
         <y>2</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -6100,7 +6100,7 @@ $(pv_value)</tooltip>
         <x>195</x>
         <y>2</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -7791,7 +7791,7 @@ $(pv_value)</tooltip>
       <x>8</x>
       <y>248</y>
       <width>80</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -8515,7 +8515,7 @@ $(pv_value)</tooltip>
       <x>9</x>
       <y>248</y>
       <width>80</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -9671,7 +9671,6 @@ $(pv_value)</tooltip>
     <y>10</y>
     <width>442</width>
     <height>185</height>
-    <visible>false</visible>
     <style>3</style>
     <foreground_color>
       <color red="0" green="128" blue="255">
@@ -9686,8 +9685,8 @@ $(pv_value)</tooltip>
     </actions>
     <rules>
       <rule name="Visible" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0 == 1">
-          <value>true</value>
+        <exp bool_exp="pv0 == 0">
+          <value>false</value>
         </exp>
         <pv_name>$(P):Ampl:sTotPwrMeasOn</pv_name>
       </rule>
@@ -9914,7 +9913,6 @@ $(pv_value)</tooltip>
     <y>10</y>
     <width>442</width>
     <height>185</height>
-    <visible>false</visible>
     <style>3</style>
     <foreground_color>
       <color red="0" green="128" blue="255">
@@ -9929,8 +9927,8 @@ $(pv_value)</tooltip>
     </actions>
     <rules>
       <rule name="Visible" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0 == 1">
-          <value>true</value>
+        <exp bool_exp="pv0 == 0">
+          <value>false</value>
         </exp>
         <pv_name>$(P):Ampl:sTotPwrMeasOn</pv_name>
       </rule>
