@@ -1738,7 +1738,7 @@ $(pv_value)</tooltip>
       <nr>1</nr>
     </macros>
     <x>460</x>
-    <y>315</y>
+    <y>313</y>
     <width>339</width>
     <height>159</height>
     <style>1</style>
@@ -6394,14 +6394,14 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Panel 2</name>
+    <name>System 1 Powers</name>
     <macros>
       <P>HPRF-DBE1</P>
     </macros>
-    <x>38</x>
-    <y>257</y>
+    <x>33</x>
+    <y>243</y>
     <width>201</width>
-    <height>649</height>
+    <height>767</height>
     <style>3</style>
     <foreground_color>
       <color red="0" green="128" blue="255">
@@ -6419,7 +6419,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):Ampl:sReflPwr</pv_name>
       <x>101</x>
       <width>100</width>
-      <height>135</height>
+      <height>140</height>
       <background_color>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
@@ -6434,30 +6434,12 @@ $(pv_value)</tooltip>
       <maximum>4000.0</maximum>
     </widget>
     <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_2</name>
-      <pv_name>$(P):DRV:sFwdPwr</pv_name>
-      <y>480</y>
-      <width>100</width>
-      <height>135</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color red="211" green="236" blue="181">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-    </widget>
-    <widget type="tank" version="2.0.0">
       <name>Progress Bar Template_3</name>
       <pv_name>$(P):DRV:sReflPwr</pv_name>
       <x>101</x>
-      <y>480</y>
+      <y>603</y>
       <width>100</width>
-      <height>135</height>
+      <height>155</height>
       <background_color>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
@@ -6474,9 +6456,9 @@ $(pv_value)</tooltip>
     <widget type="tank" version="2.0.0">
       <name>Progress Bar Template_4</name>
       <pv_name>$(P):SSA:sFwdPwr</pv_name>
-      <y>145</y>
+      <y>150</y>
       <width>100</width>
-      <height>135</height>
+      <height>140</height>
       <background_color>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
@@ -6494,9 +6476,9 @@ $(pv_value)</tooltip>
       <name>Progress Bar Template_5</name>
       <pv_name>$(P):SSA:sReflPwr</pv_name>
       <x>101</x>
-      <y>154</y>
+      <y>150</y>
       <width>100</width>
-      <height>135</height>
+      <height>140</height>
       <background_color>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
@@ -6513,9 +6495,9 @@ $(pv_value)</tooltip>
     <widget type="tank" version="2.0.0">
       <name>Progress Bar Template_6</name>
       <pv_name>$(P):SSA-1:sFwdPwr</pv_name>
-      <y>291</y>
+      <y>301</y>
       <width>100</width>
-      <height>135</height>
+      <height>140</height>
       <background_color>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
@@ -6535,7 +6517,7 @@ $(pv_value)</tooltip>
       <x>101</x>
       <y>301</y>
       <width>100</width>
-      <height>135</height>
+      <height>140</height>
       <background_color>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
@@ -6552,9 +6534,9 @@ $(pv_value)</tooltip>
     <widget type="tank" version="2.0.0">
       <name>Progress Bar Template_8</name>
       <pv_name>$(P):SSA-2:sFwdPwr</pv_name>
-      <y>361</y>
+      <y>452</y>
       <width>100</width>
-      <height>135</height>
+      <height>140</height>
       <background_color>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
@@ -6572,9 +6554,9 @@ $(pv_value)</tooltip>
       <name>Progress Bar Template_9</name>
       <pv_name>$(P):SSA-2:sReflPwr</pv_name>
       <x>101</x>
-      <y>361</y>
+      <y>452</y>
       <width>100</width>
-      <height>135</height>
+      <height>140</height>
       <background_color>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
@@ -6592,7 +6574,7 @@ $(pv_value)</tooltip>
       <name>Progress Bar Template</name>
       <pv_name>$(P):Ampl:sFwdPwr</pv_name>
       <width>100</width>
-      <height>135</height>
+      <height>140</height>
       <background_color>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
@@ -6606,16 +6588,34 @@ $(pv_value)</tooltip>
       <limits_from_pv>false</limits_from_pv>
       <maximum>200.0</maximum>
     </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_2</name>
+      <pv_name>$(P):DRV:sFwdPwr</pv_name>
+      <y>603</y>
+      <width>100</width>
+      <height>155</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
-    <text>Tube</text>
+    <text>T u b e</text>
     <x>10</x>
-    <y>210</y>
-    <width>20</width>
-    <height>106</height>
+    <y>237</y>
+    <width>15</width>
+    <height>120</height>
     <font>
-      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      <font family="Source Sans Pro" style="BOLD" size="19.0">
       </font>
     </font>
     <foreground_color>
@@ -6637,12 +6637,12 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_1</name>
     <text>D r   i  v  e  r</text>
-    <x>10</x>
-    <y>685</y>
+    <x>9</x>
+    <y>853</y>
     <width>20</width>
-    <height>124</height>
+    <height>150</height>
     <font>
-      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      <font family="Source Sans Pro" style="BOLD" size="19.0">
       </font>
     </font>
     <foreground_color>
@@ -6665,11 +6665,11 @@ $(pv_value)</tooltip>
     <name>Label Template_2</name>
     <text>S S A</text>
     <x>10</x>
-    <y>329</y>
+    <y>390</y>
     <width>20</width>
     <height>106</height>
     <font>
-      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      <font family="Source Sans Pro" style="BOLD" size="19.0">
       </font>
     </font>
     <foreground_color>
@@ -6692,11 +6692,11 @@ $(pv_value)</tooltip>
     <name>Label Template_3</name>
     <text>S S A -  1</text>
     <x>10</x>
-    <y>454</y>
+    <y>551</y>
     <width>20</width>
-    <height>106</height>
+    <height>130</height>
     <font>
-      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      <font family="Source Sans Pro" style="BOLD" size="19.0">
       </font>
     </font>
     <foreground_color>
@@ -6719,11 +6719,11 @@ $(pv_value)</tooltip>
     <name>Label Template_4</name>
     <text>S S A  -  2</text>
     <x>10</x>
-    <y>571</y>
+    <y>705</y>
     <width>20</width>
-    <height>106</height>
+    <height>125</height>
     <font>
-      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      <font family="Source Sans Pro" style="BOLD" size="19.0">
       </font>
     </font>
     <foreground_color>
@@ -6748,7 +6748,7 @@ $(pv_value)</tooltip>
       <P>HPRF-DBE1</P>
     </macros>
     <x>803</x>
-    <y>315</y>
+    <y>313</y>
     <width>128</width>
     <height>71</height>
     <style>2</style>
@@ -6765,10 +6765,11 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_5</name>
       <text>Fwd Pwr [kW]</text>
-      <width>127</width>
+      <x>12</x>
+      <width>107</width>
       <height>19</height>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
       </font>
       <foreground_color>
@@ -6792,9 +6793,9 @@ $(pv_value)</tooltip>
       <name>Text Update Template</name>
       <pv_name>$(P):Ampl:sFwdPwr</pv_name>
       <x>5</x>
-      <y>29</y>
+      <y>24</y>
       <width>116</width>
-      <height>36</height>
+      <height>41</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
         </font>
@@ -6841,10 +6842,11 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_5</name>
       <text>Fwd Pwr [kW]</text>
-      <width>127</width>
+      <x>12</x>
+      <width>107</width>
       <height>19</height>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
       </font>
       <foreground_color>
@@ -6868,9 +6870,9 @@ $(pv_value)</tooltip>
       <name>Text Update Template</name>
       <pv_name>$(P):Ampl:sFwdPwr</pv_name>
       <x>5</x>
-      <y>28</y>
+      <y>24</y>
       <width>116</width>
-      <height>36</height>
+      <height>41</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
         </font>
@@ -6895,222 +6897,12 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Panel 2_7</name>
-    <macros>
-      <P>HPRF-DBE2</P>
-    </macros>
-    <x>239</x>
-    <y>257</y>
-    <width>206</width>
-    <height>651</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_2</name>
-      <pv_name>$(P):DRV:sFwdPwr</pv_name>
-      <y>480</y>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color red="211" green="236" blue="181">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_3</name>
-      <pv_name>$(P):DRV:sReflPwr</pv_name>
-      <y>534</y>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>10.0</maximum>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_4</name>
-      <pv_name>$(P):SSA:sFwdPwr</pv_name>
-      <y>121</y>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color red="211" green="236" blue="181">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>10000.0</maximum>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_5</name>
-      <pv_name>$(P):SSA:sReflPwr</pv_name>
-      <y>175</y>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>500.0</maximum>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_6</name>
-      <pv_name>$(P):SSA-1:sFwdPwr</pv_name>
-      <y>241</y>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color red="211" green="236" blue="181">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>5000.0</maximum>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_7</name>
-      <pv_name>$(P):SSA-1:sReflPwr</pv_name>
-      <y>295</y>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>500.0</maximum>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_8</name>
-      <pv_name>$(P):SSA-2:sFwdPwr</pv_name>
-      <y>361</y>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color red="211" green="236" blue="181">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>5000.0</maximum>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_9</name>
-      <pv_name>$(P):SSA-2:sReflPwr</pv_name>
-      <y>415</y>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>500.0</maximum>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template_1</name>
-      <pv_name>$(P):Ampl:sReflPwr</pv_name>
-      <y>54</y>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>4000.0</maximum>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Progress Bar Template</name>
-      <pv_name>$(P):Ampl:sFwdPwr</pv_name>
-      <width>200</width>
-      <height>55</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <fill_color>
-        <color red="211" green="236" blue="181">
-        </color>
-      </fill_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <maximum>200.0</maximum>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
     <name>Panel 2_8</name>
     <macros>
       <P>HPRF-DBE1</P>
     </macros>
     <x>803</x>
-    <y>391</y>
+    <y>390</y>
     <width>128</width>
     <height>71</height>
     <style>2</style>
@@ -7130,7 +6922,7 @@ $(pv_value)</tooltip>
       <width>125</width>
       <height>19</height>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
       </font>
       <foreground_color>
@@ -7154,9 +6946,9 @@ $(pv_value)</tooltip>
       <name>Text Update Template</name>
       <pv_name>$(P):Ampl:sReflPwr</pv_name>
       <x>5</x>
-      <y>28</y>
+      <y>24</y>
       <width>116</width>
-      <height>36</height>
+      <height>41</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
         </font>
@@ -7186,7 +6978,7 @@ $(pv_value)</tooltip>
       <P>HPRF-DBE2</P>
     </macros>
     <x>1279</x>
-    <y>389</y>
+    <y>390</y>
     <width>128</width>
     <height>71</height>
     <style>2</style>
@@ -7206,7 +6998,7 @@ $(pv_value)</tooltip>
       <width>125</width>
       <height>19</height>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
       </font>
       <foreground_color>
@@ -7230,9 +7022,9 @@ $(pv_value)</tooltip>
       <name>Text Update Template</name>
       <pv_name>$(P):Ampl:sReflPwr</pv_name>
       <x>5</x>
-      <y>28</y>
+      <y>24</y>
       <width>116</width>
-      <height>36</height>
+      <height>41</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
         </font>
@@ -7260,7 +7052,7 @@ $(pv_value)</tooltip>
     <name>Label Template_24</name>
     <text>System 1</text>
     <x>90</x>
-    <y>210</y>
+    <y>196</y>
     <width>110</width>
     <height>47</height>
     <font>
@@ -7286,8 +7078,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_25</name>
     <text>System 2</text>
-    <x>300</x>
-    <y>210</y>
+    <x>306</x>
+    <y>196</y>
     <width>110</width>
     <height>47</height>
     <font>
@@ -8328,5 +8120,219 @@ $(pv_value)</tooltip>
         <pv_name>$(P):Ampl:sTotPwrMeasOn</pv_name>
       </rule>
     </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>System 2 Powers</name>
+    <macros>
+      <P>HPRF-DBE2</P>
+    </macros>
+    <x>252</x>
+    <y>243</y>
+    <width>201</width>
+    <height>767</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_10</name>
+      <pv_name>$(P):Ampl:sReflPwr</pv_name>
+      <x>101</x>
+      <width>100</width>
+      <height>140</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>4000.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_11</name>
+      <pv_name>$(P):DRV:sReflPwr</pv_name>
+      <x>101</x>
+      <y>603</y>
+      <width>100</width>
+      <height>155</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>10.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_12</name>
+      <pv_name>$(P):SSA:sFwdPwr</pv_name>
+      <y>150</y>
+      <width>100</width>
+      <height>140</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>10000.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_13</name>
+      <pv_name>$(P):SSA:sReflPwr</pv_name>
+      <x>101</x>
+      <y>150</y>
+      <width>100</width>
+      <height>140</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>500.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_14</name>
+      <pv_name>$(P):SSA-1:sFwdPwr</pv_name>
+      <y>301</y>
+      <width>100</width>
+      <height>140</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>5000.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_15</name>
+      <pv_name>$(P):SSA-1:sReflPwr</pv_name>
+      <x>101</x>
+      <y>301</y>
+      <width>100</width>
+      <height>140</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>500.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_16</name>
+      <pv_name>$(P):SSA-2:sFwdPwr</pv_name>
+      <y>452</y>
+      <width>100</width>
+      <height>140</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>5000.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_17</name>
+      <pv_name>$(P):SSA-2:sReflPwr</pv_name>
+      <x>101</x>
+      <y>452</y>
+      <width>100</width>
+      <height>140</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>500.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_18</name>
+      <pv_name>$(P):Ampl:sFwdPwr</pv_name>
+      <width>100</width>
+      <height>140</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>200.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_19</name>
+      <pv_name>$(P):DRV:sFwdPwr</pv_name>
+      <y>603</y>
+      <width>100</width>
+      <height>155</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
   </widget>
 </display>

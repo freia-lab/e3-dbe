@@ -1344,7 +1344,7 @@ $(pv_value)</tooltip>
       <nr>1</nr>
     </macros>
     <x>460</x>
-    <y>315</y>
+    <y>313</y>
     <width>339</width>
     <height>159</height>
     <style>1</style>
@@ -6572,7 +6572,7 @@ $(pv_value)</tooltip>
       <P>HPRF-DBE1</P>
     </macros>
     <x>802</x>
-    <y>325</y>
+    <y>313</y>
     <width>128</width>
     <height>71</height>
     <style>2</style>
@@ -6586,33 +6586,6 @@ $(pv_value)</tooltip>
     </background_color>
     <actions>
     </actions>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_5</name>
-      <text>Fwd Pwr [kW]</text>
-      <width>112</width>
-      <height>24</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template</name>
       <pv_name>$(P):Ampl:sFwdPwr</pv_name>
@@ -6642,34 +6615,14 @@ $(pv_value)</tooltip>
       </actions>
       <border_width>2</border_width>
     </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Panel 2_1</name>
-    <macros>
-      <P>HPRF-DBE2</P>
-    </macros>
-    <x>1280</x>
-    <y>325</y>
-    <width>128</width>
-    <height>71</height>
-    <style>2</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="211" green="236" blue="181">
-      </color>
-    </background_color>
-    <actions>
-    </actions>
     <widget type="label" version="2.0.0">
       <name>Label Template_5</name>
       <text>Fwd Pwr [kW]</text>
-      <width>112</width>
-      <height>24</height>
+      <x>12</x>
+      <width>107</width>
+      <height>23</height>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
       </font>
       <foreground_color>
@@ -6690,6 +6643,27 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Panel 2_1</name>
+    <macros>
+      <P>HPRF-DBE2</P>
+    </macros>
+    <x>1280</x>
+    <y>313</y>
+    <width>127</width>
+    <height>71</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="211" green="236" blue="181">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template</name>
       <pv_name>$(P):Ampl:sFwdPwr</pv_name>
@@ -6718,6 +6692,34 @@ $(pv_value)</tooltip>
       <actions>
       </actions>
       <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_5</name>
+      <text>Fwd Pwr [kW]</text>
+      <x>12</x>
+      <width>107</width>
+      <height>23</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -7158,7 +7160,7 @@ $(pv_value)</tooltip>
       <P>HPRF-DBE1</P>
     </macros>
     <x>802</x>
-    <y>403</y>
+    <y>390</y>
     <width>128</width>
     <height>71</height>
     <style>2</style>
@@ -7175,10 +7177,10 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_5</name>
       <text>Refl Pwr [W]</text>
-      <width>120</width>
+      <width>125</width>
       <height>19</height>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
       </font>
       <foreground_color>
@@ -7234,7 +7236,7 @@ $(pv_value)</tooltip>
       <P>HPRF-DBE2</P>
     </macros>
     <x>1280</x>
-    <y>403</y>
+    <y>390</y>
     <width>128</width>
     <height>71</height>
     <style>2</style>
@@ -7251,10 +7253,10 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_5</name>
       <text>Refl Pwr [W]</text>
-      <width>120</width>
+      <width>125</width>
       <height>19</height>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
       </font>
       <foreground_color>

@@ -100,7 +100,7 @@
       <width>83</width>
       <height>32</height>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="26.0">
         </font>
       </font>
       <foreground_color>
@@ -175,7 +175,7 @@
       <width>83</width>
       <height>32</height>
       <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="26.0">
         </font>
       </font>
       <foreground_color>
@@ -200,7 +200,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_28</name>
     <text>Total Power</text>
-    <x>3</x>
+    <x>7</x>
     <width>98</width>
     <height>70</height>
     <font>
