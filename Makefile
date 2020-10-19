@@ -12,3 +12,5 @@ SOURCES = -none-
 STARTUPS = $(wildcard src/main/ioc/*.cmd)
 
 OPIS= boy
+
+MISCS += src/main/ioc/ioc-dbe-freia.req

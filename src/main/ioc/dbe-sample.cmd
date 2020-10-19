@@ -1,3 +1,7 @@
+require autosave,5.7+
+
+epicsEnvSet("AUTOSAVE_SYSM_PV_PREFIX","dbe:")
+
 ###################################################################
 ## User provided PLC or fast controller driver pre configuration ##
 ###################################################################
@@ -39,5 +43,8 @@ dbLoadRecords("DBE_stat.db","SUBS=DBE2")
 # In EEE environment DBE.db is automatically created from DBE.substitutions during the make
 dbLoadRecords("DBE.db")
 
+requireSnippet(dbe-freia-preSaveRestore.cmd)
 
-#iocInit
+iocInit
+
+requireSnippet(dbe-freia-postSaveRestore.cmd)

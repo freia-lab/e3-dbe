@@ -145,3 +145,9 @@ file "analogout.template"  { pattern
 {HPRF,	DBE1,	Fil-V,	 UINT16,  0,	"65.535", 0,     150, 	 3,    "V",   "49",    "42",   "212"}
 {HPRF,	DBE2,	Fil-V,	 UINT16,  0,	"65.535", 0,     150, 	 3,    "V",   "49",    "42",   "212"}
 }
+
+file "dbe-tubeid.template" { pattern
+{SYS,      SUBSYS}
+{HPRF, DBE1}
+{HPRF, DBE2}
+}
