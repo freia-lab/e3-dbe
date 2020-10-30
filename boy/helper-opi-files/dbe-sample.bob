@@ -98,7 +98,7 @@
       <x>125</x>
       <y>28</y>
       <width>118</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -165,758 +165,6 @@
       <actions>
       </actions>
       <border_width>2</border_width>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Commands &amp; Status System 1</name>
-    <macros>
-      <P>HPRF-DBE1</P>
-    </macros>
-    <x>390</x>
-    <y>15</y>
-    <width>460</width>
-    <height>326</height>
-    <style>1</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>APS Turn Off</description>
-        </action>
-      </actions>
-      <pv_name>$(P):APS:CmdOff</pv_name>
-      <x>5</x>
-      <y>101</y>
-      <width>85</width>
-      <height>54</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_1</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>APS Turn On</description>
-        </action>
-      </actions>
-      <pv_name>$(P):APS:CmdOn</pv_name>
-      <x>95</x>
-      <y>101</y>
-      <width>85</width>
-      <height>54</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_1</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Turn Off</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdOff</pv_name>
-      <x>5</x>
-      <y>55</y>
-      <width>85</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Turn On</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdOn</pv_name>
-      <x>95</x>
-      <y>55</y>
-      <width>85</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_4</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Reset</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdReset</pv_name>
-      <x>365</x>
-      <y>226</y>
-      <width>80</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template</name>
-      <pv_name>$(P):Ampl:sFault</pv_name>
-      <bit>0</bit>
-      <x>280</x>
-      <y>60</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>Ampl OK</off_label>
-      <off_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </off_color>
-      <on_label>Ampl Fault</on_label>
-      <on_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template</name>
-      <pv_name>$(P):APS:sAlarm</pv_name>
-      <bit>0</bit>
-      <x>280</x>
-      <y>113</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>APS OK</off_label>
-      <off_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </off_color>
-      <on_label>APS Fault</on_label>
-      <on_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template</name>
-      <pv_name>$(P):Ampl:sOn</pv_name>
-      <bit>0</bit>
-      <x>190</x>
-      <y>60</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>Ampl OFF</off_label>
-      <off_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>Ampl ON</on_label>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template_1</name>
-      <pv_name>$(P):APS:sOn</pv_name>
-      <bit>0</bit>
-      <x>190</x>
-      <y>113</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>APS OFF</off_label>
-      <off_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>APS ON</on_label>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template_4</name>
-      <pv_name>$(P):Ampl:sLocal</pv_name>
-      <bit>0</bit>
-      <x>7</x>
-      <y>12</y>
-      <width>166</width>
-      <height>26</height>
-      <off_label>Remote</off_label>
-      <off_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </off_color>
-      <on_label>Local</on_label>
-      <on_color>
-        <color red="0" green="64" blue="255">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template_5</name>
-      <pv_name>$(P):Ampl:sMode</pv_name>
-      <bit>0</bit>
-      <x>189</x>
-      <y>12</y>
-      <width>168</width>
-      <height>26</height>
-      <off_label>CW</off_label>
-      <off_color>
-        <color name="YELLOW" red="252" green="242" blue="17">
-        </color>
-      </off_color>
-      <on_label>Pulsed</on_label>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template</name>
-      <pv_name>$(P):Ampl:sType</pv_name>
-      <x>367</x>
-      <y>12</y>
-      <width>76</width>
-      <height>26</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_5</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Combined Pwr Meas Off</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdTotPwrMeasOff</pv_name>
-      <x>5</x>
-      <y>165</y>
-      <width>85</width>
-      <height>71</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_6</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Combined Pwr Meas On</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdTotPwrMeasOn</pv_name>
-      <x>95</x>
-      <y>165</y>
-      <width>85</width>
-      <height>71</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_7</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Normal</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdNormal</pv_name>
-      <x>365</x>
-      <y>54</y>
-      <width>80</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_8</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Master</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdMaster</pv_name>
-      <x>365</x>
-      <y>108</y>
-      <width>80</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_9</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Slave</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdSlave</pv_name>
-      <x>365</x>
-      <y>165</y>
-      <width>80</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_10</name>
-      <text>Crowbar trips</text>
-      <x>8</x>
-      <y>250</y>
-      <width>80</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_2</name>
-      <pv_name>$(P):Ampl:sNcrowbarTrip</pv_name>
-      <x>108</x>
-      <y>250</y>
-      <width>60</width>
-      <height>16</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Panel 2</name>
-      <x>215</x>
-      <y>226</y>
-      <width>133</width>
-      <height>39</height>
-      <style>3</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-      <actions>
-      </actions>
-      <widget type="led" version="2.0.0">
-        <name>LED Template_22</name>
-        <pv_name>$(P):Ampl:sAlrm-Master</pv_name>
-        <bit>0</bit>
-        <x>2</x>
-        <y>2</y>
-        <width>16</width>
-        <height>16</height>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color name="GRAY" red="169" green="169" blue="169">
-          </color>
-        </line_color>
-        <actions>
-        </actions>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_22</name>
-        <text>Master OK</text>
-        <x>25</x>
-        <width>108</width>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="led" version="2.0.0">
-        <name>LED Template_23</name>
-        <pv_name>$(P):Ampl:sAlrm-Slave</pv_name>
-        <bit>0</bit>
-        <x>2</x>
-        <y>21</y>
-        <width>16</width>
-        <height>16</height>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color name="GRAY" red="169" green="169" blue="169">
-          </color>
-        </line_color>
-        <actions>
-        </actions>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_23</name>
-        <text>Slave OK</text>
-        <x>25</x>
-        <y>19</y>
-        <width>108</width>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template_6</name>
-      <pv_name>$(P):Fil:sRdy</pv_name>
-      <bit>0</bit>
-      <x>280</x>
-      <y>170</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>Fil Not Rdy</off_label>
-      <off_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>Fil Rdy</on_label>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Group</name>
-      <x>8</x>
-      <y>273</y>
-      <width>161</width>
-      <height>18</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_25</name>
-        <text>Tube Id</text>
-        <width>45</width>
-        <height>18</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <auto_size>true</auto_size>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template_8</name>
-        <pv_name>$(P):TubeId</pv_name>
-        <x>71</x>
-        <y>1</y>
-        <width>90</width>
-        <height>16</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <actions>
-        </actions>
-        <border_width>2</border_width>
-      </widget>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -2636,7 +1884,7 @@ $(pv_value)</tooltip>
         <text>Current</text>
         <y>2</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -2756,7 +2004,7 @@ $(pv_value)</tooltip>
       <x>75</x>
       <y>324</y>
       <width>92</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -2784,7 +2032,7 @@ $(pv_value)</tooltip>
       <x>250</x>
       <y>324</y>
       <width>89</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -2833,7 +2081,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>2</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -2884,7 +2132,7 @@ $(pv_value)</tooltip>
         <x>4</x>
         <y>27</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -2980,7 +2228,7 @@ $(pv_value)</tooltip>
         <x>4</x>
         <y>27</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3053,7 +2301,7 @@ $(pv_value)</tooltip>
         <x>6</x>
         <y>2</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3104,7 +2352,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>27</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3177,7 +2425,7 @@ $(pv_value)</tooltip>
         <x>6</x>
         <y>2</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3228,7 +2476,7 @@ $(pv_value)</tooltip>
         <x>6</x>
         <y>27</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3425,7 +2673,7 @@ $(pv_value)</tooltip>
         <x>4</x>
         <y>2</y>
         <width>54</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3476,7 +2724,7 @@ $(pv_value)</tooltip>
         <x>4</x>
         <y>27</y>
         <width>54</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3549,7 +2797,7 @@ $(pv_value)</tooltip>
         <x>4</x>
         <y>2</y>
         <width>54</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3793,7 +3041,7 @@ $(pv_value)</tooltip>
         <text>SSA-2 heatsink</text>
         <y>29</y>
         <width>87</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -3822,7 +3070,7 @@ $(pv_value)</tooltip>
       <x>75</x>
       <y>401</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -3850,7 +3098,7 @@ $(pv_value)</tooltip>
       <x>250</x>
       <y>400</y>
       <width>52</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -3898,14 +3146,6 @@ $(pv_value)</tooltip>
       </line_color>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_19</name>
@@ -4273,7 +3513,7 @@ $(pv_value)</tooltip>
       <x>206</x>
       <y>347</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -4301,7 +3541,7 @@ $(pv_value)</tooltip>
       <x>213</x>
       <y>537</y>
       <width>54</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -4716,7 +3956,7 @@ $(pv_value)</tooltip>
         <text>  I8</text>
         <y>175</y>
         <width>17</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5137,7 +4377,7 @@ $(pv_value)</tooltip>
         <text>  I8</text>
         <y>175</y>
         <width>17</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5216,7 +4456,6 @@ $(pv_value)</tooltip>
       <x>164</x>
       <y>2</y>
       <width>39</width>
-      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="15.0">
         </font>
@@ -5407,7 +4646,7 @@ $(pv_value)</tooltip>
         <text>Current</text>
         <x>187</x>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5503,7 +4742,7 @@ $(pv_value)</tooltip>
         <x>4</x>
         <y>1</y>
         <width>55</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5531,7 +4770,7 @@ $(pv_value)</tooltip>
         <x>4</x>
         <y>26</y>
         <width>55</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5627,7 +4866,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>1</y>
         <width>54</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5655,7 +4894,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>26</y>
         <width>54</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -5684,7 +4923,7 @@ $(pv_value)</tooltip>
       <x>190</x>
       <y>18</y>
       <width>52</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5915,7 +5154,7 @@ $(pv_value)</tooltip>
       <x>9</x>
       <y>65</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6407,7 +5646,7 @@ $(pv_value)</tooltip>
       <x>3</x>
       <y>3</y>
       <width>38</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -6435,7 +5674,7 @@ $(pv_value)</tooltip>
       <x>72</x>
       <y>3</y>
       <width>32</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -6463,7 +5702,7 @@ $(pv_value)</tooltip>
       <x>167</x>
       <y>3</y>
       <width>31</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -6491,7 +5730,7 @@ $(pv_value)</tooltip>
       <x>261</x>
       <y>3</y>
       <width>28</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -6519,7 +5758,7 @@ $(pv_value)</tooltip>
       <x>375</x>
       <y>58</y>
       <width>38</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -6547,7 +5786,7 @@ $(pv_value)</tooltip>
       <x>431</x>
       <y>58</y>
       <width>32</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -6575,7 +5814,7 @@ $(pv_value)</tooltip>
       <x>526</x>
       <y>58</y>
       <width>31</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="ITALIC" size="14.0">
         </font>
@@ -7017,7 +6256,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>4</y>
         <width>29</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -7045,7 +6284,7 @@ $(pv_value)</tooltip>
         <x>145</x>
         <y>6</y>
         <width>27</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -7159,7 +6398,6 @@ $(pv_value)</tooltip>
         <text>  Total </text>
         <x>21</x>
         <width>44</width>
-        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="BOLD" size="15.0">
           </font>
@@ -7210,7 +6448,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>4</y>
         <width>29</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -7238,7 +6476,7 @@ $(pv_value)</tooltip>
         <x>146</x>
         <y>6</y>
         <width>27</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -7333,14 +6571,6 @@ $(pv_value)</tooltip>
       </foreground_color>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Panel 2_10</name>
@@ -7436,7 +6666,7 @@ $(pv_value)</tooltip>
           <x>5</x>
           <y>4</y>
           <width>29</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -7464,7 +6694,7 @@ $(pv_value)</tooltip>
           <x>145</x>
           <y>6</y>
           <width>27</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -7628,7 +6858,7 @@ $(pv_value)</tooltip>
           <x>5</x>
           <y>4</y>
           <width>29</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -7656,7 +6886,7 @@ $(pv_value)</tooltip>
           <x>145</x>
           <y>6</y>
           <width>27</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -7771,7 +7001,7 @@ $(pv_value)</tooltip>
           <x>5</x>
           <y>4</y>
           <width>29</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -7799,7 +7029,7 @@ $(pv_value)</tooltip>
           <x>145</x>
           <y>6</y>
           <width>27</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -7964,7 +7194,7 @@ $(pv_value)</tooltip>
           <x>5</x>
           <y>4</y>
           <width>29</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -7992,7 +7222,7 @@ $(pv_value)</tooltip>
           <x>145</x>
           <y>6</y>
           <width>27</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -8171,7 +7401,7 @@ $(pv_value)</tooltip>
           <x>5</x>
           <y>4</y>
           <width>29</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -8199,7 +7429,7 @@ $(pv_value)</tooltip>
           <x>145</x>
           <y>6</y>
           <width>27</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -8336,756 +7566,26 @@ $(pv_value)</tooltip>
       </widget>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>Commands &amp; Status System 2</name>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
     <macros>
-      <P>HPRF-DBE2</P>
+      <N>1</N>
     </macros>
-    <x>875</x>
+    <file>top_panel.bob</file>
+    <x>400</x>
     <y>15</y>
-    <width>460</width>
-    <height>326</height>
-    <style>1</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>APS Turn Off</description>
-        </action>
-      </actions>
-      <pv_name>$(P):APS:CmdOff</pv_name>
-      <x>5</x>
-      <y>101</y>
-      <width>85</width>
-      <height>54</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_1</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>APS Turn On</description>
-        </action>
-      </actions>
-      <pv_name>$(P):APS:CmdOn</pv_name>
-      <x>95</x>
-      <y>101</y>
-      <width>85</width>
-      <height>54</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_1</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Turn Off</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdOff</pv_name>
-      <x>5</x>
-      <y>55</y>
-      <width>85</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Turn On</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdOn</pv_name>
-      <x>95</x>
-      <y>55</y>
-      <width>85</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_4</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Reset</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdReset</pv_name>
-      <x>365</x>
-      <y>226</y>
-      <width>80</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template</name>
-      <pv_name>$(P):Ampl:sFault</pv_name>
-      <bit>0</bit>
-      <x>280</x>
-      <y>60</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>Ampl OK</off_label>
-      <off_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </off_color>
-      <on_label>Ampl Fault</on_label>
-      <on_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template</name>
-      <pv_name>$(P):APS:sAlarm</pv_name>
-      <bit>0</bit>
-      <x>280</x>
-      <y>113</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>APS OK</off_label>
-      <off_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </off_color>
-      <on_label>APS Fault</on_label>
-      <on_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template</name>
-      <pv_name>$(P):Ampl:sOn</pv_name>
-      <bit>0</bit>
-      <x>190</x>
-      <y>60</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>Ampl OFF</off_label>
-      <off_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>Ampl ON</on_label>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template_1</name>
-      <pv_name>$(P):APS:sOn</pv_name>
-      <bit>0</bit>
-      <x>190</x>
-      <y>113</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>APS OFF</off_label>
-      <off_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>APS ON</on_label>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template_4</name>
-      <pv_name>$(P):Ampl:sLocal</pv_name>
-      <bit>0</bit>
-      <x>7</x>
-      <y>12</y>
-      <width>166</width>
-      <height>26</height>
-      <off_label>Remote</off_label>
-      <off_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </off_color>
-      <on_label>Local</on_label>
-      <on_color>
-        <color red="0" green="64" blue="255">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template_5</name>
-      <pv_name>$(P):Ampl:sMode</pv_name>
-      <bit>0</bit>
-      <x>189</x>
-      <y>12</y>
-      <width>168</width>
-      <height>26</height>
-      <off_label>CW</off_label>
-      <off_color>
-        <color name="YELLOW" red="252" green="242" blue="17">
-        </color>
-      </off_color>
-      <on_label>Pulsed</on_label>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template</name>
-      <pv_name>$(P):Ampl:sType</pv_name>
-      <x>367</x>
-      <y>12</y>
-      <width>76</width>
-      <height>26</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_5</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Combined Pwr Meas Off</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdTotPwrMeasOff</pv_name>
-      <x>5</x>
-      <y>165</y>
-      <width>85</width>
-      <height>71</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_6</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Combined Pwr Meas On</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdTotPwrMeasOn</pv_name>
-      <x>95</x>
-      <y>165</y>
-      <width>85</width>
-      <height>71</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_7</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Normal</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdNormal</pv_name>
-      <x>365</x>
-      <y>54</y>
-      <width>80</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_8</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Master</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdMaster</pv_name>
-      <x>365</x>
-      <y>108</y>
-      <width>80</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_9</name>
-      <actions execute_as_one="true">
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Slave</description>
-        </action>
-      </actions>
-      <pv_name>$(P):Ampl:CmdSlave</pv_name>
-      <x>365</x>
-      <y>165</y>
-      <width>80</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_10</name>
-      <text>Crowbar trips</text>
-      <x>8</x>
-      <y>250</y>
-      <width>80</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_2</name>
-      <pv_name>$(P):Ampl:sNcrowbarTrip</pv_name>
-      <x>108</x>
-      <y>250</y>
-      <width>60</width>
-      <height>16</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Panel 2</name>
-      <x>215</x>
-      <y>226</y>
-      <width>133</width>
-      <height>39</height>
-      <style>3</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-      <actions>
-      </actions>
-      <widget type="led" version="2.0.0">
-        <name>LED Template_22</name>
-        <pv_name>$(P):Ampl:sAlrm-Master</pv_name>
-        <bit>0</bit>
-        <x>2</x>
-        <y>2</y>
-        <width>16</width>
-        <height>16</height>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color name="GRAY" red="169" green="169" blue="169">
-          </color>
-        </line_color>
-        <actions>
-        </actions>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_22</name>
-        <text>Master OK</text>
-        <x>25</x>
-        <width>86</width>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="led" version="2.0.0">
-        <name>LED Template_23</name>
-        <pv_name>$(P):Ampl:sAlrm-Slave</pv_name>
-        <bit>0</bit>
-        <x>2</x>
-        <y>21</y>
-        <width>16</width>
-        <height>16</height>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color name="GRAY" red="169" green="169" blue="169">
-          </color>
-        </line_color>
-        <actions>
-        </actions>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_23</name>
-        <text>Slave OK</text>
-        <x>25</x>
-        <y>19</y>
-        <width>86</width>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template_6</name>
-      <pv_name>$(P):Fil:sRdy</pv_name>
-      <bit>0</bit>
-      <x>280</x>
-      <y>170</y>
-      <width>80</width>
-      <height>30</height>
-      <off_label>Fil Not Rdy</off_label>
-      <off_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>Fil Rdy</on_label>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Group_1</name>
-      <x>8</x>
-      <y>273</y>
-      <width>161</width>
-      <height>18</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_26</name>
-        <text>Tube Id</text>
-        <width>45</width>
-        <height>18</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <auto_size>true</auto_size>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template_10</name>
-        <pv_name>$(P):TubeId</pv_name>
-        <x>71</x>
-        <y>1</y>
-        <width>90</width>
-        <height>16</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <actions>
-        </actions>
-        <border_width>2</border_width>
-      </widget>
-    </widget>
+    <width>470</width>
+    <height>330</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <macros>
+      <N>2</N>
+    </macros>
+    <file>top_panel.bob</file>
+    <x>920</x>
+    <y>15</y>
+    <width>470</width>
+    <height>330</height>
   </widget>
 </display>

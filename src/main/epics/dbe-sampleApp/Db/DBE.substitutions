@@ -151,3 +151,8 @@ file "dbe-tubeid.template" { pattern
 {HPRF, DBE1}
 {HPRF, DBE2}
 }
+
+file "dbe-globstat.template" { pattern
+{SYS, SUBS}
+{HPRF, DBE}
+}
