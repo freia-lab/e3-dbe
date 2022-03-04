@@ -1,0 +1,24 @@
+record (calc, "$(SYS)-$(SUBS):Ampl:sFault-calc") { 
+    field(SCAN, "1 second")
+    field(INPA, "$(SYS)-$(SUBS)1:Ampl:sFault.SEVR")
+    field(INPB, "$(SYS)-$(SUBS)2:Ampl:sFault.SEVR")
+    field(INPC, "$(SYS)-$(SUBS)1:APS:sAlarm.SEVR")
+    field(INPD, "$(SYS)-$(SUBS)2:APS:sAlarm.SEVR")
+    field(INPE, "$(SYS)-$(SUBS)1:Ampl:sAlrm-Master.SEVR")
+    field(INPF, "$(SYS)-$(SUBS)2:Ampl:sAlrm-Slave.SEVR")
+    field(INPG, "$(SYS)-$(SUBS)1:Ampl:sAlrm-FilV.SEVR")
+    field(INPH, "$(SYS)-$(SUBS)2:Ampl:sAlrm-FilV.SEVR")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H)")
+    field(FLNK, "$(SYS)-$(SUBS):Ampl:sFault")
+}
+
+record (mbbi,  "$(SYS)-$(SUBS):Ampl:sFault") {
+    field(DESC, "General RF station status")
+    field(DTYP, "Soft Channel")
+    field(INP, "$(SYS)-$(SUBS):Ampl:sFault-calc")
+    field(ZRST, "OK")
+    field(ONST, "WARNING")
+    field(ONSV, "MINOR")
+    field(TWST, "FAULT")
+    field(TWSV, "MAJOR")
+}

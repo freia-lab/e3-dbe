@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <width>330</width>
+  <height>395</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <grid_color>
+    <color name="GROUP-BORDER" red="150" green="155" blue="151">
+    </color>
+  </grid_color>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(P)</text>
+    <x>10</x>
+    <width>292</width>
+    <height>31</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>$(DESC)</text>
+    <x>10</x>
+    <y>30</y>
+    <width>292</width>
+    <height>26</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button Template</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P):cmdReset</pv_name>
+    <text>Reset</text>
+    <x>10</x>
+    <y>306</y>
+    <width>80</width>
+    <height>40</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template</name>
+    <pv_name>$(P):sNoLatch</pv_name>
+    <bit>0</bit>
+    <x>142</x>
+    <y>307</y>
+    <width>36</width>
+    <height>36</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color name="BLACK-BORDER" red="121" green="121" blue="121">
+      </color>
+    </off_color>
+    <on_label>ON</on_label>
+    <on_color>
+      <color red="0" green="64" blue="225">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_1</name>
+    <pv_name>$(P):sOutput</pv_name>
+    <bit>0</bit>
+    <x>193</x>
+    <y>60</y>
+    <width>106</width>
+    <height>36</height>
+    <off_label>ITLK OPEN</off_label>
+    <off_color>
+      <color name="LED-RED-ON" red="255" green="60" blue="46">
+      </color>
+    </off_color>
+    <on_label>ITLK CLOSED</on_label>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <square>true</square>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button Template</name>
+    <pv_name>$(P):cNoLatch</pv_name>
+    <x>191</x>
+    <y>306</y>
+    <width>125</width>
+    <height>40</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>10</x>
+    <y>73</y>
+    <width>26</width>
+    <height>224</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text>Inp</text>
+      <x>1</x>
+      <width>20</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor Template</name>
+      <pv_name>$(P):sInp</pv_name>
+      <y>25</y>
+      <width>26</width>
+      <height>199</height>
+      <horizontal>false</horizontal>
+      <off_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>40</x>
+    <y>73</y>
+    <width>48</width>
+    <height>224</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_3</name>
+      <text>Latched</text>
+      <width>48</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor Template_1</name>
+      <pv_name>$(P):sLatched</pv_name>
+      <x>7</x>
+      <y>25</y>
+      <width>26</width>
+      <height>199</height>
+      <horizontal>false</horizontal>
+      <off_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>85</x>
+    <y>74</y>
+    <width>232</width>
+    <height>223</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor Template_2</name>
+      <pv_name>$(P):sMask</pv_name>
+      <y>24</y>
+      <width>26</width>
+      <height>199</height>
+      <horizontal>false</horizontal>
+      <off_color>
+        <color name="BLACK-BORDER" red="121" green="121" blue="121">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="64" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_7</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>7</bit>
+      <label></label>
+      <x>32</x>
+      <y>24</y>
+      <width>32</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_6</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>6</bit>
+      <label></label>
+      <x>32</x>
+      <y>48</y>
+      <width>32</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_5</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>5</bit>
+      <label></label>
+      <x>32</x>
+      <y>72</y>
+      <width>32</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_4</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>4</bit>
+      <label></label>
+      <x>32</x>
+      <y>96</y>
+      <width>32</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_3</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>3</bit>
+      <label></label>
+      <x>32</x>
+      <y>120</y>
+      <width>32</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_2</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>2</bit>
+      <label></label>
+      <x>32</x>
+      <y>144</y>
+      <width>32</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_1</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>1</bit>
+      <label></label>
+      <x>32</x>
+      <y>168</y>
+      <width>32</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template</name>
+      <pv_name>$(P):cMask</pv_name>
+      <label></label>
+      <x>32</x>
+      <y>192</y>
+      <width>32</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_4</name>
+      <text>Mask</text>
+      <x>35</x>
+      <width>31</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P):sInp-B7</pv_name>
+      <x>58</x>
+      <y>28</y>
+      <width>174</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):sInp-B6</pv_name>
+      <x>59</x>
+      <y>53</y>
+      <width>174</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P):sInp-B5</pv_name>
+      <x>58</x>
+      <y>77</y>
+      <width>174</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(P):sInp-B3</pv_name>
+      <x>58</x>
+      <y>125</y>
+      <width>174</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P):sInp-B4</pv_name>
+      <x>58</x>
+      <y>100</y>
+      <width>174</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(P):sInp-B2</pv_name>
+      <x>59</x>
+      <y>150</y>
+      <width>174</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(P):sInp-B0</pv_name>
+      <x>59</x>
+      <y>197</y>
+      <width>174</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(P):sInp-B1</pv_name>
+      <x>59</x>
+      <y>173</y>
+      <width>174</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+</display>

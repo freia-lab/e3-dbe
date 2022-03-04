@@ -1,0 +1,20 @@
+record (bi, "$(SYS)-$(SUBS)1:$(DEV):$(SIG)") {
+  field (DESC, "$(SUBS)1:$(DEV) $(DESC)")
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:$(SUBS)1/$(OFFS) T=BYTE B=0")
+  field (ZNAM, "$(ZNAM)")
+  field (ONAM, "$(ONAM)")
+  field (SCAN, "I/O Intr")
+  field (OSV,  "$(OSV)")
+  field (ZSV,  "$(ZSV)")
+}
+record (bi, "$(SYS)-$(SUBS)2:$(DEV):$(SIG)") {
+  field (DESC, "$(SUBS)2:$(DEV) $(DESC)")
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:$(SUBS)2/$(OFFS) T=BYTE B=0")
+  field (ZNAM, "$(ZNAM)")
+  field (ONAM, "$(ONAM)")
+  field (SCAN, "I/O Intr")
+  field (OSV,  "$(OSV)")
+  field (ZSV,  "$(ZSV)")
+}

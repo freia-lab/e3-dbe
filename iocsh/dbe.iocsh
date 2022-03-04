@@ -1,0 +1,42 @@
+# This should be the included snippet to configure and run the deployed IOC. It should be loaded with
+#
+#   iocshLoad("$(dbe_DIR)/dbe.iocsh", "PLC_1IP=xxx.yyy.zzz.nnn,...")
+
+#- ###                dbe iocsh                     ###
+#- ####################################################
+#- >> Mandatory
+#- PLC1_IP        - 1st PLC's controller IP address
+#- PLC1_PORT      - 1st PLC's controller IP port number
+#- PLC2_IP        - 2nd PLC's controller IP address
+#- PLC2_PORT      - 2nd PLC's controller IP port number
+#- TOP		  - top directory for autosave files
+#-
+#var s7plcDebug <level>
+#level=-1:  no output
+#level=0:   errors only
+#level=1:   startup messages
+#level=2: + output record processing
+#level=3: + inputput record processing
+#level=4: + driver calls
+#level=5: + io printout
+#be careful using level>1 since many messages may introduce delays
+
+#var s7plcDebug 2
+#s7plcConfigure name,IPaddr,port,inSize,outSize,bigEndian,recvTimeout,sendIntervall
+#connects to PLC <name> on address <IPaddr> port <port>
+#<inSize>        : size of data block PLC -> IOC [bytes]
+#<outSize>       : size of data block IOC -> PLC [bytes]
+#<bigEndian>=1   : motorola format data (MSB first)
+#<bigEndian>=0   : intel format data (LSB first)
+#<recvTimeout>   : time to wait for input before disconnecting [ms]
+#<sendIntervall> : time to wait before sending new data to PLC [ms]
+
+
+s7plcConfigure PLC:DBE1,$(PLC1_IP),$(PLC1_PORT),220,56,1,2000,500
+s7plcConfigure PLC:DBE2,$(PLC2_IP),$(PLC2_PORT),220,56,1,2000,500
+
+dbLoadRecords "DBE_stat.db", "SUBS=DBE1"
+dbLoadRecords("DBE_stat.db","SUBS=DBE2")
+dbLoadRecords("DBE.db")
+
+iocshLoad("$(autosave_DIR)/autosave.iocsh", "AS_TOP=$(TOP),IOCNAME=$(IOCNAME),IOCDIR=dbe")

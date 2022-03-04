@@ -1,0 +1,5 @@
+record (longout, "$(SYS)-$(SUBSYS):TubeId") {
+  field (DESC, "Tube id number")
+  field (UDFS, "NO_ALARM")
+  info(autosaveFields,"VAL")
+}
