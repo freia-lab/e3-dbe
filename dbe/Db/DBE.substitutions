@@ -56,74 +56,74 @@ file "binin.template" { pattern
 }
 
 file "analogin.template"  { pattern
-{SYS,	SUBS,	T,      EGUL,	DEV,	SIG,	OFFS,	EGU,	MAXVAL,  PREC, DESC}
-{HPRF,	DBE,	UINT16,	0,	Fil,	sV,	50,	"V", 	"65.535",  3,   "Filament Voltage"}
-{HPRF,	DBE,	UINT16,	0,	Fil-V,	sRdV,	50,	"V", 	"65535",  0,   "Filament Voltage"}
-{HPRF,	DBE,	UINT16,	0,	Fil,	sI,	52,	"A", 	"65535", 0,   "Filament Current"}
-{HPRF,	DBE,	INT16,	-32767,	Grid-1,	sV,	54,	"V", 	"32767", 0,   "Grid 1 Voltage"}
-{HPRF,	DBE,	INT16,	-32767,	G1-V,	sRdV,	54,	"V", 	"32767", 0,   "Grid 1 Voltage"}
-{HPRF,	DBE,	UINT16,	0,	Grid-1,	sI,	56,	"mA", 	"65535", 0,   "Grid 1 Current"}
-{HPRF,	DBE,	UINT16,	0,	Grid-2,	sV,	58,	"V", 	"65535", 0,   "Grid 2 Voltage"}
-{HPRF,	DBE,	UINT16,	0,	G2-V,	sRdV,	58,	"V", 	"65535", 0,   "Grid 2 Voltage"}
-{HPRF,	DBE,	UINT16,	0,	Grid-2,	sI,	60,	"mA", 	"65535", 0,   "Grid 2 Current"}
-{HPRF,	DBE,	UINT16,	0,	APS,	sV,	62,	"V", 	"65535", 0,   "Anodic Voltage"}
-{HPRF,	DBE,	UINT16,	0,	APS,	sI,	64,	"A", 	"6553.5", 1,   "Anodic Current"}
-{HPRF,	DBE,	UINT16,	0,	Ampl,	sFwdPwr,	66,	"kW", 	"6553.5", 1,   "Forward Power"}
-{HPRF,	DBE,	UINT16,	0,	Ampl,	sReflPwr,	68,	"W", 	"65535",  0,   "Reflected Power"}
-{HPRF,	DBE,	UINT16,	0,	SSA,	sFwdPwr,	70,	"W", 	"65535",  0,   "Forward Power"}
-{HPRF,	DBE,	UINT16,	0,	SSA,	sReflPwr,	72,	"W", 	"65535" 0,   "Reflected Power"}
-{HPRF,	DBE,	UINT16,	0,	Ampl,	sLqdFlow,	74,	"l/min", 	"65535" 0,   "Liquid Flow"}
-{HPRF,	DBE,	UINT16,	0,	SSA,	sLqdFlow,	76,	"l/min", 	"65535" 0,   "Liquid Flow"}
-{HPRF,	DBE,	UINT16,	0,	Ampl,	sLqdInT,	78,	"°C", 	"6553.5", 1,   "Liquid In Temp."}
-{HPRF,	DBE,	UINT16,	0,	Ampl,	sLqdOutT,	80,	"°C", 	"6553.5", 1,   "Liquid Out Temp."}
-{HPRF,	DBE,	UINT16,	0,	SSA,	sLqdInT,	82,	"°C", 	"6553.5", 1,   "Liquid In Temp."}
-{HPRF,	DBE,	UINT16,	0,	SSA,	sLqdOutT,	84,	"°C", 	"6553.5", 1,   "Liquid Out Temp."}
-{HPRF,	DBE,	UINT16,	0,	Fil,	sPreheat,	86,	"s", 	"65535", 0,   "Time-out Fil. Preheating"}
-{HPRF,	DBE,	UINT16,	0,	Fil,	sCoolDwn,	88,	"s", 	"65535", 0,   "Time-out Fil. Cooldown"}
-{HPRF,	DBE,	UINT16,	0,	Fil,	sPostVent,	90,	"s", 	"65535", 0,   "Time-out Post Ventilation"}
-{HPRF,	DBE,	UINT16,	0,	SSAPS-1,	sV1,	92,	"V", 	"6553.5", 1,   "Voltage PS1"}
-{HPRF,	DBE,	UINT16,	0,	SSAPS-1,	sV2,	94,	"V", 	"6553.5", 1,   "Voltage PS2"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sI1,	96,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sI2,	98,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sI3,	100,	"A", 	"6553.5", 1,   "Current Rf Module 3"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sI4,	102,	"A", 	"6553.5", 1,   "Current Rf Module 4"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sI5,	104,	"A", 	"6553.5", 1,   "Current Rf Module 5"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sI6,	106,	"A", 	"6553.5", 1,   "Current Rf Module 6"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sI7,	108,	"A", 	"6553.5", 1,   "Current Rf Module 7"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sI8,	110,	"A", 	"6553.5", 1,   "Current Rf Module 8"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sFwdPwr,	112,	"W", 	"65535", 0,   "Forward Power"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sReflPwr,	114,	"W", 	"65535", 0,   "Reflected Power"}
-{HPRF,	DBE,	UINT16,	0,	SSA-1,	sT,	116,	"°C", 	"65535", 0,   "Heatsink Temp."}
-{HPRF,	DBE,	UINT16,	0,	SSAPS-2,	sV1,	118,	"V", 	"6553.5", 1,   "Voltage PS1"}
-{HPRF,	DBE,	UINT16,	0,	SSAPS-2,	sV2,	120,	"V", 	"6553.5", 1,   "Voltage PS2"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sI1,	122,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sI2,	124,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sI3,	126,	"A", 	"6553.5", 1,   "Current Rf Module 3"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sI4,	128,	"A", 	"6553.5", 1,   "Current Rf Module 4"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sI5,	130,	"A", 	"6553.5", 1,   "Current Rf Module 5"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sI6,	132,	"A", 	"6553.5", 1,   "Current Rf Module 6"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sI7,	134,	"A", 	"6553.5", 1,   "Current Rf Module 7"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sI8,	136,	"A", 	"6553.5", 1,   "Current Rf Module 8"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sFwdPwr,	138,	"W", 	"65535", 0,   "Forward Power"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sReflPwr,	140,	"W", 	"65535", 0,   "Reflected Power"}
-{HPRF,	DBE,	UINT16,	0,	SSA-2,	sT,	142,	"°C", 	"65535", 0,   "Heatsink Temp."}
-{HPRF,	DBE,	UINT16,	0,	DRVPS,	sV,	144,	"V", 	"6553.5", 1,   "Voltage PS"}
-{HPRF,	DBE,	UINT16,	0,	DRVPS,	sI,	146,	"A", 	"6553.5", 1,   "Current RF Module"}
-{HPRF,	DBE,	UINT16,	0,	DRV,	sFwdPwr,	148,	"W", 	"65535", 0,   "Forward Power"}
-{HPRF,	DBE,	UINT16,	0,	DRV,	sReflPwr,	150,	"W", 	"65535", 0,   "Reflected Power"}
-{HPRF,	DBE,	UINT16,	0,	DRV,	sT,	152,	"°C", 	"65535", 0,   "Heatsink Temp."}
-{HPRF,	DBE,	UINT16,	0,	DRVPS-CW,	sV,	154,	"V", 	"6553.5", 1,   "Voltage PS"}
-{HPRF,	DBE,	UINT16,	0,	Ampl-CW,	sV1,	156,	"V", 	"6553.5", 1,   "Voltage PS1"}
-{HPRF,	DBE,	UINT16,	0,	Ampl-CW,	sV2,	158,	"V", 	"6553.5", 1,   "Voltage PS1"}
-{HPRF,	DBE,	UINT16,	0,	DRVPS-CW,	sI,	160,	"A", 	"6553.5", 1,   "Current Driver Module"}
-{HPRF,	DBE,	UINT16,	0,	Ampl-CW,	sI1,	162,	"A", 	"6553.5", 1,   "Current Rf Module 1"}
-{HPRF,	DBE,	UINT16,	0,	Ampl-CW,	sI2,	164,	"A", 	"6553.5", 1,   "Current Rf Module 2"}
-{HPRF,	DBE,	UINT16,	0,	Ampl-CW,	sFwdPwr,	166,	"W", 	"65535", 0,   "Forward Power"}
-{HPRF,	DBE,	UINT16,	0,	Ampl-CW,	sReflPwr,	168,	"W", 	"65535", 0,   "Reflected Power"}
-{HPRF,	DBE,	UINT16,	0,	Ampl-CW,	sT,	170,	"°C", 	"65535", 0,   "Heatsink Temp."}
-{HPRF,	DBE,	UINT16,	0,	Ampl,		sNcrowbarTrip,	174,	"", 	"65535", 0,   "No of crowbar trips"}
-{HPRF,	DBE,	UINT16,	0,	Ampl,	sTotFwdPwr,	176,	"kW", 	"6553.5", 1,   "Total Forward Power"}
-{HPRF,	DBE,	UINT16,	0,	Ampl,	sTotReflPwr,	178,	"W", 	"65535", 0,   "Total Reflected Power"}
+{SYS,	SUBS,	T,      ESLO,	DEV,	SIG,	OFFS,	EGU,	PREC, DESC}
+{HPRF,	DBE,	UINT16,	0.001,	Fil,	sV,	50,	"V", 	3,   "Filament Voltage"}
+{HPRF,	DBE,	UINT16,	1,	Fil-V,	sRdV,	50,	"V",  	0,   "Filament Voltage"}
+{HPRF,	DBE,	UINT16,	1,	Fil,	sI,	52,	"A", 	0,   "Filament Current"}
+{HPRF,	DBE,	INT16,	1,	Grid-1,	sV,	54,	"V", 	0,   "Grid 1 Voltage"}
+{HPRF,	DBE,	INT16,	1,	G1-V,	sRdV,	54,	"V", 	0,   "Grid 1 Voltage"}
+{HPRF,	DBE,	UINT16,	1,	Grid-1,	sI,	56,	"mA", 	0,   "Grid 1 Current"}
+{HPRF,	DBE,	UINT16,	1,	Grid-2,	sV,	58,	"V", 	0,   "Grid 2 Voltage"}
+{HPRF,	DBE,	UINT16,	1,	G2-V,	sRdV,	58,	"V", 	0,   "Grid 2 Voltage"}
+{HPRF,	DBE,	UINT16,	1,	Grid-2,	sI,	60,	"mA", 	0,   "Grid 2 Current"}
+{HPRF,	DBE,	UINT16,	1,	APS,	sV,	62,	"V", 	0,   "Anodic Voltage"}
+{HPRF,	DBE,	UINT16,	0.1,	APS,	sI,	64,	"A", 	1,   "Anodic Current"}
+{HPRF,	DBE,	UINT16,	0.1,	Ampl,	sFwdPwr,	66,	"kW", 	1,   "Forward Power"}
+{HPRF,	DBE,	UINT16,	1,	Ampl,	sReflPwr,	68,	"W", 	0,   "Reflected Power"}
+{HPRF,	DBE,	UINT16,	1,	SSA,	sFwdPwr,	70,	"W", 	0,   "Forward Power"}
+{HPRF,	DBE,	UINT16,	1,	SSA,	sReflPwr,	72,	"W", 	0,   "Reflected Power"}
+{HPRF,	DBE,	UINT16,	1,	Ampl,	sLqdFlow,	74,	"l/min",0,   "Liquid Flow"}
+{HPRF,	DBE,	UINT16,	1,	SSA,	sLqdFlow,	76,	"l/min",0,   "Liquid Flow"}
+{HPRF,	DBE,	UINT16,	0.1,	Ampl,	sLqdInT,	78,	"°C", 	1,   "Liquid In Temp."}
+{HPRF,	DBE,	UINT16,	0.1,	Ampl,	sLqdOutT,	80,	"°C", 	1,   "Liquid Out Temp."}
+{HPRF,	DBE,	UINT16,	0.1,	SSA,	sLqdInT,	82,	"°C", 	1,   "Liquid In Temp."}
+{HPRF,	DBE,	UINT16,	0.1,	SSA,	sLqdOutT,	84,	"°C", 	1,   "Liquid Out Temp."}
+{HPRF,	DBE,	UINT16,	1,	Fil,	sPreheat,	86,	"s", 	0,   "Time-out Fil. Preheating"}
+{HPRF,	DBE,	UINT16,	1,	Fil,	sCoolDwn,	88,	"s", 	0,   "Time-out Fil. Cooldown"}
+{HPRF,	DBE,	UINT16,	1,	Fil,	sPostVent,	90,	"s", 	0,   "Time-out Post Ventilation"}
+{HPRF,	DBE,	UINT16,	0.1,	SSAPS-1,	sV1,	92,	"V", 	1,   "Voltage PS1"}
+{HPRF,	DBE,	UINT16,	0.1,	SSAPS-1,	sV2,	94,	"V", 	1,   "Voltage PS2"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-1,	sI1,	96,	"A", 	1,   "Current Rf Module 1"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-1,	sI2,	98,	"A", 	1,   "Current Rf Module 2"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-1,	sI3,	100,	"A", 	1,   "Current Rf Module 3"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-1,	sI4,	102,	"A", 	1,   "Current Rf Module 4"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-1,	sI5,	104,	"A", 	1,   "Current Rf Module 5"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-1,	sI6,	106,	"A", 	1,   "Current Rf Module 6"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-1,	sI7,	108,	"A", 	1,   "Current Rf Module 7"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-1,	sI8,	110,	"A", 	1,   "Current Rf Module 8"}
+{HPRF,	DBE,	UINT16,	1,	SSA-1,	sFwdPwr,	112,	"W", 	0,   "Forward Power"}
+{HPRF,	DBE,	UINT16,	1,	SSA-1,	sReflPwr,	114,	"W", 	0,   "Reflected Power"}
+{HPRF,	DBE,	UINT16,	1,	SSA-1,	sT,	116,	"°C", 	0,   "Heatsink Temp."}
+{HPRF,	DBE,	UINT16,	0.1,	SSAPS-2,	sV1,	118,	"V", 	1,   "Voltage PS1"}
+{HPRF,	DBE,	UINT16,	0.1,	SSAPS-2,	sV2,	120,	"V", 	1,   "Voltage PS2"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-2,	sI1,	122,	"A", 	1,   "Current Rf Module 1"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-2,	sI2,	124,	"A", 	1,   "Current Rf Module 2"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-2,	sI3,	126,	"A", 	1,   "Current Rf Module 3"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-2,	sI4,	128,	"A", 	1,   "Current Rf Module 4"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-2,	sI5,	130,	"A", 	1,   "Current Rf Module 5"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-2,	sI6,	132,	"A", 	1,   "Current Rf Module 6"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-2,	sI7,	134,	"A", 	1,   "Current Rf Module 7"}
+{HPRF,	DBE,	UINT16,	0.1,	SSA-2,	sI8,	136,	"A", 	1,   "Current Rf Module 8"}
+{HPRF,	DBE,	UINT16,	1,	SSA-2,	sFwdPwr,	138,	"W", 0,   "Forward Power"}
+{HPRF,	DBE,	UINT16,	1,	SSA-2,	sReflPwr,	140,	"W", 0,   "Reflected Power"}
+{HPRF,	DBE,	UINT16,	1,	SSA-2,	sT,	142,	"°C", 	0,   "Heatsink Temp."}
+{HPRF,	DBE,	UINT16,	0.1,	DRVPS,	sV,	144,	"V", 	1,   "Voltage PS"}
+{HPRF,	DBE,	UINT16,	0.1,	DRVPS,	sI,	146,	"A", 	1,   "Current RF Module"}
+{HPRF,	DBE,	UINT16,	1,	DRV,	sFwdPwr,	148,	"W", 0,   "Forward Power"}
+{HPRF,	DBE,	UINT16,	1,	DRV,	sReflPwr,	150,	"W", 0,   "Reflected Power"}
+{HPRF,	DBE,	UINT16,	1,	DRV,	sT,	152,	"°C", 	0,   "Heatsink Temp."}
+{HPRF,	DBE,	UINT16,	0.1,	DRVPS-CW,	sV,	154,	"V", 	1,   "Voltage PS"}
+{HPRF,	DBE,	UINT16,	0.1,	Ampl-CW,	sV1,	156,	"V", 	1,   "Voltage PS1"}
+{HPRF,	DBE,	UINT16,	0.1,	Ampl-CW,	sV2,	158,	"V", 	1,   "Voltage PS1"}
+{HPRF,	DBE,	UINT16,	0.1,	DRVPS-CW,	sI,	160,	"A", 	1,   "Current Driver Module"}
+{HPRF,	DBE,	UINT16,	0.1,	Ampl-CW,	sI1,	162,	"A", 	1,   "Current Rf Module 1"}
+{HPRF,	DBE,	UINT16,	0.1,	Ampl-CW,	sI2,	164,	"A", 	1,   "Current Rf Module 2"}
+{HPRF,	DBE,	UINT16,	1,	Ampl-CW,	sFwdPwr,	166,	"W", 	0,   "Forward Power"}
+{HPRF,	DBE,	UINT16,	1,	Ampl-CW,	sReflPwr,	168,	"W", 	0,   "Reflected Power"}
+{HPRF,	DBE,	UINT16,	1,	Ampl-CW,	sT,	170,	"°C", 	0,   "Heatsink Temp."}
+{HPRF,	DBE,	UINT16,	1,	Ampl,		sNcrowbarTrip,	174,	"", 	0,   "No of crowbar trips"}
+{HPRF,	DBE,	UINT16,	0.1,	Ampl,	sTotFwdPwr,	176,	"kW", 	1,   "Total Forward Power"}
+{HPRF,	DBE,	UINT16,	1,	Ampl,	sTotReflPwr,	178,	"W", 	0,   "Total Reflected Power"}
 }
 
 file "analogout.template"  { pattern
